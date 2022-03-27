@@ -124,6 +124,13 @@ footer .redes a
 }
 
 
+.card-text
+{
+	font-weight: bold;
+	color: white;
+	text-shadow: 2px -2px 1px #000;
+	font-size: 20px;
+}
 
 .nav-tabs
 {
@@ -133,9 +140,48 @@ footer .redes a
 
 .nav-link
 {
-	margin-left: 2%;
-	margin-right: 2%;
+	color: white;
+	font-family: Arial, Helvetica, sans-serif;
+	margin-left: 3% ;
+	margin-right: 3%;
+	font-size: 18px;
+	text-shadow: 2px -2px 1px #000;
 }
+
+.nav-link:hover
+{
+	background-color: #EA168E;
+	color: white;
+}
+
+.card1
+{
+	background-color: #F0134D;
+	text-align: center;
+	border-radius: 0px;
+}
+
+.card2
+{
+	background-color: #612570;
+	text-align: center;
+	border-radius: 0px;
+}
+
+.card3
+{
+	background-color: #FF6F5E;
+	text-align: center;
+	border-radius: 0px;
+}
+
+.card4
+{
+	background-color: #B643CD;
+	text-align: center;
+	border-radius: 0px;
+}
+
 
 .boton
 {
@@ -344,10 +390,7 @@ footer .redes a
 	border: 1px solid gray;
 }
 
-#servicios .bloque-servicio .bloque-img-servicio
-{
 
-}
 #servicios .bloque-servicio .bloque-img-servicio img
 {
 	width: 100%;
@@ -366,11 +409,6 @@ footer .redes a
 {
 	margin-top: 0;
 	font-size: 25px; 
-}
-
-#galeria
-{
-
 }
 
 #galeria h4
