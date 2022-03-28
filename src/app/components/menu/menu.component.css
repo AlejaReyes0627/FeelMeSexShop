@@ -36,12 +36,6 @@ header .container nav a:hover
 	color: gray;
 }
 
-header .container .hamb
-{
-	display: none;
-	position: relative;
-}
-
 
 footer
 {
@@ -184,6 +178,11 @@ footer .redes a
 	max-width: 10%;  
 }
 
+.carrito2:hover
+{
+	opacity: 40%;
+}
+
 .boton1
 {
 	background-color: #612570;
@@ -208,58 +207,6 @@ footer .redes a
 	color: white;
 }
 
-.boton.boton-rojo
-{
-	background-color: rgb(190, 67, 153);
-	color: white;
-	font-size: 20px;
-	font-weight: bold;
-	border-radius: 15px;
-}
-
-.boton.boton-rojo:hover 
-{
-	background-color:  gray;
-	color: white;
-	font-size: 20px;
-	font-weight: bold;
-	border-radius: 15px;
-}
-.boton.boton-blanco
-{
-	background-color: white;
-	color: red;
-	font-size: 16px;
-	font-weight: bold;
-	border: 1px solid red;
-	border-radius: 15px;
-}
-.boton.boton-blanco:hover
-{
-	background-color: red;
-	color: white;
-	font-size: 16px;
-	font-weight: bold;
-	border: 1px solid red;
-	border-radius: 15px;
-}
-
-.boton.boton-negro
-{
-	background-color: black;
-	color: white;
-	font-size: 20px;
-	font-weight: bold;
-	border-radius: 15px;
-}
-
-.boton.boton-negro:hover
-{
-	background-color: white;
-	color: black;
-	border-radius: 15px;
-}
-
 .seccion
 {
 	padding-top: 60px;
@@ -271,8 +218,7 @@ footer .redes a
 	width: 100%;
 	padding-bottom: 100%;
 	position: relative;
-	background-color: #F0134D;
-
+	background-color: #000000;
 }
 
 .card-items
@@ -291,10 +237,27 @@ footer .redes a
 	height: 100%;
 	object-fit: fill;
 	object-position: center;
-	position: absolute;	
-	border-radius:100px;
-    border:5px solid #F0134D;
+	position: absolute;
+	
 }
+
+.cuadrado-perfecto:hover h4
+{
+	color: white;
+}
+
+#galeria img
+{
+	filter: grayscale(0);
+}
+
+#galeria .cuadrado-perfecto:hover img
+{
+	opacity: 40%;
+	filter: grayscale(1);
+}
+
+
 .container /*selector por clase o por etiqueta*/
 {
 	width: 1140px;
@@ -420,21 +383,6 @@ footer .redes a
 	width: 100%;
 }
 
-#galeria img
-{
-	filter: grayscale(1);
-}
-
-#galeria .cuadrado-perfecto:hover img
-{
-	filter: grayscale(0);
-}
-
-#galeria .cuadrado-perfecto:hover h4
-{
-	display: none;
-}
-
 #contactenos
 {
 	position: relative;
@@ -488,7 +436,7 @@ footer .redes a
 	margin-bottom: 0;
 }
 
-/*@media(max-width: 767px)
+@media(max-width: 767px)
 {
 	body
 	{
@@ -605,4 +553,4 @@ footer .redes a
 		padding: 0;
 	}
 
-}*/
+}
