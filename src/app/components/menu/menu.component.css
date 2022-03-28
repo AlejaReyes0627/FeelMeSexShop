@@ -226,6 +226,11 @@ footer .redes a
 	color: #F0134D;
 }
 
+.formulario:hover
+{
+	opacity: 70%;
+}
+
 .card-items
 {
 	background-color: #F0134D;
