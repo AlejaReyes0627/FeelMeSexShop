@@ -221,6 +221,11 @@ footer .redes a
 	background-color: #000000;
 }
 
+.sabiasque
+{
+	color: #F0134D;
+}
+
 .card-items
 {
 	background-color: #F0134D;
@@ -238,7 +243,6 @@ footer .redes a
 	object-fit: fill;
 	object-position: center;
 	position: absolute;
-	
 }
 
 .cuadrado-perfecto:hover h4
@@ -273,7 +277,6 @@ footer .redes a
 	padding-right: 15px;
 	padding-left: 15px;
 	position: relative;
-	
 }
 
 .row
@@ -282,7 +285,7 @@ footer .redes a
 	flex-wrap: wrap;
 	margin-left: -15px;
 	margin-right: -15px;
-
+	margin-bottom: 20px;
 }
 
 .columna
