@@ -115,12 +115,78 @@ footer .redes a
 	text-shadow: 2px -2px 1px #000;
 }
 
+/*IMAGENES METODOS DE PAGO*/
+
+.cards1 img
+{
+	width: auto;
+    height: 80px;
+}
+
+.cards2 img
+{
+	width: 130px;
+	height: 80px;
+
+}
+
+.cards3 img
+{
+	width: auto;
+	height: 80px;
+}
+
+.cards4 img
+{
+	width: auto;
+	height: 80px;
+}
+
+.cards5 img
+{
+	width: 120px;
+	height: 60px;
+}
+
+.cards6 img
+{
+	width: 160px;
+	height: 60px;
+}
+
+.cards7 img
+{
+	width: auto;
+	height: 80px;
+}
+
+.cards8 img
+{
+	width: 140px;
+	height: 50px;
+}
+
+.cards9 img
+{
+	width: 180px;
+	height: 50px;	
+}
+
+.columnaPaid
+{
+	padding-left: 150px;
+}
+/*------------------------------------------------------*/
+
+/* TITULO DE METODOS DE PAGO*/
 .nav-middle-text
 {
 	color: white; 
 	font-size: 50px;
 }
+/*------------------------------------------------------*/
 
+/*LINKS DEL NAV DE ARRIBA*/
 .links
 {
 	color: white;
@@ -136,7 +202,7 @@ footer .redes a
 	background-color: #EA168E;
 	color: white;
 }
-
+/*-----------------------------------------------------*/
 
 
 .card1

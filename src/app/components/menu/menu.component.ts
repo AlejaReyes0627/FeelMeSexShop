@@ -24,6 +24,15 @@ export class MenuComponent implements OnInit {
   informacion4:string;
   informacion5:string;
   informacion6:string;
+  metodo_pago1:string;
+  metodo_pago2:string;
+  metodo_pago3:string;
+  metodo_pago4:string;
+  metodo_pago5:string;
+  metodo_pago6:string;
+  metodo_pago7:string;
+  metodo_pago8:string;
+  metodo_pago9:string;
 
 
   constructor(public router: Router) {
@@ -43,6 +52,15 @@ export class MenuComponent implements OnInit {
     this.informacion4='/assets/img/information/information4.jpg';
     this.informacion5='/assets/img/information/information5.jpg';
     this.informacion6='/assets/img/information/information6.jpg';
+    this.metodo_pago1='/assets/img/paidMethod/metodo_pago1.png';
+    this.metodo_pago2='/assets/img/paidMethod/metodo_pago2.png';
+    this.metodo_pago3='/assets/img/paidMethod/metodo_pago3.png';
+    this.metodo_pago4='/assets/img/paidMethod/metodo_pago4.png';
+    this.metodo_pago5='/assets/img/paidMethod/metodo_pago5.png';
+    this.metodo_pago6='/assets/img/paidMethod/metodo_pago6.png';
+    this.metodo_pago7='/assets/img/paidMethod/metodo_pago7.png';
+    this.metodo_pago8='/assets/img/paidMethod/metodo_pago8.png';
+    this.metodo_pago9='/assets/img/paidMethod/metodo_pago9.png';
    }
 
   ngOnInit(): void {
