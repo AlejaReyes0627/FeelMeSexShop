@@ -19,7 +19,6 @@
         rel="stylesheet">
 
     <link rel="stylesheet" href="normalize.css">
-
     <script src="https://kit.fontawesome.com/1d7b9539e6.js" crossorigin="anonymous"></script>
 </head>
 
@@ -35,8 +34,8 @@
             </div>
             <nav>
                 <!-- relacionada a los navegadores-->
-                <a> Inicio</a><!-- hace referencia a un elemento con ID -->
-                <a> Nosotros</a>
+                <button type="submit" (click)="insertarprueba()"> Inicio</button><!-- hace referencia a un elemento con ID -->
+                <a> Productos</a>
                 <a href="" class="carrito2"><img class="carrito" [src]="iconcarrito" /><span
                         class="position-absolute start-100 p-2 bg-danger border border-light rounded-circle"
                         style="transform: translateX(-130px);">
@@ -225,7 +224,7 @@
         </section>
         <section id="contactenos" class="seccion">
             <iframe width="1024" height="1024" frameborder="0"
-                src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=%20Ibagué+(peru)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+                src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=%20Ibagué+(Colombia)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
             </iframe>
             <div class="container">
                 <div class="row">
@@ -257,14 +256,9 @@
         </section>
     </main>
     <footer>
-        <div class="container">
+        <div class="container container-footer">
             <div class="row">
-                <div class="columna columna-25 columna-mobile-100">
-                    <!--<img src="img/logo-blanco.png" class="logo-footer">-->
-                    <p>Vestibulum congue porta neque. Curabitur elementum magna at accumsan sagittis. Pellentesque ac
-                        sapien mi. Aliquam erat volutpat.</p>
-                </div>
-                <div class="columna columna-25 columna-mobile-100">
+                <div class="col columna-mobile-100">
                     <h3>
                         Temas relacionados
                     </h3>
@@ -274,9 +268,9 @@
                         <li><a href="#">Tema 3</a></li>
                     </ul>
                 </div>
-                <div class="columna columna-25 columna-mobile-100">
+                <div class="col columna-mobile-100">
                     <h3>
-                        Datos de contacto
+                        Datos de Contacto
                     </h3>
                     <ul>
                         <li>sdfgh@hotmail.com</li>
@@ -284,7 +278,7 @@
                         <li>direccion oculta<br>Colombia</li>
                     </ul>
                 </div>
-                <div class="columna columna-25 columna-mobile-100">
+                <div class="col columna-mobile-100">
                     <h3>
                         Redes sociales
                     </h3>

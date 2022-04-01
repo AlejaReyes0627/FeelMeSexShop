@@ -55,10 +55,6 @@ footer .barra-footer
 	padding-bottom: 30px;
 }
 
-footer .logo-footer
-{
-	width: 100%;
-}
 footer p
 {
 	color: white;
@@ -127,14 +123,15 @@ footer .redes a
 {
 	width: 130px;
 	height: 80px;
-
 }
+
 
 .cards3 img
 {
 	width: auto;
 	height: 80px;
 }
+
 
 .cards4 img
 {
@@ -153,7 +150,6 @@ footer .redes a
 	width: 160px;
 	height: 60px;
 }
-
 .cards7 img
 {
 	width: auto;
@@ -166,6 +162,7 @@ footer .redes a
 	height: 50px;
 }
 
+
 .cards9 img
 {
 	width: 180px;
@@ -176,6 +173,7 @@ footer .redes a
 {
 	padding-left: 150px;
 }
+
 /*------------------------------------------------------*/
 
 /* TITULO DE METODOS DE PAGO*/
@@ -264,10 +262,12 @@ footer .redes a
 	opacity: 40%;
 }
 
+/* -----------------------------------*/
 .boton1
 {
 	background-color: #612570;
 	color: white;
+	margin-right: 5px;
 }
 
 .boton1:hover
@@ -280,6 +280,7 @@ footer .redes a
 {
 	background-color: #F0134D ;
 	color: white;
+	margin-left: 5px;
 }
 
 .boton2:hover
@@ -382,16 +383,18 @@ footer .redes a
 	margin-bottom: 20px;
 }
 
+.container-footer
+{
+	display: flex;
+	justify-content: center;
+}
+
 .columna
 {
 	padding-right: 15px;
 	padding-left: 15px;
 }
 
-.columna-25
-{
-	width: 25%;
-}
 .columna-33
 {
 	width: 33.33%;
@@ -583,15 +586,12 @@ footer .redes a
 		text-align: center;
 	}
 
-	footer .logo-footer
-	{
-		width: 50%;
-	}
-
 	footer .redes
 	{
 		justify-content: center;
 	}
+
+	
 
 	.container
 	{
