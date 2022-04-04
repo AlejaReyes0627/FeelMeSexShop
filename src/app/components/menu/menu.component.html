@@ -23,7 +23,7 @@
 </head>
 
 <body>
-    <header>
+    <header >
         <!-- vamos a dividir el bloque con div despues de eso-->
         <div class="container">
             <!-- esto se usa para separar bloques, la clase es para usarla en varias partes de la web -->
@@ -34,8 +34,8 @@
             </div>
             <nav>
                 <!-- relacionada a los navegadores-->
-                <button type="submit" (click)="insertarprueba()"> Inicio</button><!-- hace referencia a un elemento con ID -->
-                <a> Productos</a>
+                <a type="submit"> Inicio</a><!-- hace referencia a un elemento con ID -->
+                <a routerLink='productos' type="submit"> Productos</a>
                 <a href="" class="carrito2"><img class="carrito" [src]="iconcarrito" /><span
                         class="position-absolute start-100 p-2 bg-danger border border-light rounded-circle"
                         style="transform: translateX(-130px);">
