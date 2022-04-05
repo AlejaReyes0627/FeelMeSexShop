@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {  ActivatedRoute,Router } from '@angular/router';
+import { Router } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 import { SexshopdatabaseService } from 'src/app/sexshopdatabase.service';
-import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-menu',
@@ -40,7 +39,7 @@ export class MenuComponent{
   metodo_pago9:string;
 
 
-  constructor(http:HttpClient, private route: ActivatedRoute, private router: Router) 
+  constructor(public router: Router, http:HttpClient) 
   {
     this.sexshopService = new SexshopdatabaseService(http);
     this.logoFeelMe='/assets/img/logo.png';
@@ -78,22 +77,13 @@ export class MenuComponent{
      var tipo="delete";
      var sql="DELETE FROM persona";
      this.sexshopService.llamadoHttp(tipo,sql).subscribe((data:any)=>{
-      Swal.fire({
-        title: 'yeah maracuyea',
-        text: 'Excelente panita',
-        icon: 'success',
-        confirmButtonText: 'Ok'
-      });
+       console.log(data);
      },(error: any) => {
       console.log(error);
     })
 
    }
 
-   redireccionar()
-   {
-    this.router.navigate(['/productos']);
-   }
 
 
 }
