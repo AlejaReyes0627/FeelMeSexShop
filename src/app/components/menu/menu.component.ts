@@ -72,17 +72,7 @@ export class MenuComponent{
 
 
 
-   insertarprueba()
-   {
-     var tipo="delete";
-     var sql="DELETE FROM persona";
-     this.sexshopService.llamadoHttp(tipo,sql).subscribe((data:any)=>{
-       console.log(data);
-     },(error: any) => {
-      console.log(error);
-    })
-
-   }
+ 
 
 
 

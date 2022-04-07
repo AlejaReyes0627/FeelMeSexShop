@@ -23,32 +23,7 @@
 </head>
 
 <body>
-    <header>
-        <!-- vamos a dividir el bloque con div despues de eso-->
-        <div class="container">
-            <!-- esto se usa para separar bloques, la clase es para usarla en varias partes de la web -->
-            <!-- hipervinculo que nos da direcciones de la imagen o texto, base clickeable-->
-            <div class="">
-                <img [src]="logoFeelMe" class="logo"> <!-- el source es para colocar la ruta del logo-->
-                <img [src]="SloganFeelMe" class="logo" style=" width: 200px;">
-            </div>
-            <nav>
-                <!-- relacionada a los navegadores-->
-                <a type="submit" (click)="insertarprueba()"> Inicio</a><!-- hace referencia a un elemento con ID -->
-                <a routerLink="productos"> Productos</a>
-                <a href="" class="carrito2"><img class="carrito" [src]="iconcarrito" /><span
-                        class="position-absolute start-100 p-2 bg-danger border border-light rounded-circle"
-                        style="transform: translateX(-130px);">
-                    </span> </a>
-            </nav>
-        </div>
-        <ul class="nav nav-tabs nav-upside">
-            <a class="nav-link links" href="#" style="color: white;">Para Mujeres</a>
-            <a class="nav-link links" href="#" style="color: white;">Para Hombres</a>
-            <a class="nav-link links" href="#" style="color: white;">Para Parejas</a>
-            <a class="nav-link links" href="#" style="color: white;">Unisex</a>
-        </ul>
-    </header>
+    
     <main>
         <section id="inicio">
             <img [src]="banner1" class="img-fluid">

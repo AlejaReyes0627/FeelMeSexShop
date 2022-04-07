@@ -1,0 +1,79 @@
+header
+{
+	padding: 0px 0; /*que quite margenes mejor dicho, el margin es para agregar margenes*/
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 2;
+	background-color: white;
+	width: 100%;
+	box-shadow: 0px 0px 30px black;
+}
+
+header .container	
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	
+}
+
+header .container .logo	
+{
+	width: 100px; /*darle anchura completa al logo*/
+}
+
+header .container nav a	
+{
+	color: black;
+	text-decoration: none; /*le quita las lineas a los items de a*/
+	margin: 0 15px;
+	font-weight: bold;
+}
+
+header .container nav a:hover
+{
+	color: gray;
+}
+
+.links
+{
+	color: white;
+	font-family: Arial, Helvetica, sans-serif;
+	margin-left: 3% ;
+	margin-right: 3%;
+	font-size: 18px;
+	text-shadow: 2px -2px 1px #000;
+}
+
+.nav-link:hover
+{
+	background-color: #EA168E;
+	color: white;
+}
+
+.carrito
+{
+	max-width: 10%;  
+}
+
+.carrito2:hover
+{
+	opacity: 40%;
+}
+
+.container /*selector por clase o por etiqueta*/
+{
+	width: 1140px;
+	margin: 0 auto 0 auto;
+	padding-right: 15px;
+	padding-left: 15px;
+	position: relative;
+}
+
+
+.nav-upside
+{
+	background-color: #612570; 
+	justify-content: center;
+}
