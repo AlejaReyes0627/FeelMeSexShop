@@ -1,6 +1,6 @@
-/*header
+header
 {
-	padding: 0px 0; que quite margenes mejor dicho, el margin es para agregar margenes
+	padding: 0px 0; /*que quite margenes mejor dicho, el margin es para agregar margenes*/
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -20,13 +20,13 @@ header .container
 
 header .container .logo	
 {
-	width: 100px;
+	width: 100px; /*darle anchura completa al logo*/
 }
 
 header .container nav a	
 {
 	color: black;
-	text-decoration: none; le quita las lineas a los items de a
+	text-decoration: none; /*le quita las lineas a los items de a*/
 	margin: 0 15px;
 	font-weight: bold;
 }
@@ -34,7 +34,7 @@ header .container nav a
 header .container nav a:hover
 {
 	color: gray;
-}*/
+}
 
 
 footer
@@ -98,11 +98,11 @@ footer .redes a
 	font-size: 20px;
 }
 
-/*.nav-upside
+.nav-upside
 {
 	background-color: #612570; 
 	justify-content: center;
-}*/
+}
 
 .nav-middle
 {
@@ -184,7 +184,7 @@ footer .redes a
 }
 /*------------------------------------------------------*/
 
-/*LINKS DEL NAV DE ARRIBA
+/*LINKS DEL NAV DE ARRIBA*/
 .links
 {
 	color: white;
@@ -198,8 +198,8 @@ footer .redes a
 .nav-link:hover
 {
 	background-color: #EA168E;
-	color: white
-}*/
+	color: white;
+}
 /*-----------------------------------------------------*/
 
 
