@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { ProductosComponent } from './components/productos/productos.component';
 import { MenuComponent } from './components/menu/menu.component';
 
-const routes: Routes = [{path: '', component:MenuComponent}, {path:'productos', component:ProductosComponent}];
+const routes: Routes = [{path: '', component:MenuComponent}, {path:'productos', component:ProductosComponent}, {path:'inicio', component:MenuComponent} ];
 
 @NgModule({
   

@@ -1,287 +1,414 @@
-<!DOCTYPE html> <!-- cabecera-->
+<!DOCTYPE html>
+<!-- cabecera-->
 <html>
-
-<head>
-    <meta charset="utf-8"> <!-- para la codificacion-->
-    <meta name="description" content="Cocacola es la bebida y bla bla bla bla">
+  <head>
+    <meta charset="utf-8" />
+    <!-- para la codificacion-->
+    <meta
+      name="description"
+      content="Cocacola es la bebida y bla bla bla bla"
+    />
     <!-- para aparecer en la descripcion de la pagina al buscarla en google-->
-    <meta name="keywords" content="bebida, gaseosa, cola">
+    <meta name="keywords" content="bebida, gaseosa, cola" />
     <!-- son las palabras clave, es decir, google busca y pone las palabras clave-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>
-        Inicio - Coca Cola
-    </title>
-    <link rel="shortcut icon" href="img/favicon.png">
+    <title>Inicio - Coca Cola</title>
+    <!-- linea para implementar el bootstrap en cada HTML-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="shortcut icon" href="img/favicon.png" />
     <!-- de qué trata este link-... link permite enlazar archivos internos o externos-->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,300&display=swap"
-        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,300&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="stylesheet" href="normalize.css">
-    <script src="https://kit.fontawesome.com/1d7b9539e6.js" crossorigin="anonymous"></script>
-</head>
+    <link rel="stylesheet" href="normalize.css" />
+    <script
+      src="https://kit.fontawesome.com/1d7b9539e6.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<body>
-    
+  <body>
     <main>
-        <section id="inicio">
-            <img [src]="banner1" class="img-fluid">
-            <!--que haga referencia a la imagen que va a ir de fondo-->
-            <!--<div class="bloque-inicio">
-				<h1>Bienvenidos a Cola Cola</h1>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pellentesque erat at felis volutpat, a congue dui suscipit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam sodales maximus libero id pharetra. 
-				</p>
-				<a href="#nosotros" class="boton boton-rojo">Ver más</a>
-			</div>-->
-            <div class="card-group mb-3px" style="height: 120px;">
-                <div class="card card1">
-                    <img [src]="icono2" class="card-img-center" alt="..."
-                        style="height: 80px; width: 80px; margin-left: 40%; margin-top: 10%;">
-                    <div class="card-body">
-                        <p class="card-text1">CONFIDENCIALIDAD</p>
-                    </div>
-                </div>
-                <div class="card card2" style="width: 18rem;">
-                    <img [src]="icono1" class="card-img-top" alt="..."
-                        style="height: 80px; width: 80px; margin-left: 40%;margin-top: 10%;">
-                    <div class="card-body">
-                        <p class="card-text1">ENVÍOS A TODO EL PAÍS</p>
-                    </div>
-                </div>
-                <div class="card card3" style="width: 18rem;">
-                    <img [src]="icono4" class="card-img-top" alt="..."
-                        style="height: 80px; width: 80px; margin-left: 40%; margin-top: 10%;">
-                    <div class="card-body">
-                        <p class="card-text1">ATENCIÓN OPORTUNA</p>
-                    </div>
-                </div>
-                <div class="card card4" style="width: 18rem;">
-                    <img [src]="icono3" class="card-img-top" alt="..."
-                        style="height: 80px; width: 80px; margin-left: 40%; margin-top: 10%;">
-                    <div class="card-body">
-                        <p class="card-text1">PRECIOS ASEQUIBLE</p>
-                    </div>
-                </div>
+      <section id="inicio">
+        <!-- Slide -->
+        <!-- <img [src]="banner1" class="img-fluid" /> -->
+
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img [src]="banner1" class="d-block w-100 img-fluid" alt="..." />
             </div>
-        </section>
-        <!--<section id="nosotros" class="seccion">
+            <div class="carousel-item">
+              <img [src]="banner2" class="d-block w-100 img-fluid" alt="..." />
+            </div>
+            <div class="carousel-item">
+              <img [src]="banner1" class="d-block w-100 img-fluid" alt="..." />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+        <!--CAJAS DE COLORES-->
+        <div class="card-group mb-3px" style="height: 120px">
+          <a class="card card1" routerLink="productos">
+            <img
+              [src]="icono2"
+              class="card-img-center"
+              alt="..."
+              style="
+                height: 80px;
+                width: 80px;
+                margin-left: 40%;
+                margin-top: 10%;
+              "
+            />
+            <div class="card-body">
+              <p class="card-text1">CONFIDENCIALIDAD</p>
+            </div>
+          </a>
+          <a class="card card2" style="width: 18rem" routerLink="productos">
+            <img
+              [src]="icono1"
+              class="card-img-top"
+              alt="..."
+              style="
+                height: 80px;
+                width: 80px;
+                margin-left: 40%;
+                margin-top: 10%;
+              "
+            />
+            <div class="card-body">
+              <p class="card-text1">ENVÍOS A TODO EL PAÍS</p>
+            </div>
+          </a>
+          <a class="card card3" style="width: 18rem" routerLink="productos">
+            <img
+              [src]="icono4"
+              class="card-img-top"
+              alt="..."
+              style="
+                height: 80px;
+                width: 80px;
+                margin-left: 40%;
+                margin-top: 10%;
+              "
+            />
+            <div class="card-body">
+              <p class="card-text1">ATENCIÓN OPORTUNA</p>
+            </div>
+          </a>
+          <a class="card card4" style="width: 18rem" routerLink="productos">
+            <img
+              [src]="icono3"
+              class="card-img-top"
+              alt="..."
+              style="
+                height: 80px;
+                width: 80px;
+                margin-left: 40%;
+                margin-top: 10%;
+              "
+            />
+            <div class="card-body">
+              <p class="card-text1">PRECIOS ASEQUIBLE</p>
+            </div>
+          </a>
+        </div>
+      </section>
+      <!--<section id="nosotros" class="seccion">
         </section>-->
-        <section id="servicios" class="seccion">
-            <div class="container">
-                <div class="row mt-5" style="justify-content: center;">
-                    <div class="col-sm-4">
-                        <h1 class="display-2">Ofertas</h1>
-                        <div class="card">
-                            <img [src]="prueba1" />
-                            <div class="card-body">
-                                <h5 class="card-title titulos">Audifonos Para Mujer para hacer deporte</h5>
-                                <h6 class="categoria">Categoría</h6>
-                                <p>$360</p>
-                                <button type="button" class="btn btn-lg boton1">Añadir al carrito</button>
-                                <button type="button" class="btn  btn-lg boton2">Vista</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <h1 class="display-2">Más vendidos</h1>
-                        <div class="card">
-                            <img [src]="prueba2" />
-                            <div class="card-body">
-                                <h5 class="card-title titulos">Audifonos Para Mujer para hacer deporte</h5>
-                                <h6 class="categoria">Categoría</h6>
-                                <p>$360</p>
-                                <button type="button" class="btn btn-lg boton1">Añadir al carrito</button>
-                                <button type="button" class="btn btn-lg boton2">Vista</button>
-                            </div>
-                        </div>
-                    </div>
+      <section id="servicios" class="seccion">
+        <div class="container">
+          <div class="row mt-5" style="justify-content: center">
+            <div class="col-sm-4">
+              <h1 class="display-2">Ofertas</h1>
+              <div class="card">
+                <img [src]="prueba1" />
+                <div class="card-body">
+                  <h5 class="card-title titulos">
+                    Audifonos Para Mujer para hacer deporte
+                  </h5>
+                  <h6 class="categoria">Categoría</h6>
+                  <p>$360</p>
+                  <button type="button" class="btn btn-lg boton1">
+                    Añadir al carrito
+                  </button>
+                  <button type="button" class="btn btn-lg boton2">Vista</button>
                 </div>
+              </div>
             </div>
-        </section>
-        <section id="galeria">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class=" columna-33 columna-mobile-50">
-                        <div class="cuadrado-perfecto">
-                            <img [src]="informacion1">
-                            <h4>
-                                <p class="sabiasque">Sabías que...</p>Según el Instituto Kinsey, la erección de pene más
-                                larga de la que se tenga registro midió 39 centímetros. La más corta, fue de 4.5
-                                centímetros.
-                            </h4>
-                        </div>
-                    </div>
-                    <div class=" columna-33 columna-mobile-50">
-                        <div class="cuadrado-perfecto">
-                            <img [src]="informacion2">
-                            <h4>
-                                <p class="sabiasque">Sabías que...</p>Durante un beso, por lo menos 40 mil bacterias
-                                pasan de una boca a otra, sin embargo, la mayoría son inofensivas, además, la saliva
-                                contiene sustancias que ayudan a desinfectar.
-                            </h4>
-                        </div>
-                    </div>
-                    <div class=" columna-33 columna-mobile-50">
-                        <div class="cuadrado-perfecto">
-                            <img [src]="informacion3">
-                            <h4>
-                                <p class="sabiasque">Sabías que...</p>Las mujeres pueden hacer que su voz suene más
-                                sexy, mientras que los hombres no.
-                            </h4>
-                        </div>
-                    </div>
-                    <div class=" columna-33 columna-mobile-50">
-                        <div class="cuadrado-perfecto">
-                            <img [src]="informacion4">
-                            <h4>
-                                <p class="sabiasque">Sabías que...</p>La fantasía sexual más común es el sexo oral.
-                            </h4>
-                        </div>
-                    </div>
-                    <div class=" columna-33 columna-mobile-50">
-                        <div class="cuadrado-perfecto">
-                            <img [src]="informacion5">
-                            <h4>
-                                <p class="sabiasque">Sabías que...</p>La probabilidad de sentir asco es menor cuando se
-                                tienen relaciones sexuales.
-                            </h4>
-                        </div>
-                    </div>
-                    <div class=" columna-33 columna-mobile-50">
-                        <div class="cuadrado-perfecto">
-                            <img [src]="informacion6">
-                            <h4>
-                                <p class="sabiasque">Sabías que...</p>El orgasmo femenino puede durar aproximadamente
-                                entre 13 y 15 segundos, mientras que el masculino de 10 a 13 segundos.
-                            </h4>
-                        </div>
-                    </div>
+            <div class="col-sm-4">
+              <h1 class="display-2">Más vendidos</h1>
+              <div class="card">
+                <img [src]="prueba2" />
+                <div class="card-body">
+                  <h5 class="card-title titulos">
+                    Audifonos Para Mujer para hacer deporte
+                  </h5>
+                  <h6 class="categoria">Categoría</h6>
+                  <p>$360</p>
+                  <button type="button" class="btn btn-lg boton1">
+                    Añadir al carrito
+                  </button>
+                  <button type="button" class="btn btn-lg boton2">Vista</button>
                 </div>
+              </div>
             </div>
-            <div>
-                <ul class="nav nav-tabs nav-middle">
-                    <p class="nav-links nav-middle-text">MÉTODOS DE PAGO</p>
-                </ul>
+          </div>
+        </div>
+      </section>
+      <section id="galeria">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="columna-33 columna-mobile-50">
+              <div class="cuadrado-perfecto">
+                <img [src]="informacion1" />
+                <h4>
+                  <p class="sabiasque">Sabías que...</p>
+                  Según el Instituto Kinsey, la erección de pene más larga de la
+                  que se tenga registro midió 39 centímetros. La más corta, fue
+                  de 4.5 centímetros.
+                </h4>
+              </div>
             </div>
-            <div class="container">
-                <div class="row row-cols-1 row-cols-md-3 g-4 mb-5 mt-3 columnaPaid">
-                    <div class="col cards1">
-                        <img [src]="metodo_pago1" class="card-img-center" alt="...">
-                    </div>
-                    <div class="col cards2">
-                        <img [src]="metodo_pago2" class="card-img-center" alt="...">
-                    </div>
-                    <div class="col cards3">
-                        <img [src]="metodo_pago3" class="card-img-center" alt="...">
-                    </div>
-                    <div class="col cards4">
-                        <img [src]="metodo_pago4" class="card-img-center" alt="...">
-                    </div>
-                    <div class="col cards5">
-                        <img [src]="metodo_pago5" class="card-img-center" alt="...">
-                    </div>
-                    <div class="col cards6">
-                        <img [src]="metodo_pago6" class="card-img-center" alt="...">
-                    </div>
-                    <div class="col cards7">
-                        <img [src]="metodo_pago7" class="card-img-center" alt="...">
-                    </div>
-                    <div class="col cards8">
-                        <img [src]="metodo_pago8" class="card-img-center" alt="...">
-                    </div>
-                    <div class="col cards9">
-                        <img [src]="metodo_pago9" class="card-img-center" alt="...">
-                    </div>
+            <div class="columna-33 columna-mobile-50">
+              <div class="cuadrado-perfecto">
+                <img [src]="informacion2" />
+                <h4>
+                  <p class="sabiasque">Sabías que...</p>
+                  Durante un beso, por lo menos 40 mil bacterias pasan de una
+                  boca a otra, sin embargo, la mayoría son inofensivas, además,
+                  la saliva contiene sustancias que ayudan a desinfectar.
+                </h4>
+              </div>
+            </div>
+            <div class="columna-33 columna-mobile-50">
+              <div class="cuadrado-perfecto">
+                <img [src]="informacion3" />
+                <h4>
+                  <p class="sabiasque">Sabías que...</p>
+                  Las mujeres pueden hacer que su voz suene más sexy, mientras
+                  que los hombres no.
+                </h4>
+              </div>
+            </div>
+            <div class="columna-33 columna-mobile-50">
+              <div class="cuadrado-perfecto">
+                <img [src]="informacion4" />
+                <h4>
+                  <p class="sabiasque">Sabías que...</p>
+                  La fantasía sexual más común es el sexo oral.
+                </h4>
+              </div>
+            </div>
+            <div class="columna-33 columna-mobile-50">
+              <div class="cuadrado-perfecto">
+                <img [src]="informacion5" />
+                <h4>
+                  <p class="sabiasque">Sabías que...</p>
+                  La probabilidad de sentir asco es menor cuando se tienen
+                  relaciones sexuales.
+                </h4>
+              </div>
+            </div>
+            <div class="columna-33 columna-mobile-50">
+              <div class="cuadrado-perfecto">
+                <img [src]="informacion6" />
+                <h4>
+                  <p class="sabiasque">Sabías que...</p>
+                  El orgasmo femenino puede durar aproximadamente entre 13 y 15
+                  segundos, mientras que el masculino de 10 a 13 segundos.
+                </h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <ul class="nav nav-tabs nav-middle">
+            <p class="nav-links nav-middle-text">MÉTODOS DE PAGO</p>
+          </ul>
+        </div>
+        <div class="container">
+          <div class="row row-cols-1 row-cols-md-3 g-4 mb-5 mt-3 columnaPaid">
+            <div class="col cards1">
+              <img [src]="metodo_pago1" class="card-img-center" alt="..." />
+            </div>
+            <div class="col cards2">
+              <img [src]="metodo_pago2" class="card-img-center" alt="..." />
+            </div>
+            <div class="col cards3">
+              <img [src]="metodo_pago3" class="card-img-center" alt="..." />
+            </div>
+            <div class="col cards4">
+              <img [src]="metodo_pago4" class="card-img-center" alt="..." />
+            </div>
+            <div class="col cards5">
+              <img [src]="metodo_pago5" class="card-img-center" alt="..." />
+            </div>
+            <div class="col cards6">
+              <img [src]="metodo_pago6" class="card-img-center" alt="..." />
+            </div>
+            <div class="col cards7">
+              <img [src]="metodo_pago7" class="card-img-center" alt="..." />
+            </div>
+            <div class="col cards8">
+              <img [src]="metodo_pago8" class="card-img-center" alt="..." />
+            </div>
+            <div class="col cards9">
+              <img [src]="metodo_pago9" class="card-img-center" alt="..." />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contactenos" class="seccion">
+        <iframe
+          width="1024"
+          height="1024"
+          frameborder="0"
+          src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=%20Ibagué+(Colombia)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+        >
+        </iframe>
+        <div class="container">
+          <div class="row">
+            <div
+              class="columna columna-41 columna-mobile-100 empujar-58 empujar-mobile-0 sinpadding-mobile"
+            >
+              <form action="" method="post" class="formulario">
+                <p style="color: white; font-weight: bold; font-size: larger">
+                  Estamos ubicados en:
+                </p>
+                <div class="form-block">
+                  <h1 style="color: black">Ibagué - Tolima</h1>
                 </div>
-            </div>
-        </section>
-        <section id="contactenos" class="seccion">
-            <iframe width="1024" height="1024" frameborder="0"
-                src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=%20Ibagué+(Colombia)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
-            </iframe>
-            <div class="container">
-                <div class="row">
-                    <div class="columna columna-41 columna-mobile-100 empujar-58 empujar-mobile-0 sinpadding-mobile">
-                        <form action="" method="post" class="formulario">
-                            <p style="color: white; font-weight: bold; font-size: larger; "> Estamos ubicados en: </p>
-                            <div class="form-block">
-                                <h1 style="color: black;">Ibagué - Tolima</h1>
-                            </div>
-                            <div class="form-block">
-                                <p>
-                                    Ibagué, capital del departamento del Tolima, es una tierra tan llena de música que
-                                    su himno no es una melodía militar, sino una canción alegre del folclor popular. No
-                                    en vano, la ciudad es llamada la 'Capital Musical de Colombia'. Además, Ibagué es un
-                                    importante eje financiero y económico de Colombia.
-                                </p>
-                            </div>
-                            <div class="form-block">
-                                <p>
-                                    Entre los más importantes atractivos de Ibagué, además de la ciudad misma, de
-                                    agradable aspecto, están los centros recreativos, los clubes sociales y deportivos,
-                                    los paisajes de los alrededores, el nevado del Tolima.
-                                </p>
-                            </div>
-                        </form>
-                    </div>
+                <div class="form-block">
+                  <p>
+                    Ibagué, capital del departamento del Tolima, es una tierra
+                    tan llena de música que su himno no es una melodía militar,
+                    sino una canción alegre del folclor popular. No en vano, la
+                    ciudad es llamada la 'Capital Musical de Colombia'. Además,
+                    Ibagué es un importante eje financiero y económico de
+                    Colombia.
+                  </p>
                 </div>
+                <div class="form-block">
+                  <p>
+                    Entre los más importantes atractivos de Ibagué, además de la
+                    ciudad misma, de agradable aspecto, están los centros
+                    recreativos, los clubes sociales y deportivos, los paisajes
+                    de los alrededores, el nevado del Tolima.
+                  </p>
+                </div>
+              </form>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
     </main>
     <footer>
-        <div class="container container-footer">
-            <div class="row">
-                <div class="col columna-mobile-100">
-                    <h3>
-                        Temas relacionados
-                    </h3>
-                    <ul>
-                        <li><a href="#">Tema 1</a></li>
-                        <li><a href="#">Tema 2</a></li>
-                        <li><a href="#">Tema 3</a></li>
-                    </ul>
-                </div>
-                <div class="col columna-mobile-100">
-                    <h3>
-                        Datos de Contacto
-                    </h3>
-                    <ul>
-                        <li>sdfgh@hotmail.com</li>
-                        <li>numero oculto</li>
-                        <li>direccion oculta<br>Colombia</li>
-                    </ul>
-                </div>
-                <div class="col columna-mobile-100">
-                    <h3>
-                        Redes sociales
-                    </h3>
-                    <ul class="redes">
-                        <li><a href="#">
-                                <i class="fab fa-facebook-square"></i>
-                            </a>
-                        </li>
-                        <li><a href="#">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                        </li>
-                        <li><a href="#">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                        </li>
-                        <li><a href="#">
-                                <i class="fab fa-youtube"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+      <div class="container container-footer">
+        <div class="row">
+          <div class="col columna-mobile-100">
+            <h3>Temas relacionados</h3>
+            <ul>
+              <li><a href="#">Tema 1</a></li>
+              <li><a href="#">Tema 2</a></li>
+              <li><a href="#">Tema 3</a></li>
+            </ul>
+          </div>
+          <div class="col columna-mobile-100">
+            <h3>Datos de Contacto</h3>
+            <ul>
+              <li>sdfgh@hotmail.com</li>
+              <li>numero oculto</li>
+              <li>direccion oculta<br />Colombia</li>
+            </ul>
+          </div>
+          <div class="col columna-mobile-100">
+            <h3>Redes sociales</h3>
+            <ul class="redes">
+              <li>
+                <a href="#">
+                  <i class="fab fa-facebook-square"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fab fa-youtube"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="barra-footer">
-            &copy; Derechos reservados - 2022
-        </div>
+      </div>
+      <div class="barra-footer">&copy; Derechos reservados - 2022</div>
     </footer>
-</body>
-
+  </body>
 </html>

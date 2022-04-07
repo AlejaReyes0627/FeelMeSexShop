@@ -357,6 +357,7 @@ footer .redes a
 #inicio /*selector por id*/
 {
 	position: relative; /*el inicio se queda quieto xd*/
+	padding-top: 130px;
 }
 
 #inicio img

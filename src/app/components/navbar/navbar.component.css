@@ -33,23 +33,7 @@ header .container nav a
 
 header .container nav a:hover
 {
-	color: gray;
-}
-
-.links
-{
-	color: white;
-	font-family: Arial, Helvetica, sans-serif;
-	margin-left: 3% ;
-	margin-right: 3%;
-	font-size: 18px;
-	text-shadow: 2px -2px 1px #000;
-}
-
-.nav-link:hover
-{
-	background-color: #EA168E;
-	color: white;
+	color: #EA168E;
 }
 
 .carrito
@@ -59,7 +43,7 @@ header .container nav a:hover
 
 .carrito2:hover
 {
-	opacity: 40%;
+	opacity: 50%;
 }
 
 .container /*selector por clase o por etiqueta*/
@@ -72,8 +56,37 @@ header .container nav a:hover
 }
 
 
+/* --------------------------------------------------- */
+
+/* MENU */
+
+.nav-link:hover
+{
+	background-color: #EA168E;
+	color: white;
+}
+
 .nav-upside
 {
 	background-color: #612570; 
 	justify-content: center;
 }
+
+.nav-tabs {
+	border-bottom: none;
+}
+
+.nav-tabs .nav-link{
+	border: none;
+}
+
+.links
+{
+	color: white;
+	font-family: Arial, Helvetica, sans-serif;
+	margin-left: 3% ;
+	margin-right: 3%;
+	font-size: 18px;
+	text-shadow: 2px -2px 1px rgba(0, 0, 0, 0.4);
+}
+
