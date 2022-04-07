@@ -7,12 +7,14 @@ import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { MenuComponent } from './components/menu/menu.component';
 import { ProductosComponent } from './components/productos/productos.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MenuComponent,
-    ProductosComponent
+    ProductosComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
