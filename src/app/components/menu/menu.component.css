@@ -395,11 +395,6 @@ footer .redes a
 	background-size: cover;
 }
 
-#servicios .bloque-servicio
-{
-	border: 1px solid gray;
-}
-
 #galeria h4
 {
 	padding-right: 15px;
@@ -561,11 +556,6 @@ footer .redes a
 		height: 100%;
 		object-fit: cover;
 		object-position: center;
-	}
-
-	#servicios .bloque-servicio
-	{
-		margin-bottom: 15px;
 	}
 
 	#contactenos iframe

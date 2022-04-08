@@ -8,13 +8,17 @@ import { HttpClientModule } from '@angular/common/http';
 import { MenuComponent } from './components/menu/menu.component';
 import { ProductosComponent } from './components/productos/productos.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { ProductosOfertaComponent } from './components/productosOferta/productosOferta.component';
+import { ProductosTopComponent } from './components/productosTop/productosTop.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MenuComponent,
     ProductosComponent,
-    NavbarComponent
+    NavbarComponent,
+    ProductosOfertaComponent,
+    ProductosTopComponent,
   ],
   imports: [
     BrowserModule,

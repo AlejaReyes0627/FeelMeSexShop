@@ -1,0 +1,71 @@
+.seccion{
+	padding-top: 40px;
+}
+
+.container /*selector por clase o por etiqueta*/
+{
+	width: 1140px;
+	margin: 0 auto 0 auto;
+	padding-right: 15px;
+	padding-left: 15px;
+	position: relative;
+}
+
+.display-2
+{
+	text-align: center;
+	font-weight: bold;
+	color: #F0134D;
+}
+
+.categoria
+{
+	font-size: 11px;
+}
+
+.boton1
+{
+	background-color: #612570;
+	color: white;
+	margin-right: 5px;
+}
+
+.boton1:hover
+{
+	color: white;
+	background-color: #B643CD;
+}
+
+.boton2
+{
+	background-color: #F0134D ;
+	color: white;
+	margin-left: 5px;
+}
+
+.boton2:hover
+{
+	background-color: #FF6F5E;
+	color: white;
+}
+
+.vermas{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	padding-top: 30px;
+}
+
+.botonvermas
+{
+	width: 12vw;
+	background-color: #612570;
+	color: white;
+	margin-right: 5px;
+}
+
+.botonvermas:hover
+{
+	color: white;
+	background-color: #F0134D;
+}
