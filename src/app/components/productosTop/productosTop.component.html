@@ -1,15 +1,145 @@
 <section class="seccion">
-  <section id="servicios" >
-    <div class="container">
-      <h1 class="display-2">Productos Top</h1>
-      <div class="row mt-5" style="justify-content: center">
-        <div class="col-sm-4">
+  <h5 class="display-2">Ofertas</h5>
+
+  <div
+    id="carouselExampleDark"
+    class="carousel carousel-dark slide"
+    data-bs-ride="carousel"
+  >
+    <div class="carousel-inner cardsSlider">
+      <!-- Producto 1 -->
+      <div class="carousel-item active" data-bs-interval="10000">
+        <div class="card-group">
+          <!-- Subproducto 1 -->
+          <div class="card cardProduct">
+            <img [src]="prueba1" />
+
+            <div class="card-body">
+              <h5 class="card-title titulos">Audifonos Para mujer</h5>
+              <h6 class="categoria">Categoría</h6>
+              <p>$360</p>
+              <button type="button" class="btn btn-lg boton1">
+                Añadir al carrito
+              </button>
+              <button type="button" class="btn btn-lg boton2">Vista</button>
+            </div>
+          </div>
+
+          <!-- Subproducto 2 -->
+          <div class="card cardProduct">
+            <img [src]="prueba1" />
+
+            <div class="card-body">
+              <h5 class="card-title titulos">Audifonos Para mujer</h5>
+              <h6 class="categoria">Categoría</h6>
+              <p>$360</p>
+              <button type="button" class="btn btn-lg boton1">
+                Añadir al carrito
+              </button>
+              <button type="button" class="btn btn-lg boton2">Vista</button>
+            </div>
+          </div>
+
+          <!-- Subproducto 3 -->
+          <div class="card cardProduct">
+            <img [src]="prueba1" />
+
+            <div class="card-body">
+              <h5 class="card-title titulos">Audifonos Para mujer</h5>
+              <h6 class="categoria">Categoría</h6>
+              <p>$360</p>
+              <button type="button" class="btn btn-lg boton1">
+                Añadir al carrito
+              </button>
+              <button type="button" class="btn btn-lg boton2">Vista</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Producto2 -->
+      <div class="carousel-item" data-bs-interval="2000">
+        <div class="card-group">
+          <!-- Subproducto 1 -->
           <div class="card">
             <img [src]="prueba1" />
             <div class="card-body">
-              <h5 class="card-title titulos">
-                Audifonos Para Mujer para hacer deporte
-              </h5>
+              <h5 class="card-title titulos">Producto 2.1</h5>
+              <h6 class="categoria">Categoría</h6>
+              <p>$360</p>
+              <button type="button" class="btn btn-lg boton1">
+                Añadir al carrito
+              </button>
+              <button type="button" class="btn btn-lg boton2">Vista</button>
+            </div>
+          </div>
+
+          <!-- Subproducto 2 -->
+          <div class="card">
+            <img [src]="prueba1" />
+            <div class="card-body">
+              <h5 class="card-title titulos">Producto 2.2</h5>
+              <h6 class="categoria">Categoría</h6>
+              <p>$360</p>
+              <button type="button" class="btn btn-lg boton1">
+                Añadir al carrito
+              </button>
+              <button type="button" class="btn btn-lg boton2">Vista</button>
+            </div>
+          </div>
+
+          <!-- Subproducto 3 -->
+          <div class="card">
+            <img [src]="prueba1" />
+            <div class="card-body">
+              <h5 class="card-title titulos">Producto 2.3</h5>
+              <h6 class="categoria">Categoría</h6>
+              <p>$360</p>
+              <button type="button" class="btn btn-lg boton1">
+                Añadir al carrito
+              </button>
+              <button type="button" class="btn btn-lg boton2">Vista</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Producto 3 -->
+      <div class="carousel-item">
+        <div class="card-group">
+          <!-- Subproducto 1 -->
+          <div class="card">
+            <img [src]="prueba1" />
+            <div class="card-body">
+              <h5 class="card-title titulos">Producto 3.1</h5>
+              <h6 class="categoria">Categoría</h6>
+              <p>$360</p>
+              <button type="button" class="btn btn-lg boton1">
+                Añadir al carrito
+              </button>
+              <button type="button" class="btn btn-lg boton2">Vista</button>
+            </div>
+          </div>
+
+          <!-- Subproducto 2 -->
+          <div class="card">
+            <img [src]="prueba1" />
+            <div class="card-body">
+              <h5 class="card-title titulos">Producto 3.2</h5>
+              <h6 class="categoria">Categoría</h6>
+              <p>$360</p>
+              <button type="button" class="btn btn-lg boton1">
+                Añadir al carrito
+              </button>
+              <button type="button" class="btn btn-lg boton2">Vista</button>
+            </div>
+          </div>
+
+          <!-- Subproducto 3 -->
+          <div class="card">
+            <img [src]="prueba1" />
+            <div class="card-body">
+              <h5 class="card-title titulos">Producto 3.3</h5>
               <h6 class="categoria">Categoría</h6>
               <p>$360</p>
               <button type="button" class="btn btn-lg boton1">
@@ -21,8 +151,32 @@
         </div>
       </div>
     </div>
-  </section>
+
+    <button
+      class="carousel-control-prev"
+      type="button"
+      data-bs-target="#carouselExampleDark"
+      data-bs-slide="prev"
+    >
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+
+    <button
+      class="carousel-control-next"
+      type="button"
+      data-bs-target="#carouselExampleDark"
+      data-bs-slide="next"
+    >
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- Boton Ver Mas -->
   <section class="vermas">
-    <button type="button" class="btn botonvermas" routerLink="productos">Ver Más</button>
+    <button type="button" class="btn botonvermas" routerLink="productos">
+      Ver Más
+    </button>
   </section>
 </section>

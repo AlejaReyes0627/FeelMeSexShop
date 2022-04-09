@@ -1,71 +1,91 @@
-.seccion{
-	padding-top: 40px;
+.seccion {
+  padding-top: 40px;
 }
 
-.container /*selector por clase o por etiqueta*/
-{
-	width: 1140px;
-	margin: 0 auto 0 auto;
-	padding-right: 15px;
-	padding-left: 15px;
-	position: relative;
+.container /*selector por clase o por etiqueta*/ {
+  width: 1140px;
+  margin: 0 auto 0 auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  position: relative;
 }
 
-.display-2
-{
-	text-align: center;
-	font-weight: bold;
-	color: #F0134D;
+.display-2 {
+  text-align: center;
+  font-weight: bold;
+  color: #f0134d;
 }
 
-.categoria
-{
-	font-size: 11px;
+.categoria {
+  font-size: 11px;
 }
 
-.boton1
-{
-	background-color: #612570;
-	color: white;
-	margin-right: 5px;
+.boton1 {
+  background-color: #612570;
+  color: white;
+  margin-right: 5px;
 }
 
-.boton1:hover
-{
-	color: white;
-	background-color: #B643CD;
+.boton1:hover {
+  color: white;
+  background-color: #b643cd;
 }
 
-.boton2
-{
-	background-color: #F0134D ;
-	color: white;
-	margin-left: 5px;
+.boton2 {
+  background-color: #f0134d;
+  color: white;
+  margin-left: 5px;
 }
 
-.boton2:hover
-{
-	background-color: #FF6F5E;
-	color: white;
+.boton2:hover {
+  background-color: #ff6f5e;
+  color: white;
 }
 
-.vermas{
+.vermas {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+.botonvermas {
+  width: 12vw;
+  background-color: #612570;
+  color: white;
+  margin-right: 5px;
+}
+
+.botonvermas:hover {
+  color: white;
+  background-color: #f0134d;
+}
+
+.cardsSlider{
+padding: 0 130px 0 130px;
+}
+
+.containerImg {
+	/* border-style: solid;
+	border-color: #f0134d; */
+	border: 1px solid #f0134d;
+	border-bottom: 2px solid #f0134d;
+	border-top: 2px solid #f0134d;
+
+
+}
+.imgProduct {
+  max-width: 350px;
+  justify-content: center;
+}
+
+.cardProduct {
+  /* padding: 0 45px 0 45px; */
+}
+
+.buttonZone{
 	width: 100%;
 	display: flex;
-	justify-content: center;
-	padding-top: 30px;
+	justify-content: center
 }
 
-.botonvermas
-{
-	width: 12vw;
-	background-color: #612570;
-	color: white;
-	margin-right: 5px;
-}
-
-.botonvermas:hover
-{
-	color: white;
-	background-color: #F0134D;
-}
