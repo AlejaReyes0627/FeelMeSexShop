@@ -20,6 +20,10 @@ export class MenuComponent{
   icono2:string;
   icono3:string;
   icono4:string;
+  facebookIcon:string;
+  instagramIcon:string;
+  twitterIcon:string;
+  whatsappIcon:string;
   prueba1:string;
   prueba2:string;
   informacion1:string;
@@ -53,6 +57,10 @@ export class MenuComponent{
     this.icono4='/assets/img/icons/whatsapp.png';
     this.prueba1='/assets/img/pruebas/prueba5.jpg';
     this.prueba2='/assets/img/pruebas/prueba1.jpg';
+    this.facebookIcon='/assets/img/icons/facebookIcon.png';
+    this.instagramIcon='/assets/img/icons/instagramIcon.png';
+    this.twitterIcon='/assets/img/icons/twitterIcon.png';
+    this.whatsappIcon='/assets/img/icons/whatsappIcon.png';
     this.informacion1='/assets/img/information/information1.png';
     this.informacion2='/assets/img/information/information2.jpg';
     this.informacion3='/assets/img/information/information3.png';

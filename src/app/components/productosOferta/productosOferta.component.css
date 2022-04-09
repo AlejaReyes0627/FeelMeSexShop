@@ -1,5 +1,4 @@
 .seccion {
-  padding-top: 40px;
 }
 
 .container /*selector por clase o por etiqueta*/ {
@@ -8,6 +7,28 @@
   padding-right: 15px;
   padding-left: 15px;
   position: relative;
+}
+
+/* Separador */
+.nav-middle {
+  display: flex !important;
+  align-items: center !important;
+  background-color: #ff6f5e; /* Color Separador */
+  justify-content: center;
+  text-shadow: 2px -2px 1px #000;
+}
+
+/* Separador Texto */
+.nav-middle-text {
+  color: white;
+  font-size: 50px;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.sliderProductsContainer{
+  padding-top: 30px;
 }
 
 .display-2 {
