@@ -53,9 +53,9 @@ export class MenuComponent{
     this.icono4='/assets/img/icons/whatsapp.png';
     this.prueba1='/assets/img/pruebas/prueba5.jpg';
     this.prueba2='/assets/img/pruebas/prueba1.jpg';
-    this.informacion1='/assets/img/information/information1.jpg';
+    this.informacion1='/assets/img/information/information1.png';
     this.informacion2='/assets/img/information/information2.jpg';
-    this.informacion3='/assets/img/information/information3.jpg';
+    this.informacion3='/assets/img/information/information3.png';
     this.informacion4='/assets/img/information/information4.jpg';
     this.informacion5='/assets/img/information/information5.jpg';
     this.informacion6='/assets/img/information/information6.jpg';
