@@ -1,0 +1,110 @@
+/* GENERAL */
+
+a {
+  background-color: transparent;
+  text-decoration:none;
+}
+
+img {
+  border-style: none;
+}
+
+/* Footer */
+.container-footer {
+  display: flex;
+  justify-content: center;
+}
+
+footer a:hover{
+  color: #F0134D;
+}
+
+footer {
+  text-align: center;
+}
+
+footer .redes {
+  justify-content: center;
+}
+
+footer {
+  background: rgb(126, 7, 74);
+  background: linear-gradient(
+    151deg,
+    rgba(126, 7, 74, 1) 0%,
+    rgba(156, 15, 185, 1) 60%,
+    rgba(79, 7, 97, 1) 100%
+  );
+  color: white;
+  padding-top: 60px;
+}
+
+footer .barra-footer {
+  background-color: gray;
+  text-align: center;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+footer p {
+  color: white;
+  margin-bottom: 30px;
+}
+
+footer ul {
+  padding-left: 0;
+  list-style: none;
+  margin: 0;
+}
+
+footer ul li {
+  margin-bottom: 10px;
+}
+
+footer a {
+  color: white;
+}
+
+footer .redes {
+  font-size: 15px;
+  display: flex;
+}
+footer .redes a {
+  margin: 0 4.5px;
+}
+
+/* Columna */
+.columna-mobile-100 {
+  width: 100%;
+}
+
+/* SocialMedia */
+.socialMediaIcon{
+  width: 40px;
+  border-width: 2px;
+  border-radius: 60px;
+  border-style: solid;
+  border-color: white;
+}
+
+.container {
+  width: 100%;
+}
+
+.container /*selector por clase o por etiqueta*/ {
+  width: 1140px;
+  margin: 0 auto 0 auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  position: relative;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+  margin-bottom: 20px;
+}

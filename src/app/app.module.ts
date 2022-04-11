@@ -10,6 +10,8 @@ import { ProductosComponent } from './components/productos/productos.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { ProductosOfertaComponent } from './components/productosOferta/productosOferta.component';
 import { ProductosTopComponent } from './components/productosTop/productosTop.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { PreguntasFrecuentesComponent } from './components/preguntas-frecuentes/preguntas-frecuentes.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +21,8 @@ import { ProductosTopComponent } from './components/productosTop/productosTop.co
     NavbarComponent,
     ProductosOfertaComponent,
     ProductosTopComponent,
+    FooterComponent,
+    PreguntasFrecuentesComponent,
   ],
   imports: [
     BrowserModule,
