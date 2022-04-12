@@ -408,18 +408,19 @@
   }
 
   /* Separador */
-  .separatorSabiasQue{
+  .separatorSabiasQue {
     padding-bottom: 30px;
   }
-  
+
   .nav-middle {
     display: flex !important;
     align-items: center !important;
-    background-color: #ff6f5e;
+    background-color: #ff6f5e; /* Color Separador */
     justify-content: center;
     text-shadow: 2px -2px 1px #000;
   }
-  
+
+  /* Separador Texto */
   .nav-middle-text {
     color: white;
     font-size: 50px;
