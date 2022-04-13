@@ -13,7 +13,7 @@
 .nav-middle {
   display: flex !important;
   align-items: center !important;
-  background-color: #ff6f5e; /* Color Separador */
+  background-color: #C580ED; /* Color Separador */
   justify-content: center;
   text-shadow: 2px -2px 1px #000;
 }
@@ -42,24 +42,26 @@
 }
 
 .boton1 {
-  background-color: #612570;
+  background-color: #F992AD;
   color: white;
   margin-right: 5px;
+  text-shadow: 2px -2px 1px rgba(0, 0, 0, 0.301);
 }
 
 .boton1:hover {
   color: white;
-  background-color: #b643cd;
+  background-color: #FBBCEE;
 }
 
 .boton2 {
-  background-color: #f0134d;
+  background-color: #A480F2;
   color: white;
   margin-left: 5px;
+  text-shadow: 2px -2px 1px rgba(0, 0, 0, 0.301);
 }
 
 .boton2:hover {
-  background-color: #ff6f5e;
+  background-color: #CFB9F7;
   color: white;
 }
 
@@ -72,14 +74,16 @@
 
 .botonvermas {
   width: 12vw;
-  background-color: #612570;
+  background-color: #F78ECF;
   color: white;
   margin-right: 5px;
+  text-shadow: 2px -2px 1px rgba(0, 0, 0, 0.301);
 }
 
 .botonvermas:hover {
   color: white;
-  background-color: #f0134d;
+  background-color: #FBBCEE;
+  text-shadow: 2px -2px 1px rgba(0, 0, 0, 0.35);
 }
 
 .cardsSlider{

@@ -16,7 +16,7 @@ img {
 }
 
 footer a:hover{
-  color: #F0134D;
+  color: #814af8;
 }
 
 footer {
@@ -28,12 +28,12 @@ footer .redes {
 }
 
 footer {
-  background: rgb(126, 7, 74);
+  background: rgb(164, 128, 242);
   background: linear-gradient(
-    151deg,
-    rgba(126, 7, 74, 1) 0%,
-    rgba(156, 15, 185, 1) 60%,
-    rgba(79, 7, 97, 1) 100%
+    90deg,
+    rgba(164, 128, 242, 1) 0%,
+    rgba(197, 128, 237, 1) 50%,
+    rgba(229, 133, 238, 1) 100%
   );
   color: white;
   padding-top: 60px;

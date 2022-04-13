@@ -16,6 +16,7 @@ export class MenuComponent{
   SloganFeelMe:string;
   banner1:string;
   banner2: string;
+  banner3: string;
   icono1:string;
   icono2:string;
   icono3:string;
@@ -49,8 +50,9 @@ export class MenuComponent{
     this.logoFeelMe='/assets/img/logo.png';
     this.SloganFeelMe='/assets/img/logo2.png';
     this.iconcarrito='/assets/img/icons/carrito.ico';
-    this.banner1='/assets/img/sliderHomepage/banner1.jpg';
-    this.banner2='/assets/img/sliderHomepage/banner2.jpg';
+    this.banner1='/assets/img/sliderHomepage/banner1.png';
+    this.banner2='/assets/img/sliderHomepage/banner2.png';
+    this.banner3='/assets/img/sliderHomepage/banner3.png';
     this.icono1='/assets/img/icons/box.png';
     this.icono2='/assets/img/icons/silence.png';
     this.icono3='/assets/img/icons/dinero.png';

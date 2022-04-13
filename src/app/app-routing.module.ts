@@ -5,13 +5,20 @@ import { MenuComponent } from './components/menu/menu.component';
 import { ProductosOfertaComponent } from './components/productosOferta/productosOferta.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { PreguntasFrecuentesComponent } from './components/preguntas-frecuentes/preguntas-frecuentes.component';
+import { EnviosComponent } from './components/envios/envios.component';
 
-const routes: Routes = [{path: '', component:MenuComponent}, {path:'productos', component:ProductosComponent}, {path:'inicio', component:MenuComponent}, {path:'produtosOferta', component:ProductosOfertaComponent}, {path:'footer', component: FooterComponent}, {path:'preguntasFrecuentes', component: PreguntasFrecuentesComponent} ];
+const routes: Routes = [
+  { path: '', component: MenuComponent },
+  { path: 'productos', component: ProductosComponent },
+  { path: 'inicio', component: MenuComponent },
+  { path: 'produtosOferta', component: ProductosOfertaComponent },
+  { path: 'footer', component: FooterComponent },
+  { path: 'preguntasFrecuentes', component: PreguntasFrecuentesComponent },
+  { path: 'envios', component: EnviosComponent },
+];
 
 @NgModule({
-  
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
-
+export class AppRoutingModule {}

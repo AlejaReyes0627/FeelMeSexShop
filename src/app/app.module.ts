@@ -12,6 +12,7 @@ import { ProductosOfertaComponent } from './components/productosOferta/productos
 import { ProductosTopComponent } from './components/productosTop/productosTop.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { PreguntasFrecuentesComponent } from './components/preguntas-frecuentes/preguntas-frecuentes.component';
+import { EnviosComponent } from './components/envios/envios.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { PreguntasFrecuentesComponent } from './components/preguntas-frecuentes/
     ProductosTopComponent,
     FooterComponent,
     PreguntasFrecuentesComponent,
+    EnviosComponent,
   ],
   imports: [
     BrowserModule,

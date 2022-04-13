@@ -23,7 +23,7 @@
 .nav-middle {
   display: flex !important;
   align-items: center !important;
-  background-color: #ff6f5e; /* Color Separador */
+  background-color: #f992ad; /* Color Separador */
   justify-content: center;
   text-shadow: 2px -2px 1px #000;
 }
@@ -37,7 +37,7 @@
   margin: 0;
 }
 
-.sliderProductsContainer{
+.sliderProductsContainer {
   padding-top: 30px;
 }
 
@@ -52,24 +52,26 @@
 }
 
 .boton1 {
-  background-color: #612570;
+  background-color: #f992ad;
   color: white;
   margin-right: 5px;
+  text-shadow: 2px -2px 1px rgba(0, 0, 0, 0.301);
 }
 
 .boton1:hover {
   color: white;
-  background-color: #b643cd;
+  background-color: #fbbcee;
 }
 
 .boton2 {
-  background-color: #f0134d;
+  background-color: #a480f2;
   color: white;
   margin-left: 5px;
+  text-shadow: 2px -2px 1px rgba(0, 0, 0, 0.301);
 }
 
 .boton2:hover {
-  background-color: #ff6f5e;
+  background-color: #cfb9f7;
   color: white;
 }
 
@@ -82,14 +84,16 @@
 
 .botonvermas {
   width: 12vw;
-  background-color: #612570;
+  background-color: #f78ecf;
   color: white;
   margin-right: 5px;
+  text-shadow: 2px -2px 1px rgba(0, 0, 0, 0.301);
 }
 
 .botonvermas:hover {
   color: white;
-  background-color: #f0134d;
+  background-color: #fbbcee;
+  text-shadow: 2px -2px 1px rgba(0, 0, 0, 0.35);
 }
 
 .cardsSlider {
