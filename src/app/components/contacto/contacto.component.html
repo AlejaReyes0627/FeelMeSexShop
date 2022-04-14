@@ -1,91 +1,68 @@
-<div class="row">
-  <div class="col-md-6">
-    <div style="padding-top: 150px">
-      <div class="separatorSabiasQue">
-        <ul class="nav nav-middle">
-          <p class="nav-links nav-middle-text">CONTÁCTANOS</p>
-        </ul>
-      </div>
+<div class="formContactenos">
+  <div class="separatorSabiasQue">
+    <ul class="nav nav-middle" style="background-color: #f992ad">
+      <p class="nav-links nav-middle-text">CONTACTANOS</p>
+    </ul>
+  </div>
 
-      <div style="justify-content: center">
-        <h1 class="style-text">
-          Si tienes alguna duda o quieres alguna asesoria para la compra de
-          productos no dudes en comunicarte con nosotros. Estamos dispuestos a
-          solucionar todas tus dudas.
-        </h1>
-      </div>
-
-      <div class="separatorSabiasQue" style="margin-top: 20px">
-        <ul class="nav nav-middle">
-          <p class="nav-links nav-second-text">PUEDES DEJARNOS TU COMENTARIO</p>
-        </ul>
-      </div>
-      <!-- Default form contact -->
-      <form class="text-center border border-light p-5 form">
-        <!-- Name -->
-        <input
-          type="text"
-          id="defaultContactFormName"
-          class="form-control mb-4"
-          placeholder="Nombre"
-        />
-        <!-- Email -->
-        <input
-          type="email"
-          id="defaultContactFormEmail"
-          class="form-control mb-4"
-          placeholder="Correo"
-        />
-        <div class="form-group">
-          <textarea
-            class="form-control rounded-0"
-            id="exampleFormControlTextarea2"
-            rows="3"
-            placeholder="Mensaje"
-          ></textarea>
-        </div>
-        <!-- Copy -->
-        <div class="row">
-          <div class="col-md-6 mx-auto d-flex justify-content-center"></div>
-        </div>
-        <!-- Send button -->
-        <button mdbBtn class="botonEnviar" type="submit">Enviar</button>
-      </form>
-      <!-- Default form contact -->
-    </div>
-
+  <div class="formInputsContactenos">
     <div style="justify-content: center">
-      <h1 class="style-text">
-        Brindamos asesorias en nuestra linea de WhatsApp, también nos puedes
-        escribir al correo.
-      </h1>
-    </div>
-    <div style="float: left">
-      <ul>
-        <li style="list-style: none">
-          <a href="https://web.whatsapp.com" target="_blank">
-            <img [src]="whatsappIcon" class="socialMediaIcon" />
-          </a>
-        </li>
-      </ul>
-    </div>
-    <div style="float: left; margin-top: 20px; margin-left: -50px">
-      <h1 class="style-text">WhatsApp : 3015969277</h1>
+      <p class="style-text">
+        Si tienes alguna duda o quieres alguna asesoria para la compra de
+        productos no dudes en comunicarte con nosotros. Estamos dispuestos a
+        solucionar todas tus dudas.
+      </p>
+      <h3>PUEDES DEJARNOS TU COMENTARIO</h3>
     </div>
 
-    <div style="justify-content: center">
-      <div style="float: left">
-        <ul>
-          <li style="list-style: none; margin-left: -40px;">
-            <img [src]="gmailIcon" class="gmailIcon" />
-          </li>
-        </ul>
+    <form class="text-center inputsContactenos">
+      <input
+        type="text"
+        id="defaultContactFormName"
+        class="form-control mb-4"
+        placeholder="Nombre"
+      />
+
+      <input
+        type="email"
+        id="defaultContactFormEmail"
+        class="form-control mb-4"
+        placeholder="Correo"
+      />
+      <div class="form-group">
+        <textarea
+          class="form-control rounded-0"
+          id="exampleFormControlTextarea2"
+          rows="3"
+          placeholder="Mensaje"
+        ></textarea>
       </div>
-      <div style="float: left; margin-top: 20px; margin-left: -50px">
-        <h1 class="style-text">info@feelmeshop.com</h1>
+
+      <div class="btnEnviar">
+        <button type="button" class="btn botonvermas" routerLink="productos">
+          Enviar
+        </button>
       </div>
-    </div>
+    </form>
+  </div>
+
+  <div>
+    <p class="style-text">
+      Brindamos asesorias en nuestra linea de WhatsApp, también nos puedes
+      escribir al correo.
+    </p>
+  </div>
+
+  <div class="containerInfoWhatsapp">
+    <a href="https://web.whatsapp.com" target="_blank">
+      <img [src]="whatsappIcon" class="socialMediaIcon" />
+      <p class="style-text"><strong>WhatsApp :</strong> 3015969277</p>
+    </a>
+  </div>
+
+  <div>
+    <img [src]="gmailIcon" class="gmailIcon" />
+    <p class="style-text"><strong>Correo:</strong> info@feelmeshop.com</p>
   </div>
 </div>
-
 <app-footer></app-footer>

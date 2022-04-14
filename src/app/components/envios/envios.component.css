@@ -1,13 +1,20 @@
+.enviosContainer {
+  margin: 150px 8vw 50px 8vw;
+}
+
 .nav-middle {
   display: flex !important;
   align-items: center !important;
-  justify-content: left;
+  justify-content: center;
   text-shadow: 2px -2px 1px rgba(0, 0, 0, 0.568);
-  margin-left: 70px;
+}
+
+.separatorSabiasQue {
+  padding-bottom: 20px;
 }
 
 .nav-middle-text {
-  color: #f0134d;
+  color: white;
   font-size: 50px;
   font-weight: 500;
   align-items: center;
@@ -15,54 +22,48 @@
   margin: 0;
 }
 
-.image-envio {
-  margin-left: 70px;
-  margin-bottom: 50px;
-  width: 950px;
-  height: 450px;
-  
+.imageText {
+  padding-bottom: 20px;
 }
 
 .style-text {
   color: #000000;
   font-size: 20px;
   text-align: justify;
-  margin-right: 0px;
-  margin-left: 70px;
 }
+
+.divTable {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
 .table {
-  border: 3px solid #000000;
-  margin-left: 200px;
+  border: 2px solid #000000;
   margin-top: 30px;
-  width: 550px;
-  
-  
+  width: 600px;
+  text-align: center;
 }
+
+.containerImage {
+  padding: 20px 0 20px 0;
+}
+
+table td{
+  padding: 10px 0 10px 0;
+}
+
+table td h4{
+  font-weight: 400;
+}
+
 .image-transporte {
-  width: 250px;
-  height: 100px;  
+  width: 340px;
+  height: 100px;
 }
 
 .image-entrega {
   width: 250px;
-  height: 200px;  
+  height: 200px;
   margin: 10px;
-}
-.espacio-footer {
-  margin-bottom: 60px;
-}
-
-.segunda-columna {
-  color: #000000;
-  font-size: 30px;
-  font-weight: 500;
-  padding-top: 200px;
-}
-
-.li-segunda-col {
-  color: #A480F2 ; 
-  text-decoration: none;
-  margin-left: 10px;
-  
-  
 }
