@@ -1,56 +1,154 @@
-<div style="padding-top: 150px">
-  <div class="separatorSabiasQue">
-    <ul class="nav nav-middle">
-      <p class="nav-links nav-middle-text">Pedidos y envios</p>
-    </ul>
+<div class="row">
+  <div class="col-md-8">
+    <div style="padding-top: 150px">
+      <div class="separatorSabiasQue">
+        <ul class="nav nav-middle">
+          <p class="nav-links nav-middle-text">PEDIDOS Y ENVÍOS</p>
+          <img [src]="delivery" alt="" srcset="" class="image-entrega" />
+        </ul>
+      </div>
+
+      <img
+        [src]="entregaImagen"
+        class="img-fluid shadow-2-strong image-envio"
+        alt=""
+      />
+
+      <div style="justify-content: center">
+        <h1 class="style-text">
+          Contamos con envios a todo el pais, Las transportadoras con las cuales
+          trabajamos son Servientrega e interrapidísimo. En caso tal de que
+          éstas empresas no lleguen a tu ubicación, nos adaptamos a la que nos
+          sugieras. Si prefieres que la agencia de transporte no acuda a tu
+          domicilio, lugar de trabajo u otro destino personal, también puedes
+          elegir que te lo enviemos a una oficina de una agencia de transporte
+          donde ellos se comunicaran contigo para informarte cuando puedes
+          acercarte a recoger tu producto.
+        </h1>
+      </div>
+
+      <div class="separatorSabiasQue">
+        <ul class="nav nav-middle">
+          <p class="nav-links nav-middle-text">COSTES DE ENVÍO</p>
+        </ul>
+      </div>
+
+      <div style="justify-content: center">
+        <h1 class="style-text">
+          El envío es gratis por compras desde $90.000, si es menor a este
+          valor, pagarías por el valor del flete, dependiendo de la
+          transportadora y la ciudad a la que vaya el envio.
+        </h1>
+      </div>
+      <table class="table style-text">
+        <tr>
+          <th>Transportadora</th>
+          <th>Coste del transporte</th>
+        </tr>
+        <tr>
+          <td>
+            <img
+              [src]="servientrega"
+              alt=""
+              srcset=""
+              class="image-transporte"
+            />
+          </td>
+          <td>Desde 11.000 $</td>
+        </tr>
+        <tr>
+          <td>
+            <img
+              [src]="interRapidisimo"
+              alt=""
+              srcset=""
+              class="image-transporte"
+            />
+          </td>
+          <td>Desde 13.000 $</td>
+        </tr>
+      </table>
+      <div class="separatorSabiasQue">
+        <ul class="nav nav-middle">
+          <p class="nav-links nav-middle-text">TIEMPOS DE ENTREGA</p>
+        </ul>
+      </div>
+
+      <div style="justify-content: center">
+        <h1 class="style-text">
+          En Feel Me SexShop realizamos envios todos los dias con excepcion de
+          los dias Domingos y dias festivos. Tu pedido sera enviado en maximo
+          dos dias desde que realices la solicitud. El resto del tiempo sera el
+          que la transportadora tarde en realizar la llegada del producto hasta
+          la puerta de tu casa. Para las ciudades principales los envios se
+          demoran entre 3 y 4 días hábiles en llegar, a las ciudades secundarias
+          pueden demorar de 6 hasta 8 días hábiles en llegar.
+        </h1>
+      </div>
+      <div class="separatorSabiasQue">
+        <ul class="nav nav-middle">
+          <p class="nav-links nav-middle-text">ARTÍCULOS EN TU CARRITO</p>
+        </ul>
+      </div>
+
+      <div style="justify-content: center" class="espacio-footer">
+        <h1 class="style-text">
+          Para poder conocer el precio exacto de los gastos de envío, antes de
+          realizar el pedido debes añadir a tu carrito los artículos que desees,
+          seleccionar destino y transportadora. <br />
+          Antes de efectuar la compra sus gastos de envío se calcularán
+          automáticamente en base a los productos que tengas en la cesta y según
+          la agencia de transportes seleccionada. La información será facilitada
+          siempre de forma previa a la realización del pago.
+        </h1>
+      </div>
+    </div>
   </div>
 
-  <img
-    src="https://mdbootstrap.com/img/new/standard/city/042.webp"
-    class="img-fluid shadow-2-strong"
-    alt=""
-  />
-
-<div>
-    <h1>
-     Feel Me-Sex Shop cuenta con tarifas de envio muy competitivas. A las ciudades principales los envios se demoran entre 1 y 2 días hábiles en llegar, a las ciudades secundarias pueden demorar hasta 8 días hábiles en llegar. Las transportadoras con las cuales trabajamos son Servientrega, Coordinadora, Envía e interrapidísimo.
-        En caso tal de que éstas empresas no lleguen a tu ubicación, nos adaptamos a la que nos sugieras.
-    </h1>
+  <div class="col-md-2">
+    <div style="padding-top: 150px">
+      <div class="separatorSabiasQue">
+        <ul class="nav nav-middle">
+          <p class="nav-links segunda-columna">Ayuda</p>
+        </ul>
+      </div>
+      <div>
+        <ul style="margin-left: 30px; list-style-type: square">
+          <li>
+            <a routerLink="productos" class="li-segunda-col"
+              >PreguntasFrecuentes
+            </a>
+          </li>
+          <li>
+            <a routerLink="productos" class="li-segunda-col">¿Quienes Somos?</a>
+          </li>
+          <li>
+            <a routerLink="productos" class="li-segunda-col">Devoluciones </a>
+          </li>
+          <li>
+            <a routerLink="productos" class="li-segunda-col"
+              >Confidencialidad
+            </a>
+          </li>
+          <li>
+            <a routerLink="productos" class="li-segunda-col"
+              >Atencion Oportuna
+            </a>
+          </li>
+          <li>
+            <a routerLink="productos" class="li-segunda-col"
+              >Precios Asequibles
+            </a>
+          </li>
+          <li>
+            <a routerLink="productos" class="li-segunda-col"
+              >Nuestros productos
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
-
-<div class="separatorSabiasQue">
-    <ul class="nav nav-middle">
-      <p class="nav-links nav-middle-text">Costes de Envio</p>
-    </ul>
-</div>
-
-<div>
-    <h1>
-    El envío es gratis por compras desde $150.000, si es menor a este valor, pagarías  por el valor del flete, dependiendo de la transportadora.
-    </h1>
-</div> 
-<table>
-<thead>
-<tr>
-  <th>Texto</th>
-  <th>Imagen</th>
-  <th>Texto</th>
-</tr>
-</thead>
-<tbody><tr>
-  <td>Test</td>
-  <td><img src="test.png"></td>
-</tr>
-<tr>
-  <td>Descargar</td>
-  <td><img src="download.png"></td>
-</tr>
-<tr>
-  <td>Curso</td>
-  <td><img src="curso.png"></td>
-</tr>
-</tbody>
-</table> 
 
   <app-footer></app-footer>
 </div>

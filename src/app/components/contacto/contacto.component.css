@@ -1,0 +1,105 @@
+.nav-middle {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: left;
+    text-shadow: 2px -2px 1px rgba(0, 0, 0, 0.568);
+    margin-left: 70px;
+  }
+  
+  .nav-middle-text {
+    color: #f0134d;
+    font-size: 50px;
+    font-weight: 500;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+  .nav-second-text {
+    color: #f0134d;
+    font-size: 30px;
+    font-weight: 500;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .image-envio {
+    margin-left: 70px;
+    margin-bottom: 50px;
+    width: 950px;
+    height: 450px;
+    
+  }
+  
+  .style-text {
+    color: #000000;
+    font-size: 20px;
+    text-align: justify;
+    margin-right: 0px;
+    margin-left: 70px;
+  }
+  
+  .image-transporte {
+    width: 250px;
+    height: 100px;  
+  }
+  
+  .image-entrega {
+    width: 250px;
+    height: 200px;  
+    margin: 10px;
+  }
+  .espacio-footer {
+    margin-bottom: 60px;
+  }
+  
+  .segunda-columna {
+    color: #000000;
+    font-size: 20px;
+    font-weight: 100;
+    padding-top: 200px;
+    font-weight: 200;
+  }
+  
+  .li-segunda-col {
+    color: #A480F2 ; 
+    text-decoration: none;
+    margin-left: 10px;  
+  }
+
+  .botonEnviar {
+    width: 12vw;
+    background-color: #F78ECF;
+    color: white;
+    margin-right: 5px;
+    text-shadow: 2px -2px 1px rgba(0, 0, 0, 0.301);
+    margin-top: 10px;
+  }
+  .botonEnviar:hover {
+    color: white;
+    background-color: #FBBCEE;
+    text-shadow: 2px -2px 1px rgba(0, 0, 0, 0.35);
+  }
+
+  .form{
+    margin-left: 15px;
+    width: 800px;
+  }
+  .socialMediaIcon{
+    width: 40px;
+    border-width: 2px;
+    border-radius: 60px;
+    border-style: solid;
+    border-color: white;
+    margin-top: 10px;
+    margin-left: 45px;
+  }
+  .gmailIcon{
+    width: 70px;
+    border-width: 2px;
+    border-radius: 60px;
+    border-style: solid;
+    border-color: white;
+    margin-top: 10px;
+    margin-left: 45px;
+  }

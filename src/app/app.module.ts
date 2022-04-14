@@ -13,6 +13,9 @@ import { ProductosTopComponent } from './components/productosTop/productosTop.co
 import { FooterComponent } from './components/footer/footer.component';
 import { PreguntasFrecuentesComponent } from './components/preguntas-frecuentes/preguntas-frecuentes.component';
 import { EnviosComponent } from './components/envios/envios.component';
+import { DevolucionesComponent } from './components/devoluciones/devoluciones.component';
+import { ConfidencialidadComponent } from './components/confidencialidad/confidencialidad.component';
+import { ContactoComponent } from './components/contacto/contacto.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +28,9 @@ import { EnviosComponent } from './components/envios/envios.component';
     FooterComponent,
     PreguntasFrecuentesComponent,
     EnviosComponent,
+    DevolucionesComponent,
+    ConfidencialidadComponent,
+    ContactoComponent,
   ],
   imports: [
     BrowserModule,
