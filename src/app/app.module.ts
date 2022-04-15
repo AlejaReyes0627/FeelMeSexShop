@@ -16,6 +16,7 @@ import { EnviosComponent } from './components/envios/envios.component';
 import { DevolucionesComponent } from './components/devoluciones/devoluciones.component';
 import { ConfidencialidadComponent } from './components/confidencialidad/confidencialidad.component';
 import { ContactoComponent } from './components/contacto/contacto.component';
+import { QuienesSomosComponent } from './components/quienes-somos/quienes-somos.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { ContactoComponent } from './components/contacto/contacto.component';
     DevolucionesComponent,
     ConfidencialidadComponent,
     ContactoComponent,
+    QuienesSomosComponent,
   ],
   imports: [
     BrowserModule,
