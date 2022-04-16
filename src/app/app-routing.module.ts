@@ -10,6 +10,8 @@ import { DevolucionesComponent } from './components/devoluciones/devoluciones.co
 import { ConfidencialidadComponent } from './components/confidencialidad/confidencialidad.component';
 import { ContactoComponent } from './components/contacto/contacto.component';
 import { QuienesSomosComponent } from './components/quienes-somos/quienes-somos.component';
+import { PreciosAsequiblesComponent } from './components/precios-asequibles/precios-asequibles.component';
+import { AtencionOportunaComponent } from './components/atencion-oportuna/atencion-oportuna.component';
 
 const routes: Routes = [
   { path: '', component: MenuComponent },
@@ -22,7 +24,9 @@ const routes: Routes = [
   { path: 'devoluciones', component: DevolucionesComponent},
   { path: 'confidencialidad', component: ConfidencialidadComponent},
   { path: 'contacto', component: ContactoComponent},
-  { path: 'quienesSomos', component: QuienesSomosComponent}
+  { path: 'quienesSomos', component: QuienesSomosComponent},
+  { path: 'preciosAsequibles', component: PreciosAsequiblesComponent},
+  { path: 'atencionOportuna', component: AtencionOportunaComponent},
 ];
 
 @NgModule({
