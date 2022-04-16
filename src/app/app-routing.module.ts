@@ -9,7 +9,6 @@ import { EnviosComponent } from './components/envios/envios.component';
 import { DevolucionesComponent } from './components/devoluciones/devoluciones.component';
 import { ConfidencialidadComponent } from './components/confidencialidad/confidencialidad.component';
 import { ContactoComponent } from './components/contacto/contacto.component';
-import { QuienesSomosComponent } from './components/quienes-somos/quienes-somos.component';
 
 const routes: Routes = [
   { path: '', component: MenuComponent },
@@ -21,8 +20,8 @@ const routes: Routes = [
   { path: 'envios', component: EnviosComponent },
   { path: 'devoluciones', component: DevolucionesComponent},
   { path: 'confidencialidad', component: ConfidencialidadComponent},
-  { path: 'contacto', component: ContactoComponent},
-  { path: 'quienesSomos', component: QuienesSomosComponent}
+  { path: 'contacto', component: ContactoComponent}
+
 ];
 
 @NgModule({
