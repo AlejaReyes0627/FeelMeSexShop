@@ -13,7 +13,7 @@
     <!-- son las palabras clave, es decir, google busca y pone las palabras clave-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Inicio - Coca Cola</title>
+    <title>Inicio - Feel Me SexShop</title>
     <!-- linea para implementar el bootstrap en cada HTML-->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
@@ -107,7 +107,7 @@
 
         <!--CAJAS DE COLORES-->
         <div class="card-group mb-3px colorCards">
-          <a class="card card1" routerLink="/confidencialidad">
+          <a class="card card1" href="/confidencialidad">
             <img
               [src]="icono2"
               class="card-img-center"
@@ -123,7 +123,7 @@
               <p class="card-text1">CONFIDENCIALIDAD</p>
             </div>
           </a>
-          <a class="card card2" style="width: 18rem" routerLink="/envios">
+          <a class="card card2" style="width: 18rem" href="/envios">
             <img
               [src]="icono1"
               class="card-img-top"
@@ -139,7 +139,11 @@
               <p class="card-text1">ENVÍOS A TODO EL PAÍS</p>
             </div>
           </a>
-          <a class="card card3" style="width: 18rem" routerLink="/atencionOportuna">
+          <a
+            class="card card3"
+            style="width: 18rem"
+            href="/atencionOportuna"
+          >
             <img
               [src]="icono4"
               class="card-img-top"
@@ -155,7 +159,11 @@
               <p class="card-text1">ATENCIÓN OPORTUNA</p>
             </div>
           </a>
-          <a class="card card4" style="width: 18rem" routerLink="/preciosAsequibles">
+          <a
+            class="card card4"
+            style="width: 18rem"
+            href="/preciosAsequibles"
+          >
             <img
               [src]="icono3"
               class="card-img-top"
@@ -180,14 +188,13 @@
       <!-- Productos En Oferta -->
       <app-productos-top></app-productos-top>
 
+      <div class="separatorSabiasQue">
+        <ul class="nav nav-middle" style="background-color: #CFB9F7">
+          <p class="nav-links nav-middle-text">SABÍAS QUÉ</p>
+        </ul>
+      </div>
+      
       <section id="galeria">
-
-        <div class="separatorSabiasQue">
-          <ul class="nav nav-tabs nav-middle">
-            <p class="nav-links nav-middle-text">SABÍAS QUÉ</p>
-          </ul>
-        </div>
-        
         <div class="container-fluid">
           <div class="row">
             <div class="columna-33 columna-mobile-50">
@@ -253,11 +260,13 @@
             </div>
           </div>
         </div>
-        <div>
-          <ul class="nav nav-tabs nav-middle">
-            <p class="nav-links nav-middle-text">MÉTODOS DE PAGO</p>
+
+        <div class="separatorSabiasQue">
+          <ul class="nav nav-middle" style="background-color: #FAB4C8">
+            <p class="nav-links nav-middle-text">METODOS DE PAGO</p>
           </ul>
         </div>
+
         <div class="container">
           <div class="row row-cols-1 row-cols-md-3 g-4 mb-5 mt-3 columnaPaid">
             <div class="col cards1">

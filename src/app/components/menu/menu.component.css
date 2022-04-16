@@ -55,32 +55,52 @@
   padding-left: 150px;
 }
 
+ /* Separador */
+ .separatorSabiasQue {
+  padding-bottom: 30px;
+}
+
+.separatorSabiasQue .nav-middle {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center;
+  text-shadow: 2px -2px 1px rgba(0, 0, 0, 0.568);
+}
+
+.nav-middle .nav-middle-text {
+  color: white !important;
+  font-size: 50px !important;
+  font-weight: 500 !important;
+  align-items: center !important;
+  padding: 0;
+  margin: 0;
+}
 /*------------------------------------------------------*/
 
-.colorCards{
+.colorCards {
   padding: 15px 0 15px 0;
 }
 
 .card1 {
-  background-color: #A480F2;
+  background-color: #a480f2;
   text-align: center;
   border-radius: 0px;
 }
 
 .card2 {
-  background-color: #F78ECF;
+  background-color: #f78ecf;
   text-align: center;
   border-radius: 0px;
 }
 
 .card3 {
-  background-color: #F992AD;
+  background-color: #f992ad;
   text-align: center;
   border-radius: 0px;
 }
 
 .card4 {
-  background-color: #FAB4C8;
+  background-color: #fab4c8;
   text-align: center;
   border-radius: 0px;
 }
@@ -88,7 +108,7 @@
 .display-2 {
   text-align: center;
   font-weight: bold;
-  color: #f0134d;
+  color: #fab4c8;
 }
 
 .categoria {
@@ -116,7 +136,7 @@
 }
 
 .boton2 {
-  background-color: #f0134d;
+  background-color: #fab4c8;
   color: white;
   margin-left: 5px;
 }
@@ -139,7 +159,7 @@
 }
 
 .sabiasque {
-  color: #f0134d;
+  color: #f85679;
 }
 
 .formulario:hover {
@@ -148,13 +168,13 @@
 
 .formulario {
   color: white;
-  background-color: #f0134d;
+  background-color: #A480F2;
   border-radius: 10px;
   box-shadow: 0px 0px 30px black;
 }
 
 .card-items {
-  background-color: #f0134d;
+  background-color: #A480F2;
 }
 
 .bloque-servicio {
@@ -296,7 +316,7 @@
 
 #contactenos form {
   padding: 60px;
-  background-color: #C580ED;
+  background-color: #c580ed;
 }
 
 #contactenos form .form-block {
@@ -411,25 +431,5 @@
     padding: 0;
   }
 
-  /* Separador */
-  .separatorSabiasQue {
-    padding-bottom: 30px;
-  }
-
-  .nav-middle {
-    display: flex !important;
-    align-items: center !important;
-    background-color: #ff6f5e; /* Color Separador */
-    justify-content: center;
-    text-shadow: 2px -2px 1px #000;
-  }
-
-  /* Separador Texto */
-  .nav-middle-text {
-    color: white;
-    font-size: 50px;
-    align-items: center;
-    padding: 0;
-    margin: 0;
-  }
+ 
 }
