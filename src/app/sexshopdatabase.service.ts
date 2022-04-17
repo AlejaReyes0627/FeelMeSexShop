@@ -7,12 +7,11 @@ import { Injectable } from '@angular/core';
 export class SexshopdatabaseService {
 
   private url: string;
-
   constructor(private http: HttpClient) 
   {
     this.url="http://35.224.163.198:8081";
-  }
 
+  }
   llamadoHttp(tipo:string,sql:string)
   {
     var body:FormData = new FormData();

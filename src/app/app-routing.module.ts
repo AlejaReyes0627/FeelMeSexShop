@@ -12,10 +12,11 @@ import { ContactoComponent } from './components/contacto/contacto.component';
 import { QuienesSomosComponent } from './components/quienes-somos/quienes-somos.component';
 import { PreciosAsequiblesComponent } from './components/precios-asequibles/precios-asequibles.component';
 import { AtencionOportunaComponent } from './components/atencion-oportuna/atencion-oportuna.component';
+import { RegistroPersonaComponent } from './components/registro-persona/registro-persona.component';
 
 const routes: Routes = [
   { path: '', component: MenuComponent },
-  { path: 'productos', component: ProductosComponent },
+  { path: 'productos', component: ProductosComponent  },
   { path: 'inicio', component: MenuComponent },
   { path: 'produtosOferta', component: ProductosOfertaComponent },
   { path: 'footer', component: FooterComponent },
@@ -27,6 +28,7 @@ const routes: Routes = [
   { path: 'quienesSomos', component: QuienesSomosComponent},
   { path: 'preciosAsequibles', component: PreciosAsequiblesComponent},
   { path: 'atencionOportuna', component: AtencionOportunaComponent},
+  { path: 'registro-persona', component: RegistroPersonaComponent}
 ];
 
 @NgModule({

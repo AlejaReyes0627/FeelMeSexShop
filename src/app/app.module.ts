@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import  {environment}  from '../environments/environment';
@@ -19,6 +20,7 @@ import { ContactoComponent } from './components/contacto/contacto.component';
 import { QuienesSomosComponent } from './components/quienes-somos/quienes-somos.component';
 import { PreciosAsequiblesComponent } from './components/precios-asequibles/precios-asequibles.component';
 import { AtencionOportunaComponent } from './components/atencion-oportuna/atencion-oportuna.component';
+import { RegistroPersonaComponent } from './components/registro-persona/registro-persona.component';
 
 @NgModule({
   declarations: [
@@ -37,12 +39,14 @@ import { AtencionOportunaComponent } from './components/atencion-oportuna/atenci
     QuienesSomosComponent,
     PreciosAsequiblesComponent,
     AtencionOportunaComponent,
+    RegistroPersonaComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
