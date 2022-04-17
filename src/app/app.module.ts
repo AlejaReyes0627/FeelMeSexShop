@@ -19,6 +19,7 @@ import { ContactoComponent } from './components/contacto/contacto.component';
 import { QuienesSomosComponent } from './components/quienes-somos/quienes-somos.component';
 import { PreciosAsequiblesComponent } from './components/precios-asequibles/precios-asequibles.component';
 import { AtencionOportunaComponent } from './components/atencion-oportuna/atencion-oportuna.component';
+import { LoginComponent } from './components/login/login.component';
 
 @NgModule({
   declarations: [
@@ -37,6 +38,7 @@ import { AtencionOportunaComponent } from './components/atencion-oportuna/atenci
     QuienesSomosComponent,
     PreciosAsequiblesComponent,
     AtencionOportunaComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,

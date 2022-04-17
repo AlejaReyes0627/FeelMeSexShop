@@ -1,26 +1,56 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 <header>
-    <!-- vamos a dividir el bloque con div despues de eso-->
-    <div class="container">
-        <!-- esto se usa para separar bloques, la clase es para usarla en varias partes de la web -->
-        <!-- hipervinculo que nos da direcciones de la imagen o texto, base clickeable-->
-        <a class="" href="">
-            <img [src]="logoFeelMe" class="logo"> <!-- el source es para colocar la ruta del logo-->
-            <img [src]="SloganFeelMe" class="logo" style=" width: 200px;">
-        </a>
-        <nav>
-            <!-- relacionada a los navegadores-->
-            <a type="submit" (click)="insertarprueba()" href=""> Inicio</a><!-- hace referencia a un elemento con ID -->
-            <a href="productos"> Productos</a>
-            <a href="" class="carrito2"><img class="carrito" [src]="iconcarrito" /><span
-                    class="position-absolute start-100 p-2 bg-danger border border-light rounded-circle"
-                    style="transform: translateX(-130px);">
-                </span> </a>
-        </nav>
-    </div>
-    <ul class="nav nav-tabs nav-upside">
-        <a class="nav-link links" href="/productos" style="color: white;">Para Mujeres</a>
-        <a class="nav-link links" href="/productos" style="color: white;">Para Hombres</a>
-        <a class="nav-link links" href="/productos" style="color: white;">Para Parejas</a>
-        <a class="nav-link links" href="/productos" style="color: white;">Unisex</a>
-    </ul>
+  <!-- vamos a dividir el bloque con div despues de eso-->
+  <div class="container">
+    <!-- esto se usa para separar bloques, la clase es para usarla en varias partes de la web -->
+    <!-- hipervinculo que nos da direcciones de la imagen o texto, base clickeable-->
+    <a class="" href="">
+      <img [src]="logoFeelMe" class="logo" />
+      <!-- el source es para colocar la ruta del logo-->
+      <img [src]="SloganFeelMe" class="logo" style="width: 200px" />
+    </a>
+    <nav>
+      <!-- relacionada a los navegadores-->
+      <a type="submit" (click)="insertarprueba()" href=""> Inicio</a
+      ><!-- hace referencia a un elemento con ID -->
+      <a href="productos"> Productos</a>
+      <a href="" class="carrito2"
+        ><img class="carrito" [src]="iconcarrito" /><span
+          class="position-absolute start-100 p-2 bg-danger border border-light rounded-circle"
+          style="transform: translateX(-130px)"
+        >
+        </span>
+      </a>
+
+      <div class="dropdown">
+        <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">
+         <img src="http://placehold.it/350x150">
+           <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Menu item 1</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Menu item 2</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Menu item 3</a></li>
+          <li role="presentation" class="divider"></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Menu item 4</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  
+  <ul class="nav nav-tabs nav-upside">
+    <a class="nav-link links" href="/productos" style="color: white"
+      >Para Mujeres</a
+    >
+    <a class="nav-link links" href="/productos" style="color: white"
+      >Para Hombres</a
+    >
+    <a class="nav-link links" href="/productos" style="color: white"
+      >Para Parejas</a
+    >
+    <a class="nav-link links" href="/productos" style="color: white">Unisex</a>
+  </ul>
 </header>

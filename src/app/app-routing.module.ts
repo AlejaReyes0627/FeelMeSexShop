@@ -12,6 +12,7 @@ import { ContactoComponent } from './components/contacto/contacto.component';
 import { QuienesSomosComponent } from './components/quienes-somos/quienes-somos.component';
 import { PreciosAsequiblesComponent } from './components/precios-asequibles/precios-asequibles.component';
 import { AtencionOportunaComponent } from './components/atencion-oportuna/atencion-oportuna.component';
+import { LoginComponent } from './components/login/login.component';
 
 const routes: Routes = [
   { path: '', component: MenuComponent },
@@ -27,6 +28,8 @@ const routes: Routes = [
   { path: 'quienesSomos', component: QuienesSomosComponent},
   { path: 'preciosAsequibles', component: PreciosAsequiblesComponent},
   { path: 'atencionOportuna', component: AtencionOportunaComponent},
+  { path: 'login', component: LoginComponent},
+
 ];
 
 @NgModule({
