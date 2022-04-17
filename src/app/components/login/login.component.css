@@ -1,0 +1,23 @@
+.formLogin{
+  padding: 150px 200px 0 200px;
+}
+
+.nav-middle {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center;
+  text-shadow: 2px -2px 1px rgba(0, 0, 0, 0.568);
+}
+
+.separatorSabiasQue {
+  padding-bottom: 20px;
+}
+
+.nav-middle-text {
+  color: white;
+  font-size: 50px;
+  font-weight: 500;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}

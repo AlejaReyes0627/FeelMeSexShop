@@ -12,7 +12,11 @@ import { ContactoComponent } from './components/contacto/contacto.component';
 import { QuienesSomosComponent } from './components/quienes-somos/quienes-somos.component';
 import { PreciosAsequiblesComponent } from './components/precios-asequibles/precios-asequibles.component';
 import { AtencionOportunaComponent } from './components/atencion-oportuna/atencion-oportuna.component';
+<<<<<<< HEAD
 import { RegistroPersonaComponent } from './components/registro-persona/registro-persona.component';
+=======
+import { LoginComponent } from './components/login/login.component';
+>>>>>>> 64a126aefd605486e68eedc42298d3793ce513ee
 
 const routes: Routes = [
   { path: '', component: MenuComponent },
@@ -28,7 +32,12 @@ const routes: Routes = [
   { path: 'quienesSomos', component: QuienesSomosComponent},
   { path: 'preciosAsequibles', component: PreciosAsequiblesComponent},
   { path: 'atencionOportuna', component: AtencionOportunaComponent},
+<<<<<<< HEAD
   { path: 'registro-persona', component: RegistroPersonaComponent}
+=======
+  { path: 'login', component: LoginComponent},
+
+>>>>>>> 64a126aefd605486e68eedc42298d3793ce513ee
 ];
 
 @NgModule({

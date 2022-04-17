@@ -6,8 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./precios-asequibles.component.css']
 })
 export class PreciosAsequiblesComponent implements OnInit {
+  precios: string;
 
-  constructor() { }
+  constructor() {
+    this.precios = '/assets/img/preciosAsequibles/precio.png';
+  }
 
   ngOnInit(): void {
   }

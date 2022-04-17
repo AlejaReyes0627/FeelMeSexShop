@@ -20,7 +20,11 @@ import { ContactoComponent } from './components/contacto/contacto.component';
 import { QuienesSomosComponent } from './components/quienes-somos/quienes-somos.component';
 import { PreciosAsequiblesComponent } from './components/precios-asequibles/precios-asequibles.component';
 import { AtencionOportunaComponent } from './components/atencion-oportuna/atencion-oportuna.component';
+<<<<<<< HEAD
 import { RegistroPersonaComponent } from './components/registro-persona/registro-persona.component';
+=======
+import { LoginComponent } from './components/login/login.component';
+>>>>>>> 64a126aefd605486e68eedc42298d3793ce513ee
 
 @NgModule({
   declarations: [
@@ -39,7 +43,11 @@ import { RegistroPersonaComponent } from './components/registro-persona/registro
     QuienesSomosComponent,
     PreciosAsequiblesComponent,
     AtencionOportunaComponent,
+<<<<<<< HEAD
     RegistroPersonaComponent,
+=======
+    LoginComponent,
+>>>>>>> 64a126aefd605486e68eedc42298d3793ce513ee
   ],
   imports: [
     BrowserModule,
