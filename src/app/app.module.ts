@@ -22,7 +22,7 @@ import { PreciosAsequiblesComponent } from './components/precios-asequibles/prec
 import { AtencionOportunaComponent } from './components/atencion-oportuna/atencion-oportuna.component';
 import { RegistroPersonaComponent } from './components/registro-persona/registro-persona.component';
 import { LoginComponent } from './components/login/login.component';
-
+import { EntryPageComponent } from './components/entry-page/entry-page.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -42,6 +42,7 @@ import { LoginComponent } from './components/login/login.component';
     AtencionOportunaComponent,
     RegistroPersonaComponent,
     LoginComponent,
+    EntryPageComponent,
   ],
   imports: [
     BrowserModule,

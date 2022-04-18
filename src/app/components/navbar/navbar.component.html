@@ -7,17 +7,18 @@
   <div class="container">
     <!-- esto se usa para separar bloques, la clase es para usarla en varias partes de la web -->
     <!-- hipervinculo que nos da direcciones de la imagen o texto, base clickeable-->
-    <a class="" href="">
+    <a class="" href="/inicio">
       <img [src]="logoFeelMe" class="logo" />
       <!-- el source es para colocar la ruta del logo-->
       <img [src]="SloganFeelMe" class="logo" style="width: 200px" />
     </a>
     <nav>
       <!-- relacionada a los navegadores-->
-      <a type="submit" (click)="insertarprueba()" href=""> Inicio</a
+      <a type="submit" (click)="insertarprueba()" href="/inicio"> Inicio</a
       ><!-- hace referencia a un elemento con ID -->
       <a href="/productos"> Productos</a>
       <a href="/login"> Login</a>
+      <a href="/entrada"> Entry</a>
       <a href="" class="carrito2"
         ><img class="carrito" [src]="iconcarrito" /><span
           class="position-absolute start-100 p-2 bg-danger border border-light rounded-circle"

@@ -1,0 +1,58 @@
+<div class="entryPageBackground">
+  <div class="cardContainer">
+    <div class="card">
+      <div class="row icons">
+        <img [src]="logoFeelMe" class="col-md-5 logo" />
+        <img [src]="SloganFeelMe" class="col-md-7 slogan" />
+      </div>
+      <p class="aviso">ESTE SITIO WEB ESTA PERMITIDO <br /></p>
+      <p class="mayorEdad">SOLO PARA MAYORES DE EDAD</p>
+      <p class="verificaTuEdad">VERIFICA TU EDAD</p>
+
+      <div class="container dateContainer">
+        <div class="row">
+          <div class="col">Dia</div>
+          <div class="col">Mes</div>
+          <div class="col">Año</div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <input
+              type="number"
+              class="form-control"
+              required
+              [(ngModel)]="dia"
+            />
+          </div>
+          <div class="col">
+            <input
+              type="number"
+              class="form-control"
+              required
+              [(ngModel)]="mes"
+            />
+          </div>
+          <div class="col">
+            <input
+              type="number"
+              class="form-control"
+              required
+              [(ngModel)]="anio"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="containerBtn">
+        <button
+          type="button"
+          class="btn boton1"
+          routerLink="/inicio"
+          (click)="validacionFecha()"
+        >
+          Confirmar
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
