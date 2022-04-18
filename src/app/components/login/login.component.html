@@ -1,33 +1,42 @@
-<form class="formLogin">
-  <div class="separatorSabiasQue">
-    <ul class="nav nav-middle" style="background-color: #f992ad">
-      <p class="nav-links nav-middle-text">INGRESA</p>
-    </ul>
-  </div>
+<div class="entryPageBackground">
+<div class="container forget-password">
+  <div class="row">
+    <div class="col-md-12 col-md-offset-4">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <div class="text-center">
+            <img src="https://i.ibb.co/rshckyB/car-key.png" alt="car-key" border="0">
+            <div class="separatorSabiasQue">
+              <ul class="nav nav-middle" style="background-color: #f992ad">
+                <p class="nav-links nav-middle-text">INGRESA</p>
+              </ul>
+            </div>
+            <form id="register-form" role="form" autocomplete="off" class="form" method="post">
+              <div class="form-group">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <div class="input-group">
 
-  <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Email address</label>
-    <input
-      type="email"
-      class="form-control"
-      id="email_address"
-      name="email_address"
-      autocomplete="off"
-      required
-      autofocus
-      [(ngModel)]="email"
-    />
-    <div id="emailHelp" class="form-text">
-      We'll never share your email with anyone else.
+                    <input type="email" class="form-control" id="email_address" name="email_address" autocomplete="off"
+                      required autofocus [(ngModel)]="email" />
+                  </div>
+                </div>
+              <div class="form-group mb-3">
+                <label for="exampleInputEmail1" class="form-label">Password</label>
+                <div class="input-group">
+                    <input type="password" id="password" class="form-control" aria-describedby="button-addon2"
+                      [(ngModel)]="contrasena" placeholder="******** " autocomplete="off">
+                    <button class="btn btn-outline-secondary" (click)="mostrarcontrasena()" type="button"
+                      id="button-addon2" style="font-size:18px;">Show</button>
+                  </div>
+                </div>
+              <div class="form-group">
+                <button type="submit" class="btn btn-primary" (click)="onLogin()">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-  <div class="mb-3">
-    <label for="exampleInputPassword1" class="form-label">Password</label>
-    <input type="text" id="password" class="form-control " name="password" required [(ngModel)]="contrasena"  placeholder="******** " autocomplete="off"  />
-  </div>
-  <div class="mb-3 form-check">
-    <input type="checkbox" class="form-check-input" id="exampleCheck1" />
-    <label class="form-check-label" for="exampleCheck1">Check me out</label>
-  </div>
-  <button type="submit" class="btn btn-primary" (click)="onLogin()">Submit</button>
-</form>
+</div>
+</div>

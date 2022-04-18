@@ -22,6 +22,17 @@ export class LoginComponent implements OnInit {
   }
   ngOnInit(): void {}
 
+
+  mostrarcontrasena()
+  {
+    var tipo = document.getElementById('password');;
+      if(tipo?.getAttribute('type') == 'password'){
+        tipo?.setAttribute('type', 'text');
+      }else{
+          tipo?.setAttribute('type','password');
+      }
+  }
+
   onLogin() {
     if (
       this.email.includes('@') == false ||
@@ -37,7 +48,7 @@ export class LoginComponent implements OnInit {
     } else {
       var tipo = 'select';
       var sql =
-        "select * from prueba where contraseña='" +
+        "select * from usuario where contraseña='" +
         this.contrasena +
         "' and correo='" +
         this.email.toLowerCase() +

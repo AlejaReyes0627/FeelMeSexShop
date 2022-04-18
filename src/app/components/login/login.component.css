@@ -1,5 +1,11 @@
-.formLogin{
-  padding: 150px 200px 0 200px;
+.entryPageBackground {
+  background: rgb(164, 128, 242);
+  background: linear-gradient(
+    90deg,
+    rgba(164, 128, 242, 1) 0%,
+    rgba(197, 128, 237, 1) 50%,
+    rgba(229, 133, 238, 1) 100%
+  );
 }
 
 .nav-middle {
@@ -20,4 +26,40 @@
   align-items: center;
   padding: 0;
   margin: 0;
+}
+
+
+body{
+  background:#f3c538;
+}
+.forget-pwd > a{
+  color: #dc3545;
+  font-weight: 500;
+}
+.forget-password .panel-default{
+  padding: 31%;
+  margin-top: -30%;
+}
+.forget-password .panel-body{
+  padding: 15%;
+  margin-bottom: -70%;
+  background: #fff;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+img{
+  width:40%;
+  margin-bottom:10%;
+}
+
+.forget-password .dropdown{
+  width: 100%;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+}
+.forget-password .dropdown button{
+  width: 100%;
+}
+.forget-password .dropdown ul{
+  width: 100%;
 }
