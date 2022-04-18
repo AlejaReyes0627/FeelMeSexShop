@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { SexshopdatabaseService } from './sexshopdatabase.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -11,10 +12,13 @@ export class AppComponent {
   title = 'FeelMeSexShop';
   respuesta:any;
   sexShopservice:SexshopdatabaseService;
-  
-constructor(http:HttpClient)
+
+constructor(http:HttpClient, private router: Router)
 {
   this.sexShopservice = new SexshopdatabaseService(http);
+}
+ngOnInit(){
+
 }
 
 //metodo de ejemplo para usar webservice

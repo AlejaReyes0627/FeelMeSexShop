@@ -23,5 +23,7 @@ export class FooterComponent{
     this.twitterIcon='/assets/img/icons/twitterIcon.png';
     this.whatsappIcon='/assets/img/icons/whatsappIcon.png';
    }
-
+   navigate_envios(): void { 
+    this.router.navigate(['/envios']);
+    }
 }
