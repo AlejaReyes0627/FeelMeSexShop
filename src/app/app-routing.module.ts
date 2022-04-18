@@ -13,11 +13,13 @@ import { QuienesSomosComponent } from './components/quienes-somos/quienes-somos.
 import { PreciosAsequiblesComponent } from './components/precios-asequibles/precios-asequibles.component';
 import { AtencionOportunaComponent } from './components/atencion-oportuna/atencion-oportuna.component';
 import { LoginComponent } from './components/login/login.component';
+import { EntryPageComponent } from './components/entry-page/entry-page.component';
 
 const routes: Routes = [
-  { path: '', component: MenuComponent },
-  { path: 'productos', component: ProductosComponent },
+  { path: '', component: EntryPageComponent },
   { path: 'inicio', component: MenuComponent },
+  { path: 'entrada', component: EntryPageComponent},
+  { path: 'productos', component: ProductosComponent },
   { path: 'produtosOferta', component: ProductosOfertaComponent },
   { path: 'footer', component: FooterComponent },
   { path: 'preguntasFrecuentes', component: PreguntasFrecuentesComponent },
@@ -29,7 +31,6 @@ const routes: Routes = [
   { path: 'preciosAsequibles', component: PreciosAsequiblesComponent},
   { path: 'atencionOportuna', component: AtencionOportunaComponent},
   { path: 'login', component: LoginComponent},
-
 ];
 
 @NgModule({

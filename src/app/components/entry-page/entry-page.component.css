@@ -1,0 +1,81 @@
+.entryPageBackground {
+  background: rgb(164, 128, 242);
+  background: linear-gradient(
+    90deg,
+    rgba(164, 128, 242, 1) 0%,
+    rgba(197, 128, 237, 1) 50%,
+    rgba(229, 133, 238, 1) 100%
+  );
+}
+
+.cardContainer {
+  padding: 10.8vh 33vw 10.8vh 33vw;
+}
+
+.card {
+  background-color: white;
+  justify-content: center;
+  border-radius: 30px;
+}
+
+.icons {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+.icons .logo {
+  max-width: 10vw;
+  max-height: auto;
+}
+
+.icons .slogan {
+  max-width: 25vw;
+  max-height: auto;
+}
+
+.aviso {
+  padding: 40px 0 0 0;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.mayorEdad {
+  padding: 0 0 10px 0;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 600;
+  color:#be63f3;
+}
+
+.verificaTuEdad {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.dateContainer {
+  padding: 10px 8vw 0 8vw;
+  justify-content: center;
+  text-align: center;
+}
+
+.containerBtn {
+  text-align: center;
+  padding: 40px 0 30px 0;
+}
+
+.boton1 {
+  background-color: #f992ad;
+  color: white;
+  padding: 8px 30px 8px 30px;
+}
+
+.boton1:hover {
+  color: white;
+  background-color: #b643cd;
+}

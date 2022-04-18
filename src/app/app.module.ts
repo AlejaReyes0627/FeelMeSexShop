@@ -20,6 +20,8 @@ import { QuienesSomosComponent } from './components/quienes-somos/quienes-somos.
 import { PreciosAsequiblesComponent } from './components/precios-asequibles/precios-asequibles.component';
 import { AtencionOportunaComponent } from './components/atencion-oportuna/atencion-oportuna.component';
 import { LoginComponent } from './components/login/login.component';
+import { EntryPageComponent } from './components/entry-page/entry-page.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -39,12 +41,14 @@ import { LoginComponent } from './components/login/login.component';
     PreciosAsequiblesComponent,
     AtencionOportunaComponent,
     LoginComponent,
+    EntryPageComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
