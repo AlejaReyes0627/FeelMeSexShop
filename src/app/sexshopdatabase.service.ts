@@ -7,6 +7,8 @@ import { Injectable } from '@angular/core';
 export class SexshopdatabaseService {
 
   private url: string;
+  usuarioLogeado:any;
+
   constructor(private http: HttpClient) 
   {
     this.url="http://35.224.163.198:8081";
@@ -19,5 +21,13 @@ export class SexshopdatabaseService {
     body.set("sql",sql);
     var respuesta:any = this.http.post(this.url,body);
     return respuesta;
+  }
+  setUsuarioLogeado( usuario:any ){ 
+    this.usuarioLogeado = usuario;
+  }
+
+  getUsuarioLogeado(){
+    console.log(this.usuarioLogeado);
+    return this.usuarioLogeado;
   }
 }
