@@ -1,5 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { Router } from '@angular/router';
 import { PreguntasFrecuentesComponent } from './preguntas-frecuentes.component';
 
 describe('PreguntasFrecuentesComponent', () => {
@@ -8,9 +8,8 @@ describe('PreguntasFrecuentesComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ PreguntasFrecuentesComponent ]
-    })
-    .compileComponents();
+      declarations: [PreguntasFrecuentesComponent],
+    }).compileComponents();
   });
 
   beforeEach(() => {

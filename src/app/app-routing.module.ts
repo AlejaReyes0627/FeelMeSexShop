@@ -18,9 +18,8 @@ import { LoginComponent } from './components/login/login.component';
 import { EntryPageComponent } from './components/entry-page/entry-page.component';
 
 const routes: Routes = [
-  { path: '', component: MenuComponent },
-  { path: 'productos', component: ProductosComponent  },
   { path: '', component: EntryPageComponent },
+  { path: 'productos', component: ProductosComponent  },
   { path: 'inicio', component: MenuComponent },
   { path: 'entrada', component: EntryPageComponent},
   { path: 'productos', component: ProductosComponent },
@@ -36,7 +35,6 @@ const routes: Routes = [
   { path: 'atencionOportuna', component: AtencionOportunaComponent},
   { path: 'registro-persona', component: RegistroPersonaComponent},
   { path: 'login', component: LoginComponent},
-
 ];
 
 @NgModule({

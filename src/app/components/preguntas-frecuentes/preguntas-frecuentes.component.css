@@ -1,29 +1,28 @@
-.cardsContainer{
+.cardsContainer {
   padding: 0 5vw 0 5vw;
 }
 
-.individualCard{
+.individualCard {
   padding: 0 0 30px 0;
-  
 }
 
-.border-dark{
+.border-dark {
   /* background-color: #A480F2; */
 }
 
-.individualCard{
-/*   color: white;*/
+.individualCard {
+  /*   color: white;*/
 }
 
-.individualCard .card-title{
-  color: #A480F2;
+.individualCard .card-title {
+  color: #a480f2;
 }
 
-.card-title{
+.card-title {
 }
 
 .individualCard .boton1 {
-  background-color: #F992AD;
+  background-color: #f992ad;
   color: white;
   margin-right: 5px;
 }
@@ -35,7 +34,7 @@
 
 /*-----------------------------Separador-----------------------------*/
 
-.separatorSabiasQue{
+.separatorSabiasQue {
   padding-bottom: 30px;
 }
 

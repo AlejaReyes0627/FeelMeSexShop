@@ -48,8 +48,9 @@ export class EntryPageComponent implements OnInit {
       edad--;
     }
 
+    /* Entrada */
     if (edad >= 18) {
-      this.router.navigate(['/inicio']);
+      this.router.navigate(['/login']);
     } else {
       Swal.fire({
         title: 'Denegación!',
