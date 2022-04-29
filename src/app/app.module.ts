@@ -42,7 +42,7 @@ import { EntryPageComponent } from './components/entry-page/entry-page.component
     AtencionOportunaComponent,
     RegistroPersonaComponent,
     LoginComponent,
-    EntryPageComponent,
+    EntryPageComponent
   ],
   imports: [
     BrowserModule,
