@@ -13,17 +13,17 @@
             </div>
             <form id="register-form" role="form" autocomplete="off" class="form" method="post">
               <div class="form-group">
-                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <label for="exampleInputEmail1" class="form-label">Email</label>
                 <div class="input-group">
 
-                    <input type="email" class="form-control" id="email_address" name="email_address" autocomplete="off"
+                    <input type="email" class="form-control inputStyle" id="email_address" name="email_address" autocomplete="off"
                       required autofocus [(ngModel)]="email" />
                   </div>
                 </div>
-              <div class="form-group mb-3">
-                <label for="exampleInputEmail1" class="form-label">Password</label>
+              <div class="form-group mb-3 pt-3">
+                <label for="exampleInputEmail1" class="form-label">Contraseña</label>
                 <div class="input-group">
-                    <input type="password" id="password" class="form-control" aria-describedby="button-addon2"
+                    <input type="password" id="password" class="form-control inputStyle" aria-describedby="button-addon2"
                       [(ngModel)]="contrasena" placeholder="******** " autocomplete="off" name="password">
                     <button class="btn btn-outline-secondary" (click)="mostrarcontrasena()" type="button"
                       id="button-addon2" style="font-size:18px;">Show</button>

@@ -63,3 +63,27 @@ img{
 .forget-password .dropdown ul{
   width: 100%;
 }
+
+.boton1 {
+  background-color: #f992ad;
+  color: white;
+  margin-right: 5px;
+  border: none;
+}
+
+.boton1:hover {
+  color: white;
+  background-color: #b643cd;
+  border: none;
+}
+
+.inputs
+{
+  justify-content: center;
+}
+
+.inputspass
+{
+  justify-content: center;
+  margin-left: 27px;
+}
