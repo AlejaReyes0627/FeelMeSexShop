@@ -1,36 +1,63 @@
-<html>
-<main class="login-form">
-    <div class="container" style="padding-top:1.5cm ;">
-        <div class="row justify-content-center">
-            <div class="col-md-6">
-                <div class="card border-secondary mb-3" style="-webkit-box-shadow: 2px 2px 84px 12px rgba(0,0,0,0.56);
-                -moz-box-shadow: 2px 2px 84px 12px rgba(0,0,0,0.56);
-                box-shadow: 2px 2px 84px 12px rgba(0,0,0,0.56);">
-                    <div class=" card-header alert alert-success text-center "><i class="fas fa-user fa-2x "></i>
-                        <font size=6> Login </font>
-                    </div>
-                    <div class="card-body ">
-                        <form action=" " method=" ">
-                            <div class="form-group row " style="margin: 5px; ">
-                                <label for="email_address " class="col-md-4 col-form-label text-md-right " style="text-align: right; ">Correo Electrónico</label>
-                                <div class="col-md-6 ">
-                                    <input type="text" id="email_address" class="form-control " name="email-address" required autofocus [(ngModel)]="email" style="height: 0.9cm; " placeholder="example@network.com " autocomplete="off">
-                                </div>
-                            </div>
-                            <div class="form-group input-group col-md-4 " style="height: 1cm; width: 10cm; ">
-                                <input type="text" id="password" class="form-control " name="password" required [(ngModel)]="contrasena" style="height: 0.9cm; " placeholder="******** " autocomplete="off">
-                            </div>
-                            <div class="col-md-6 offset-md-4 ">
-                                <button type="submit" class="btn btn-primary " (click)="insertarprueba()">
-                                        Log in
-                                    </button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</main>
+<section class="h-100 h-custom" style="background-color: #8fc4b7">
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-lg-8 col-xl-6">
+        <div class="card rounded-3">
+          <img
+            src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-registration/img3.webp"
+            class="w-100"
+            style="
+              border-top-left-radius: 0.3rem;
+              border-top-right-radius: 0.3rem;
+            "
+            alt="Sample photo"
+          />
+          <div class="card-body p-4 p-md-5">
+            <h3 class="mb-4 pb-2 pb-md-0 mb-md-5 px-md-2">Registration Info</h3>
 
-</html>
+            <form class="px-md-2">
+                <!-- Nombre -->
+              <div class="form-outline mb-4">
+                <label class="form-label" for="form3Example1q">Nombres</label>
+                <input type="text" id="form3Example1q" class="form-control" />
+              </div>
+              <!-- Apellidos -->
+              <div class="form-outline mb-4">
+                <label class="form-label" for="form3Example1q">Apellidos</label>
+                <input type="text" id="form3Example1q" class="form-control" />
+              </div>
+              <!-- Correo -->
+              <div class="form-outline mb-4">
+                <label class="form-label" for="form3Example1q">Correo</label>
+                <input type="text" id="form3Example1q" class="form-control" />
+              </div>
+              <!-- Contraseña -->
+              <div class="form-outline mb-4">
+                <label class="form-label" for="form3Example1q">Contraseña</label>
+                <input type="text" id="form3Example1q" class="form-control" />
+              </div>
+              <!-- Confirmar Contraseña -->
+              <div class="form-outline mb-4">
+                <label class="form-label" for="form3Example1q">Confirmar Contraseña</label>
+                <input type="text" id="form3Example1q" class="form-control" />
+              </div>
+
+              <div class="col-md-6 mb-4">
+                <select class="select">
+                  <option value="1" disabled>Genero</option>
+                  <option value="2">Hombre</option>
+                  <option value="3">Mujer</option>
+                  <option value="4">Other</option>
+                </select>
+              </div>
+
+              <button type="submit" class="btn btn-success btn-lg mb-1">
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

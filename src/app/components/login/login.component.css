@@ -77,13 +77,43 @@ img{
   border: none;
 }
 
-.inputs
+input
 {
   justify-content: center;
+  border: 1px solid rgb(97, 95, 95);
+  padding: 5px 5px 5px 5px;
 }
 
-.inputspass
+.inputs, .inputEmail
 {
   justify-content: center;
-  margin-left: 27px;
+  width: 100%;
+}
+
+.inputPassword{
+  justify-content: center;
+  width: 80%;
+}
+
+.btnShow{
+  background-color: #f992ad;
+  color: white;
+  border: 1px solid rgb(97, 95, 95);
+}
+
+.btnShow:hover{
+  background-color: #C580ED;
+  color: white;
+}
+
+.btnEnviar{
+  background-color: #f992ad;
+  color: white;
+  border: 1px solid rgb(97, 95, 95);
+  padding: 6px 40px 6px 40px;
+}
+
+.btnEnviar:hover{
+  background-color: #F78ECF;
+  color: white;
 }
