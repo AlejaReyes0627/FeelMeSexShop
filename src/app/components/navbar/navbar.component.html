@@ -1,4 +1,8 @@
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<link
+  href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+  rel="stylesheet"
+  id="bootstrap-css"
+/>
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
@@ -7,30 +11,46 @@
   <div class="container">
     <!-- esto se usa para separar bloques, la clase es para usarla en varias partes de la web -->
     <!-- hipervinculo que nos da direcciones de la imagen o texto, base clickeable-->
-    <a class="" href="/inicio">
+    <a class="logos" href="/inicio">
       <img [src]="logoFeelMe" class="logo" />
       <!-- el source es para colocar la ruta del logo-->
       <img [src]="SloganFeelMe" class="logo" style="width: 200px" />
     </a>
+
     <nav>
       <!-- relacionada a los navegadores-->
       <a type="submit" (click)="insertarprueba()" href="/inicio"> Inicio</a
       ><!-- hace referencia a un elemento con ID -->
       <a href="/productos"> Productos</a>
+
       <a href="/login"> Login</a>
       <a href="/entrada"> Entry</a>
       <a href="/registro-persona"> Registro</a>
+
       <a href="" class="carrito2"
         ><img class="carrito" [src]="iconcarrito" /><span
           class="position-absolute start-100 p-2 bg-danger border border-light rounded-circle"
-          style="transform: translateX(-130px)"
+          style="transform: translateX(-118px)"
         >
         </span>
       </a>
 
+      <a
+        class="dropdown-toggle user2"
+        id="dropdownMenuLink"
+        data-bs-toggle="dropdown"
+        aria-expanded="false"
+      >
+        <img [src]="iconUser" class="user" />
+      </a>
+
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+        <li><a class="dropdown-item dropdownUser" href="/perfil">Perfil</a></li>
+        <li><a class="dropdown-item dropdownUser" href="#">Cerrar Sesión</a></li>
+      </ul>
     </nav>
   </div>
-  
+
   <ul class="nav nav-tabs nav-upside">
     <a class="nav-link links" href="/productos" style="color: white"
       >Para Mujeres</a

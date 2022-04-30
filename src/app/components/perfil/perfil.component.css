@@ -1,0 +1,133 @@
+.entryPageBackground {
+  background: rgb(164, 128, 242);
+  background: linear-gradient(
+    90deg,
+    rgba(164, 128, 242, 1) 0%,
+    rgba(197, 128, 237, 1) 50%,
+    rgba(229, 133, 238, 1) 100%
+  );
+}
+
+.nav-middle {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center;
+  text-shadow: 2px -2px 1px rgba(0, 0, 0, 0.568);
+}
+
+.separatorSabiasQue {
+  padding-bottom: 20px;
+}
+
+.nav-middle-text {
+  color: white;
+  font-size: 50px;
+  font-weight: 500;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: #f3c538;
+}
+.forget-pwd > a {
+  color: #dc3545;
+  font-weight: 500;
+}
+.forget-password .panel-default {
+  padding: 31%;
+  margin-top: -30%;
+}
+.forget-password .panel-body {
+  margin-bottom: -70%;
+  background: #fff;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.text-center {
+  padding: 0 15% 10% 15%;
+}
+
+img {
+  width: 40%;
+  margin-bottom: 10%;
+}
+
+.forget-password .dropdown {
+  width: 100%;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+}
+.forget-password .dropdown button {
+  width: 100%;
+}
+.forget-password .dropdown ul {
+  width: 100%;
+}
+
+.boton1 {
+  background-color: #f992ad;
+  color: white;
+  margin-right: 5px;
+  border: none;
+}
+
+.boton1:hover {
+  color: white;
+  background-color: #b643cd;
+  border: none;
+}
+
+input {
+  justify-content: center;
+  border: 1px solid rgb(97, 95, 95);
+  padding: 5px 5px 5px 5px;
+}
+
+.inputs,
+.inputEmail {
+  justify-content: center;
+  width: 100%;
+}
+
+.inputPassword {
+  justify-content: center;
+  width: 80%;
+}
+
+.btnShow {
+  background-color: #f992ad;
+  color: white;
+  border: 1px solid rgb(97, 95, 95);
+}
+
+.btnShow:hover {
+  background-color: #c580ed;
+  color: white;
+}
+
+.btnEnviar {
+  background-color: #f992ad;
+  color: white;
+  border: 1px solid rgb(97, 95, 95);
+  padding: 6px 40px 6px 40px;
+}
+
+.btnEnviar:hover {
+  background-color: #f78ecf;
+  color: white;
+}
+
+.backImgContainer{
+  
+}
+
+.backImg {
+  padding: 30px 0 0 30px;
+  width: 70px;
+  margin: 0;
+}
+

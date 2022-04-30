@@ -16,6 +16,7 @@ import { AtencionOportunaComponent } from './components/atencion-oportuna/atenci
 import { RegistroPersonaComponent } from './components/registro-persona/registro-persona.component';
 import { LoginComponent } from './components/login/login.component';
 import { EntryPageComponent } from './components/entry-page/entry-page.component';
+import { PerfilComponent } from './components/perfil/perfil.component';
 
 const routes: Routes = [
   { path: '', component: EntryPageComponent },
@@ -35,6 +36,7 @@ const routes: Routes = [
   { path: 'atencionOportuna', component: AtencionOportunaComponent},
   { path: 'registro-persona', component: RegistroPersonaComponent},
   { path: 'login', component: LoginComponent},
+  { path: 'perfil', component: PerfilComponent},
 ];
 
 @NgModule({

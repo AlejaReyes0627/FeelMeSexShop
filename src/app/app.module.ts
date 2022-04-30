@@ -23,6 +23,7 @@ import { AtencionOportunaComponent } from './components/atencion-oportuna/atenci
 import { RegistroPersonaComponent } from './components/registro-persona/registro-persona.component';
 import { LoginComponent } from './components/login/login.component';
 import { EntryPageComponent } from './components/entry-page/entry-page.component';
+import { PerfilComponent } from './components/perfil/perfil.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -42,7 +43,8 @@ import { EntryPageComponent } from './components/entry-page/entry-page.component
     AtencionOportunaComponent,
     RegistroPersonaComponent,
     LoginComponent,
-    EntryPageComponent
+    EntryPageComponent,
+    PerfilComponent
   ],
   imports: [
     BrowserModule,

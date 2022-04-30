@@ -30,12 +30,39 @@ header .container nav a:hover {
   color: #c580ed;
 }
 
+.dropdownUser{
+  color: black;
+  text-decoration: none; 
+  margin: 0 15px;
+  font-weight: 500 !important;
+}
+
+.dropdownUser :hover{
+  color: #A480F2;
+}
+
+nav{
+  text-align: right;
+}
+
 .carrito {
-  max-width: 10%;
+  max-width: 6%;
 }
 
 .carrito2:hover {
   opacity: 50%;
+}
+
+.user {
+  max-width: 5%;
+}
+
+.user2:hover {
+  opacity: 50%;
+}
+
+.logos{
+  width: 70%;
 }
 
 .container /*selector por clase o por etiqueta*/ {
@@ -51,7 +78,7 @@ header .container nav a:hover {
 /* MENU */
 
 .nav-link:hover {
-  background-color: #FAB4C8;
+  background-color: #fab4c8;
   text-shadow: 2px -2px 1px rgba(0, 0, 0, 0.2);
 }
 
@@ -83,6 +110,6 @@ header .container nav a:hover {
   text-shadow: 2px -2px 1px rgba(0, 0, 0, 0.15);
 }
 
-.imgUser{
+.imgUser {
   max-width: 60px;
 }
