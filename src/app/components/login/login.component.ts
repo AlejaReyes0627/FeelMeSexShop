@@ -22,15 +22,13 @@ export class LoginComponent implements OnInit {
   }
   ngOnInit(): void {}
 
-
-  mostrarcontrasena()
-  {
-    var tipo = document.getElementById('password');;
-      if(tipo?.getAttribute('type') == 'password'){
-        tipo?.setAttribute('type', 'text');
-      }else{
-          tipo?.setAttribute('type','password');
-      }
+  mostrarcontrasena() {
+    var tipo = document.getElementById('password');
+    if (tipo?.getAttribute('type') == 'password') {
+      tipo?.setAttribute('type', 'text');
+    } else {
+      tipo?.setAttribute('type', 'password');
+    }
   }
 
   onLogin() {
@@ -59,14 +57,16 @@ export class LoginComponent implements OnInit {
             var contra = data.mensaje[0].contraseña;
             var email = data.mensaje[0].correo;
             if (contra == this.contrasena && email == this.email) {
-              this.sexShopService.setUsuarioLogeado(data.mensaje[0].usuario);
-              localStorage.setItem('usuario', data.mensaje[0].usuario);
+              this.sexShopService.setUsuarioLogeado(data.mensaje[0].correo);
+              localStorage.setItem('usuario', data.mensaje[0].correo);
               Swal.fire({
                 title: 'Éxito!',
                 text: 'Has ingresado con éxito, disfruta del placer!',
                 icon: 'success',
                 confirmButtonText: 'Ok',
               });
+              var usuairo = localStorage.getItem('usuario');
+              console.log(usuairo);
               this.router.navigate(['/inicio']);
             } else {
               this.sexShopService.setUsuarioLogeado(null);

@@ -16,48 +16,115 @@
             <h3 class="mb-4 pb-2 pb-md-0 mb-md-5 px-md-2">Registration Info</h3>
 
             <form class="px-md-2">
-                <!-- Nombre -->
+              <!-- Nombre -->
               <div class="form-outline mb-4">
                 <label class="form-label" for="form3Example1q">Nombres</label>
-                <input type="text" id="form3Example1q" class="form-control" />
+                <input
+                  type="text"
+                  id="nombre_registro"
+                  name="nombre_registro"
+                  autocomplete="off"
+                  required
+                  autofocus
+                  [(ngModel)]="nombre"
+                  class="form-control"
+                />
               </div>
               <!-- Apellidos -->
               <div class="form-outline mb-4">
                 <label class="form-label" for="form3Example1q">Apellidos</label>
-                <input type="text" id="form3Example1q" class="form-control" />
+                <input
+                  type="text"
+                  id="apellido_registro"
+                  name="apellido_registro"
+                  autocomplete="off"
+                  required
+                  autofocus
+                  [(ngModel)]="apellido"
+                  class="form-control"
+                />
               </div>
               <!-- Correo -->
               <div class="form-outline mb-4">
                 <label class="form-label" for="form3Example1q">Correo</label>
-                <input type="text" id="form3Example1q" class="form-control" />
+                <input
+                  type="text"
+                  id="email_registro"
+                  name="email_registro"
+                  autocomplete="off"
+                  required
+                  autofocus
+                  [(ngModel)]="emailRegister"
+                  class="form-control"
+                />
               </div>
               <!-- Contraseña -->
-              <div class="form-outline mb-4">
-                <label class="form-label" for="form3Example1q">Contraseña</label>
-                <input type="text" id="form3Example1q" class="form-control" />
+              <div class="form-group pb-4 pt-3">
+                <label class="form-label" for="form3Example1q"
+                  >Contraseña</label
+                >
+                <input
+                  type="password"
+                  id="contrasena_registro"
+                  name="contrasena_registro"
+                  autocomplete="off"
+                  required
+                  autofocus
+                  placeholder="******** "
+                  [(ngModel)]="contrasenaRegister"
+                  class="form-control"
+                />
               </div>
               <!-- Confirmar Contraseña -->
               <div class="form-outline mb-4">
-                <label class="form-label" for="form3Example1q">Confirmar Contraseña</label>
-                <input type="text" id="form3Example1q" class="form-control" />
-              </div>
-
-              <div class="col-md-6 mb-4">
-                <select class="select">
-                  <option value="1" disabled>Genero</option>
-                  <option value="2">Hombre</option>
-                  <option value="3">Mujer</option>
-                  <option value="4">Other</option>
-                </select>
+                <label class="form-label" for="form3Example1q"
+                  >Confirmar Contraseña</label
+                >
+                <input
+                  type="password"
+                  id="confirmar_contraseña"
+                  name="confirmar_contraseña"
+                  autocomplete="off"
+                  required
+                  autofocus
+                  placeholder="******** "
+                  [(ngModel)]="confirmarContrasena"
+                  class="form-control"
+                />
+                <button
+                  class="btn btnShow"
+                  (click)="mostrarcontrasenaRegistro()"
+                  type="button"
+                  id="button-addon2"
+                  style="font-size: 14px; background-color: #f992ad"
+                >
+                  Mostrar Contraseñas
+                </button>
               </div>
 
               <div class="form-outline mb-4">
-                <label class="form-label" for="form3Example1q">Mene</label>
-                <input type="text" id="form3Example1q" class="form-control" />
+                <label class="form-label" for="form3Example1q">Género</label>
+                <div class="col-md-6 mb-4">
+                  <select
+                    class="select"
+                    id="genero"
+                    name="genero"
+                    [(ngModel)]="genero"
+                  >
+                    <option value="Masculino">Masculino</option>
+                    <option value="Femenino">Femenino</option>
+                    <option value="Otro">Otro</option>
+                  </select>
+                </div>
               </div>
 
-              <button type="submit" class="btn btn-success btn-lg mb-1">
-                Submit
+              <button
+                type="submit"
+                class="btn btn-success btn-lg mb-1"
+                style="background-color: #f992ad"
+                (click)="insertarPerona()"
+              >
+                Registrarse
               </button>
             </form>
           </div>
