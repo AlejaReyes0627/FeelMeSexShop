@@ -1,92 +1,81 @@
-
 <div class="entryPageBackground">
-  <div class="container forget-password">
-    <div class="row">
-      <div class="col-md-12 col-md-offset-4">
-        <div class="panel panel-default">
-          <div class="panel-body">
-            <a class="backImgContainer" href="/inicio">
-              <img [src]="backArrow" alt="car-key" class="backImg" />
-            </a>
+  <div class="forget-password">
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <a class="backImgContainer" href="/inicio">
+          <img [src]="backArrow" alt="car-key" class="backImg" />
+        </a>
 
-            <div class="text-center">
-              <img [src]="iconUser" alt="car-key" border="0" />
+        <div class="text-center">
+          <img class="iconUserImg" [src]="iconUser" alt="car-key" border="0" />
 
-              <form
-                id="register-form"
-                role="form"
-                autocomplete="off"
-                class="form"
-                method="post"
-              >
-                <!-- Input Email -->
-                <div class="form-group">
-                  <label for="exampleInputEmail1" class="form-label"
-                    >Nombres</label
-                  >
-                  <div class="input-group inputs">
-                    <input
-                      class="inputEmail"
-                      id="nombre"
-                      name="nombre"
-                      readonly
-                    />
-                  </div>
-                </div>
-
-                <div class="form-group">
-                  <label for="exampleInputEmail1" class="form-label"
-                    >Apellidos</label
-                  >
-                  <div class="input-group inputs">
-                    <input class="inputEmail" id="apellido" name="apellido" readonly />
-                  </div>
-                </div>
-
-                <div class="form-group">
-                  <label for="exampleInputEmail1" class="form-label"
-                    >Email</label
-                  >
-                  <div class="input-group inputs">
-                    <input
-                      class="inputEmail"
-                      id="email"
-                      name="email"
-                      readonly
-                    />
-                  </div>
-                </div>
-
-                <!-- Input Email -->
-                <div class="form-group">
-                  <label for="exampleInputEmail1" class="form-label"
-                    >Contraseña</label
-                  >
-                  <div class="input-group inputs">
-                    <input class="inputEmail" id="contrasena" name="contrasena" readonly />
-                  </div>
-                </div>
-
-                <div class="form-group">
-                  <label for="exampleInputEmail1" class="form-label"
-                    >Genero</label
-                  >
-                  <div class="input-group inputs">
-                    <input class="inputEmail" id="genero" name="genero" readonly />
-                  </div>
-                </div>
-
-                <div class="form-group">
-                  <label for="exampleInputEmail1" class="form-label"
-                    >Fecha De Nacimiento</label
-                  >
-                  <div class="input-group inputs">
-                    <input class="inputEmail" id="fechaN" name="fechaN" readonly />
-                  </div>
-                </div>
-              </form>
+          <form
+            id="register-form"
+            role="form"
+            autocomplete="off"
+            class="form"
+            method="post"
+          >
+            <!-- Input Email -->
+            <div class="form-group">
+              <label for="exampleInputEmail1" class="form-label">Nombres</label>
+              <div class="input-group inputs">
+                <input class="inputEmail" id="nombre" name="nombre" readonly />
+              </div>
             </div>
-          </div>
+
+            <div class="form-group">
+              <label for="exampleInputEmail1" class="form-label"
+                >Apellidos</label
+              >
+              <div class="input-group inputs">
+                <input
+                  class="inputEmail"
+                  id="apellido"
+                  name="apellido"
+                  readonly
+                />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="exampleInputEmail1" class="form-label">Email</label>
+              <div class="input-group inputs">
+                <input class="inputEmail" id="email" name="email" readonly />
+              </div>
+            </div>
+
+            <!-- Input Email -->
+            <div class="form-group">
+              <label for="exampleInputEmail1" class="form-label"
+                >Contraseña</label
+              >
+              <div class="input-group inputs">
+                <input
+                  class="inputEmail"
+                  id="contrasena"
+                  name="contrasena"
+                  readonly
+                />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="exampleInputEmail1" class="form-label">Genero</label>
+              <div class="input-group inputs">
+                <input class="inputEmail" id="genero" name="genero" readonly />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="exampleInputEmail1" class="form-label"
+                >Fecha De Nacimiento</label
+              >
+              <div class="input-group inputs">
+                <input class="inputEmail" id="fechaN" name="fechaN" readonly />
+              </div>
+            </div>
+          </form>
         </div>
       </div>
     </div>

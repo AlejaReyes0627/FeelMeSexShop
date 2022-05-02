@@ -19,11 +19,13 @@ import { ConfidencialidadComponent } from './components/confidencialidad/confide
 import { ContactoComponent } from './components/contacto/contacto.component';
 import { QuienesSomosComponent } from './components/quienes-somos/quienes-somos.component';
 import { PreciosAsequiblesComponent } from './components/precios-asequibles/precios-asequibles.component';
-import { AtencionOportunaComponent } from './components/atencion-oportuna/atencion-oportuna.component';
+import { AtencionOportunaComponent } from './components/timely-care/atencion-oportuna.component';
 import { RegistroPersonaComponent } from './components/registro-persona/registro-persona.component';
 import { LoginComponent } from './components/login/login.component';
 import { EntryPageComponent } from './components/entry-page/entry-page.component';
 import { PerfilComponent } from './components/perfil/perfil.component';
+import { RememberPasswordComponent } from './components/remember-password/remember-password.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -44,7 +46,8 @@ import { PerfilComponent } from './components/perfil/perfil.component';
     RegistroPersonaComponent,
     LoginComponent,
     EntryPageComponent,
-    PerfilComponent
+    PerfilComponent,
+    RememberPasswordComponent
   ],
   imports: [
     BrowserModule,
