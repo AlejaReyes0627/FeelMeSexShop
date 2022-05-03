@@ -10,7 +10,7 @@ import Swal from 'sweetalert2';
   styleUrls: ['./registro-persona.component.css'],
 })
 export class RegistroPersonaComponent implements OnInit {
-  title = 'zoo';
+  backArrow: string;
   sexShopService: SexshopdatabaseService;
   nombre: String;
   apellido: String;
@@ -27,6 +27,7 @@ export class RegistroPersonaComponent implements OnInit {
     this.confirmarContrasena = '';
     this.genero = '';
     this.sexShopService = new SexshopdatabaseService(http);
+    this.backArrow = '/assets/img/icons/backArrow.png';
   }
 
   ngOnInit(): void {}
@@ -44,6 +45,25 @@ export class RegistroPersonaComponent implements OnInit {
       tipo?.setAttribute('type', 'password');
     }
   }
+
+  mostrarcontrasena() {
+    var tipo = document.getElementById('contrasena_registro');
+    if (tipo?.getAttribute('type') == 'password') {
+      tipo?.setAttribute('type', 'text');
+    } else {
+      tipo?.setAttribute('type', 'password');
+    }
+  }
+
+  mostrarconfirmarcontrasena() {
+    var tipo = document.getElementById('confirmar_contraseña');
+    if (tipo?.getAttribute('type') == 'password') {
+      tipo?.setAttribute('type', 'text');
+    } else {
+      tipo?.setAttribute('type', 'password');
+    }
+  }
+
 
   insertarPerona() {
     if (

@@ -1,19 +1,17 @@
-<section class="h-100 h-custom" style="background-color: #8fc4b7">
-  <div class="container py-5 h-100">
-    <div class="row d-flex justify-content-center align-items-center h-100">
+<section class="h-100 h-custom registerBackground">
+  <div class="whitebox">
+    <div class="d-flex justify-content-center align-items-center">
       <div class="col-lg-8 col-xl-6">
         <div class="card rounded-3">
-          <img
-            src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-registration/img3.webp"
-            class="w-100"
-            style="
-              border-top-left-radius: 0.3rem;
-              border-top-right-radius: 0.3rem;
-            "
-            alt="Sample photo"
-          />
-          <div class="card-body p-4 p-md-5">
-            <h3 class="mb-4 pb-2 pb-md-0 mb-md-5 px-md-2">Registration Info</h3>
+          <a class="backImgContainer" href="/login">
+            <img [src]="backArrow" alt="car-key" class="backImg" />
+          </a>
+          <div class="card-body cardSize">
+            <div class="separatorSabiasQue">
+              <ul class="nav nav-middle" style="background-color: #f992ad">
+                <p class="nav-links nav-middle-text">REGISTRATE</p>
+              </ul>
+            </div>
 
             <form class="px-md-2">
               <!-- Nombre -->
@@ -58,58 +56,15 @@
                   class="form-control"
                 />
               </div>
-              <!-- Contraseña -->
-              <div class="form-group pb-4 pt-3">
-                <label class="form-label" for="form3Example1q"
-                  >Contraseña</label
-                >
-                <input
-                  type="password"
-                  id="contrasena_registro"
-                  name="contrasena_registro"
-                  autocomplete="off"
-                  required
-                  autofocus
-                  placeholder="******** "
-                  [(ngModel)]="contrasenaRegister"
-                  class="form-control"
-                />
-              </div>
-              <!-- Confirmar Contraseña -->
-              <div class="form-outline mb-4">
-                <label class="form-label" for="form3Example1q"
-                  >Confirmar Contraseña</label
-                >
-                <input
-                  type="password"
-                  id="confirmar_contraseña"
-                  name="confirmar_contraseña"
-                  autocomplete="off"
-                  required
-                  autofocus
-                  placeholder="******** "
-                  [(ngModel)]="confirmarContrasena"
-                  class="form-control"
-                />
-                <button
-                  class="btn btnShow"
-                  (click)="mostrarcontrasenaRegistro()"
-                  type="button"
-                  id="button-addon2"
-                  style="font-size: 14px; background-color: #f992ad"
-                >
-                  Mostrar Contraseñas
-                </button>
-              </div>
 
               <div class="form-outline mb-4">
                 <label class="form-label" for="form3Example1q">Género</label>
-                <div class="col-md-6 mb-4">
+                <div class="col-md-12 mb-4">
                   <select
-                    class="select"
                     id="genero"
                     name="genero"
                     [(ngModel)]="genero"
+                    class="selectGenero"
                   >
                     <option value="Masculino">Masculino</option>
                     <option value="Femenino">Femenino</option>
@@ -118,14 +73,75 @@
                 </div>
               </div>
 
-              <button
-                type="submit"
-                class="btn btn-success btn-lg mb-1"
-                style="background-color: #f992ad"
-                (click)="insertarPerona()"
+              <!-- Contraseña -->
+              <div class="form-group pb-4">
+                <label class="form-label" for="form3Example1q"
+                  >Contraseña</label
+                >
+                <div class="input-group inputsPassword">
+                  <input
+                    type="password"
+                    id="contrasena_registro"
+                    name="contrasena_registro"
+                    autocomplete="off"
+                    required
+                    autofocus
+                    placeholder="******** "
+                    [(ngModel)]="contrasenaRegister"
+                    class="form-control"
+                  />
+                  <button
+                    class="btn btnShow"
+                    (click)="mostrarcontrasena()"
+                    type="button"
+                    id="button-addon2"
+                    style="font-size: 14px"
+                  >
+                    Mostrar
+                  </button>
+                </div>
+              </div>
+
+              <!-- Confirmar Contraseña -->
+              <div class="form-outline mb-4">
+                <label class="form-label" for="form3Example1q"
+                  >Confirmar Contraseña</label
+                >
+                <div class="input-group inputsPassword">
+                  <input
+                    type="password"
+                    id="confirmar_contraseña"
+                    name="confirmar_contraseña"
+                    autocomplete="off"
+                    required
+                    autofocus
+                    placeholder="******** "
+                    [(ngModel)]="confirmarContrasena"
+                    class="form-control"
+                  />
+                  <button
+                    class="btn btnShow"
+                    (click)="mostrarconfirmarcontrasena()"
+                    type="button"
+                    id="button-addon2"
+                    style="font-size: 14px"
+                  >
+                    Mostrar
+                  </button>
+                </div>
+              </div>
+
+              <div
+                class="pt-4 d-flex justify-content-center align-items-center"
               >
-                Registrarse
-              </button>
+                <button
+                  type="submit"
+                  class="btn btn-lg mb-1 btnRegistrarse"
+                  (click)="insertarPerona()"
+                >
+                  Registrarse
+                </button>
+              </div>
             </form>
           </div>
         </div>

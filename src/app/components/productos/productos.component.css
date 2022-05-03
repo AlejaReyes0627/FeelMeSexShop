@@ -1,0 +1,86 @@
+/* Separador */
+.nav-middle {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center;
+  text-shadow: 2px -2px 1px rgba(0, 0, 0, 0.568);
+}
+
+.separatorSabiasQue {
+  padding-bottom: 20px;
+}
+
+.nav-middle-text {
+  color: white;
+  font-size: 40px;
+  font-weight: 500;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+/* Menu Lateral */
+
+.menuContainer {
+  display: block;
+  text-align: center;
+}
+
+.options {
+  width: 200px;
+  text-decoration: none;
+}
+
+.optionsContainer {
+  padding-top: 20px;
+  padding: 20px 0 20px 10px;
+}
+
+.productDiv {
+  height: 50px;
+  color: #000000;
+}
+
+/* Cards Productos */
+
+.containerImg {
+}
+
+img {
+  max-width: 200px;
+  justify-content: center;
+}
+
+.cardProduct {
+  /* padding: 0 45px 0 45px; */
+}
+
+.buttonZone{
+	width: 100%;
+	display: flex;
+	justify-content: center
+}
+
+.boton1 {
+  background-color: #F992AD;
+  color: white;
+  margin-right: 5px;
+  text-shadow: 2px -2px 1px rgba(0, 0, 0, 0.301);
+}
+
+.boton1:hover {
+  color: white;
+  background-color: #FBBCEE;
+}
+
+.boton2 {
+  background-color: #A480F2;
+  color: white;
+  margin-left: 5px;
+  text-shadow: 2px -2px 1px rgba(0, 0, 0, 0.301);
+}
+
+.boton2:hover {
+  background-color: #CFB9F7;
+  color: white;
+}
