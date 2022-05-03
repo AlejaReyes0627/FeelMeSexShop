@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { SexshopdatabaseService } from 'src/app/sexshopdatabase.service';
 import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
-import Swal from 'sweetalert2';
+
 
 @Component({
   selector: 'app-perfil',
@@ -16,7 +16,7 @@ export class PerfilComponent implements OnInit {
   sexShopService: SexshopdatabaseService;
  
 
-  constructor(http: HttpClient, private router: Router) {
+  constructor(http: HttpClient) {
     this.iconUser = '/assets/img/icons/user.png';
     this.backArrow = '/assets/img/icons/backArrow.png';
     this.sexShopService = new SexshopdatabaseService(http);

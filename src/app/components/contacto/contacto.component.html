@@ -20,27 +20,28 @@
     <form class="text-center inputsContactenos">
       <input
         type="text"
-        id="defaultContactFormName"
         class="form-control mb-4"
         placeholder="Nombre"
+        id="nombre"
       />
 
       <input
         type="email"
-        id="defaultContactFormEmail"
         class="form-control mb-4"
         placeholder="Correo"
+        id="email"
+       
       />
       <div class="form-group">
         <textarea
           class="form-control rounded-0"
-          id="exampleFormControlTextarea2"
+          id="mensaje"
           rows="3"
           placeholder="Mensaje"
         ></textarea>
       </div>
 
-      <div class="btnEnviar">
+      <div class="btnEnviar" (click)="enviarMensaje()">
         <button type="button" class="btn botonvermas" href="/productos">
           Enviar
         </button>

@@ -18,6 +18,7 @@ import { LoginComponent } from './components/login/login.component';
 import { EntryPageComponent } from './components/entry-page/entry-page.component';
 import { PerfilComponent } from './components/perfil/perfil.component';
 import { RememberPasswordComponent } from './components/remember-password/remember-password.component';
+import { SeccionPagoComponent } from './components/seccion-pago/seccion-pago.component';
 
 const routes: Routes = [
   { path: '', component: EntryPageComponent },
@@ -39,6 +40,7 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent},
   { path: 'perfil', component: PerfilComponent},
   { path: 'rememberPassword', component: RememberPasswordComponent},
+  { path: 'pago', component:SeccionPagoComponent}
 ];
 
 @NgModule({
