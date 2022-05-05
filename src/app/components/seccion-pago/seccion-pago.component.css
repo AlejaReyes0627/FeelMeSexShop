@@ -29,7 +29,7 @@
 .title-section {
   color: #000000;
   font-size: 20px;
-  text-align: center;  
+  text-align: center;
   font-weight: bold;
 }
 .text-style {
@@ -37,13 +37,52 @@
   font-size: 17px;
   text-align: justify;
 }
-.envio-link{
+.envio-link {
   color: #000000;
   font-weight: bold;
-
 }
-.card-img-center{
+.card-img-center {
   width: 75px;
-  height: 65px;
+  height: 60px;
+  padding-left: 10px;
+}
+.card-img-banco {
+  width: 100px;
+  height: 70px;
+  padding-left: 10px;
+}
+.metodo-pago {
+  display: flex;
+  justify-content: center;
+}
+.vermas {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
 }
 
+.botonvermas {
+  width: 25vw;
+  height: 6vw;
+  background-color: #f78ecf;
+  color: white;
+  margin-right: 5px;
+  text-shadow: 2px -2px 1px rgba(0, 0, 0, 0.301);
+  font-size: 30px;
+}
+
+.botonvermas:hover {
+  color: white;
+  background-color: #fbbcee;
+  text-shadow: 2px -2px 1px rgba(0, 0, 0, 0.35);
+}
+
+.resumen-pago {
+  display: grid;
+  justify-content: center;
+}
+.card-pedido{
+  width: 20vw;
+  background-color: #fbbcee;
+}

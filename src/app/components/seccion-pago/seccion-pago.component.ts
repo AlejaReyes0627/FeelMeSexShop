@@ -9,8 +9,8 @@ import { HttpClient } from '@angular/common/http';
 })
 export class SeccionPagoComponent implements OnInit {
   title = 'zoo';
-  servientrega: string;
-  interRapidisimo: string;
+  mercadoPago: String;
+  transferencia: String;
   sexShopService: SexshopdatabaseService;
   nombres: String;
   apellidos: String;
@@ -24,17 +24,11 @@ export class SeccionPagoComponent implements OnInit {
   estado: String;
   transportadora: String;
   metodoDePago: String;
-  metodo_pago1: string;
-  metodo_pago2: string;
-  metodo_pago3: string;
-  metodo_pago4: string;
-  metodo_pago5: string;
-  metodo_pago6: string;
 
   constructor(http: HttpClient) {
     this.sexShopService = new SexshopdatabaseService(http);
-    this.servientrega = '/assets/img/envios/servientrega_logo.png';
-    this.interRapidisimo = '/assets/img/envios/inter_logo.jpg';
+    this.mercadoPago = '/assets/img/seccion-pago/mercadoPago.png';
+    this.transferencia = '/assets/img/seccion-pago/Bancolombia-nequi.png'
     this.nombres = '';
     this.apellidos = '';
     this.email = '';
@@ -47,12 +41,6 @@ export class SeccionPagoComponent implements OnInit {
     this.estado = '';
     this.transportadora = '';
     this.metodoDePago = '';
-    this.metodo_pago1 = '/assets/img/paidMethod/metodo_pago1.png';
-    this.metodo_pago2 = '/assets/img/paidMethod/metodo_pago2.png';
-    this.metodo_pago3 = '/assets/img/paidMethod/metodo_pago3.png';
-    this.metodo_pago4 = '/assets/img/paidMethod/metodo_pago4.png';
-    this.metodo_pago5 = '/assets/img/paidMethod/metodo_pago5.png';
-    this.metodo_pago6 = '/assets/img/paidMethod/metodo_pago6.png';
   }
 
   ngOnInit(): void {

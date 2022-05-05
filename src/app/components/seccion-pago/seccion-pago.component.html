@@ -37,6 +37,7 @@
             id="direccion"
             autocomplete="off"
             placeholder="Cra 12 #64-158"
+            [ngModel]="direccion"
           />
         </div>
         <div class="form-group">
@@ -114,139 +115,147 @@
         Recuerda que todas tus transacciones son seguras. Escoge el metodo que
         mejor se adapte a tu necesidad.
       </p>
-    </div>
-    <div class="accordion col-md-7" id="accordionExample">
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingThree">
-          <button
-            class="accordion-button collapsed"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#collapseThree"
-            aria-expanded="false"
-            aria-controls="collapseThree"
+      <div class="accordion col-md-13" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseThree"
+              aria-expanded="false"
+              aria-controls="collapseThree"
+            >
+              Tarjeta de crédito, PSE, Efecty y Baloto
+              <img [src]="mercadoPago" class="card-img-center" alt="" />
+            </button>
+          </h2>
+          <div
+            id="collapseThree"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingThree"
+            data-bs-parent="#accordionExample"
           >
-            Tarjeta de crédito, PSE, Efecty y Baloto
-          </button>
-        </h2>
-        <div
-          id="collapseThree"
-          class="accordion-collapse collapse"
-          aria-labelledby="headingThree"
-          data-bs-parent="#accordionExample"
-        >
-          <div class="accordion-body">
-            <div class="row">
-              <div class="col-md-4">
-                <img [src]="metodo_pago2" class="card-img-center" alt="..." />
-              </div>
-              <div class="col-md-4">
-                <img [src]="metodo_pago4" class="card-img-center" alt="..." />
-              </div>
-              <div class="col-md-4">
-                <img [src]="metodo_pago5" class="card-img-center" alt="..." />
-              </div>
+            <div class="accordion-body">
+              <p>
+                Puedes pagar con tu tarjeta de crédito, débito o pagos en
+                efectivo. Manejamos los siguientes medios :
+              </p>
+              <ul>
+                <li>Visa</li>
+                <li>MasterCard</li>
+                <li>PSE</li>
+                <li>Efecty</li>
+                <li>Baloto</li>
+              </ul>
             </div>
-            <div class="row">
-              <div class="col-md-4">
-                <img [src]="metodo_pago1" class="card-img-center" alt="..." />
-              </div>
-              <div class="col-md-4">
-                <img [src]="metodo_pago3" class="card-img-center" alt="..." />
-              </div>
-              <div class="col-md-4">
-                <img [src]="metodo_pago6" class="card-img-center" alt="..." />
-              </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo"
+              aria-expanded="false"
+              aria-controls="collapseTwo"
+            >
+              Transferencia Bancaria y consignación
+              <img [src]="transferencia" class="card-img-banco" alt="" />
+            </button>
+          </h2>
+          <div
+            id="collapseTwo"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingTwo"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <p>
+                Realiza tu pago directamente en nuestra cuenta bancaria por
+                transferencia o consignación y envíanos el comprobante de pago a
+                nuestro WhatsApp.
+                <strong>recuerda :</strong> Tu pedido no se procesará hasta que
+                se haya recibido el importe en nuestra cuenta.
+              </p>
             </div>
           </div>
         </div>
       </div>
-
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingTwo">
-          <button
-            class="accordion-button collapsed"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#collapseTwo"
-            aria-expanded="false"
-            aria-controls="collapseTwo"
+      <br /><br />
+      <p class="title-section">¿CÓMO DESEAS PAGAR TU PEDIDO?</p>
+      <div class="metodo-pago">
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="inlineRadioOptions"
+            id="inlineRadio1"
+            value="option1"
+          />
+          <label class="form-check-label" for="inlineRadio1"
+            >Mercado Pago</label
           >
-            Transferencia Bancaria y consignación
-          </button>
-        </h2>
-        <div
-          id="collapseTwo"
-          class="accordion-collapse collapse"
-          aria-labelledby="headingTwo"
-          data-bs-parent="#accordionExample"
-        >
-          <div class="accordion-body">
-            <p>
-              Realiza tu pago directamente en nuestra cuenta bancaria por
-              transferencia o consignación y envíanos el comprobante de pago a
-              nuestro WhatsApp.
-              <strong>recuerda :</strong> Tu pedido no se procesará hasta que se
-              haya recibido el importe en nuestra cuenta.
-            </p>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="inlineRadioOptions"
+            id="inlineRadio2"
+            value="option2"
+          />
+          <label class="form-check-label" for="inlineRadio2"
+            >Transferencia bancaria</label
+          >
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="inlineRadioOptions"
+            id="inlineRadio2"
+            value="option2"
+          />
+          <label class="form-check-label" for="inlineRadio2"
+            >Pago contra entrega</label
+          >
+        </div>
+      </div>
+      <div class="vermas">
+        <button type="button" class="btn botonvermas">HACER PEDIDO</button>
+      </div>
+    </div>
+
+    <div class="col-md-5">
+      <div class="resumen-pago">
+        <p class="title-section">RESUMEN DE TU PEDIDO</p>
+        <div class="card border-dark mb-3 card-pedido">
+          <div class="card-header">
+            <p class="card-text col">No de Productos</p>
+            <p class="card-text col">1</p>
+          </div>
+          <div class="card-body text-dark">
+            <div class="row">
+              <p class="card-text col">Subtotal</p>
+              <p class="card-text col">90.000 $</p>
+            </div>
+            <div class="row">
+              <p class="card-text col">Costo Envío</p>
+              <p class="card-text col">11.000 $</p>
+            </div>
+          </div>
+          <div class="card-footer">
+            <div class="row">
+              <p class="card-text col">Total</p>
+              <h5 class="card-text col">101.000$</h5>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <br/><br/>
-    <p class="text-style" style="padding-top: 10px;">
-      ¿Cómo deseas pagar tu pedido?
-    </p>
-
-    <div class="form-check">
-      <input
-        class="form-check-input"
-        type="radio"
-        name="flexRadioDefault"
-        id="flexRadioDefault1"
-      />
-      <label class="form-check-label" for="flexRadioDefault1">
-        Tarjeta de crédito.
-      </label>
-    </div>
-    <div class="form-check">
-      <input
-        class="form-check-input"
-        type="radio"
-        name="flexRadioDefault"
-        id="flexRadioDefault2"
-        checked
-      />
-      <label class="form-check-label" for="flexRadioDefault2">
-        Tarjeta de Debito
-      </label>
-    </div>
-    <div class="form-check">
-      <input
-        class="form-check-input"
-        type="radio"
-        name="flexRadioDefault"
-        id="flexRadioDefault2"
-        checked
-      />
-      <label class="form-check-label" for="flexRadioDefault2">
-        Pago en efectivo
-      </label>
-    </div>
-    <div class="form-check">
-      <input
-        class="form-check-input"
-        type="radio"
-        name="flexRadioDefault"
-        id="flexRadioDefault2"
-        checked
-      />
-      <label class="form-check-label" for="flexRadioDefault2">
-        Transferencia.
-      </label>
-    </div>
-
-    <div class="col-md-5"></div>
   </div>
 </div>
 
