@@ -2,192 +2,100 @@
 <div style="padding-top: 130px">
   <div class="separatorSabiasQue">
     <ul class="nav nav-middle" style="background-color: #f992ad">
-      <p class="nav-links nav-middle-text">NUESTROS PRODUCTOS</p>
+      <p class="nav-links nav-middle-text">PRODUCTOS</p>
     </ul>
   </div>
 
-  <div class="row">
-    <!-- Menu Lateral -->
-    <div class="col-2 menuContainer" style="background-color: #f992ad">
-      <div class="optionsContainer">
-        <p>No se que va aca</p>
+  <div class="container-fluid">
+    <div class="row">
+      <!-- Menu Lateral -->
+      <div
+        class="col-2 menuContainer"
+        style="background-color: rgb(245, 245, 245)"
+      >
+        <div class="optionsContainer">
+          <p class="titleMenu">MENU</p>
 
-        <a class="options" href="/login"
-          ><div style="background-color: aquamarine" class="productDiv">
-            Producto 1
-          </div></a
-        >
-
-        <a class="options" href="/login"
-          ><div style="background-color: blue" class="productDiv">
-            Producto 2
-          </div></a
-        >
-
-        <a class="options" href="/login"
-          ><div style="background-color: bisque" class="productDiv">
-            Producto 3
-          </div></a
-        >
-
-        <a class="options" href="/login"
-          ><div style="background-color: brown" class="productDiv">
-            Producto 4
-          </div></a
-        >
-
-        <a class="options" href="/login"
-          ><div style="background-color: chartreuse" class="productDiv">
-            Producto 4
-          </div></a
-        >
-
-        <a class="options" href="/login"
-          ><div style="background-color: cornflowerblue" class="productDiv">
-            Producto 4
-          </div></a
-        >
+          <!-- Categorias -->
+          <p class="titleCategories">Categorias</p>
+          <a class="options" href="/login"
+            ><div class="productDiv">Para Mujeres</div></a
+          >
+          <a class="options" href="/login"
+            ><div class="productDiv">Para Hombres</div></a
+          >
+          <a class="options" href="/login"
+            ><div class="productDiv">Para Parejas</div></a
+          >
+          <a class="options" href="/login"
+            ><div class="productDiv">Unisex</div></a
+          >
+          <a class="options" href="/login"
+            ><div class="productDiv">Vibradores</div></a
+          >
+          <a class="options" href="/login"
+            ><div class="productDiv">Juegos</div></a
+          >
+          <a class="options" href="/login"
+            ><div class="productDiv">Lubricantes/Aceites</div></a
+          >
+          <a class="options" href="/login"
+            ><div class="productDiv">Lenceria</div></a
+          >
+          <a class="options" href="/login"
+            ><div class="productDiv">Otros</div></a
+          >
+          <a class="options" href="/login"
+            ><div class="productDiv">Ver Todos</div></a
+          >
+          <!-- Orden -->
+          <p class="titleCategories pt-2">Orden</p>
+          <a class="options" href="/login"
+            ><div class="productDiv">Ascendente</div></a
+          >
+          <a class="options" href="/login"
+            ><div class="productDiv">Descendente</div></a
+          >
+        </div>
       </div>
-    </div>
 
-    <!-- Productos -->
-    <div class="col" style="background-color: aqua">
-      <div class="row g-3 cardsContainer">
-        <!-- cARDS -->
-        <div class="col-sm col-md col-lg-3">
-          <div class="card">
-            <img [src]="prueba1" class="card-img-top" alt="product" />
-            <div class="card-body">
-              <p class="card-title titles">Audifonos Para mujer</p>
-              <p class="description">
-                Audifonos Multiproposito para mujeres, de color rosado. Estilo
-                Sorround De Alta Calidad
-              </p>
-              <p class="price">$360</p>
-              <div class="buttonZone">
-                <button type="button" class="btn buttonProduct" href="productos">
-                  Añadir al carrito
-                </button>
-                <button type="button" class="btn buttonProduct" href="productos">
-                  Vista
-                </button>
+      <!-- Productos -->
+      <div class="col">
+        <div class="row cardsContainer g-3">
+          <div
+            class="col-sm col-md col-lg-3"
+            *ngFor="let productos of listaProductos; let i = index"
+          >
+            <!-- CARDS -->
+            <div class="card cardSize">
+              <img [src]="prueba1" class="card-img-top" alt="product" />
+              <p class="card-title titles">{{ productos.nombreProducto }}</p>
+
+              <div class="card-body">
+                <p class="description">
+                  {{ productos.descripcion }}
+                </p>
+                <p class="price">${{ productos.precio }}</p>
+                <div class="buttonZone">
+                  <button
+                    type="button"
+                    class="btn buttonProduct"
+                    href="productos"
+                  >
+                    Añadir al carrito
+                  </button>
+                  <button
+                    type="button"
+                    class="btn buttonProduct"
+                    href="productos"
+                  >
+                    Vista
+                  </button>
+                </div>
               </div>
             </div>
           </div>
         </div>
-
-        <div class="col-sm col-md col-lg-3">
-          <div class="card">
-            <img [src]="prueba1" class="card-img-top" alt="product" />
-            <div class="card-body">
-              <p class="card-title titles">Audifonos Para mujer</p>
-              <p class="description">
-                Audifonos Multiproposito para mujeres, de color rosado. Estilo
-                Sorround De Alta Calidad
-              </p>
-              <p class="price">$360</p>
-              <div class="buttonZone">
-                <button type="button" class="btn buttonProduct" href="productos">
-                  Añadir al carrito
-                </button>
-                <button type="button" class="btn buttonProduct" href="productos">
-                  Vista
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm col-md col-lg-3">
-          <div class="card">
-            <img [src]="prueba1" class="card-img-top" alt="product" />
-            <div class="card-body">
-              <p class="card-title titles">Audifonos Para mujer</p>
-              <p class="description">
-                Audifonos Multiproposito para mujeres, de color rosado. Estilo
-                Sorround De Alta Calidad
-              </p>
-              <p class="price">$360</p>
-              <div class="buttonZone">
-                <button type="button" class="btn buttonProduct" href="productos">
-                  Añadir al carrito
-                </button>
-                <button type="button" class="btn buttonProduct" href="productos">
-                  Vista
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm col-md col-lg-3">
-          <div class="card">
-            <img [src]="prueba1" class="card-img-top" alt="product" />
-            <div class="card-body">
-              <p class="card-title titles">Audifonos Para mujer</p>
-              <p class="description">
-                Audifonos Multiproposito para mujeres, de color rosado. Estilo
-                Sorround De Alta Calidad
-              </p>
-              <p class="price">$360</p>
-              <div class="buttonZone">
-                <button type="button" class="btn buttonProduct" href="productos">
-                  Añadir al carrito
-                </button>
-                <button type="button" class="btn buttonProduct" href="productos">
-                  Vista
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm col-md col-lg-3">
-          <div class="card">
-            <img [src]="prueba1" class="card-img-top" alt="product" />
-            <div class="card-body">
-              <p class="card-title titles">Audifonos Para mujer</p>
-              <p class="description">
-                Audifonos Multiproposito para mujeres, de color rosado. Estilo
-                Sorround De Alta Calidad
-              </p>
-              <p class="price">$360</p>
-              <div class="buttonZone">
-                <button type="button" class="btn buttonProduct" href="productos">
-                  Añadir al carrito
-                </button>
-                <button type="button" class="btn buttonProduct" href="productos">
-                  Vista
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm col-md col-lg-3">
-          <div class="card">
-            <img [src]="prueba1" class="card-img-top" alt="product" />
-            <div class="card-body">
-              <p class="card-title titles">Audifonos Para mujer</p>
-              <p class="description">
-                Audifonos Multiproposito para mujeres, de color rosado. Estilo
-                Sorround De Alta Calidad
-              </p>
-              <p class="price">$360</p>
-              <div class="buttonZone">
-                <button type="button" class="btn buttonProduct" href="productos">
-                  Añadir al carrito
-                </button>
-                <button type="button" class="btn buttonProduct" href="productos">
-                  Vista
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-
       </div>
     </div>
   </div>

@@ -9,8 +9,8 @@ import { HttpClient } from '@angular/common/http';
 })
 export class SeccionPagoComponent implements OnInit {
   title = 'zoo';
-  mercadoPago: String;
-  transferencia: String;
+  imgMercadoPago: String;
+  imgTransferencia: String;
   sexShopService: SexshopdatabaseService;
   nombres: String;
   apellidos: String;
@@ -23,12 +23,15 @@ export class SeccionPagoComponent implements OnInit {
   telefono: String;
   estado: String;
   transportadora: String;
-  metodoDePago: String;
+  mercadoPago: String;
+  transferencia: String;
+  contraEntrega: String;
+  
 
   constructor(http: HttpClient) {
     this.sexShopService = new SexshopdatabaseService(http);
-    this.mercadoPago = '/assets/img/seccion-pago/mercadoPago.png';
-    this.transferencia = '/assets/img/seccion-pago/Bancolombia-nequi.png'
+    this.imgMercadoPago = '/assets/img/seccion-pago/mercadoPago.png';
+    this.imgTransferencia = '/assets/img/seccion-pago/Bancolombia-nequi.png'
     this.nombres = '';
     this.apellidos = '';
     this.email = '';
@@ -40,7 +43,9 @@ export class SeccionPagoComponent implements OnInit {
     this.telefono = '';
     this.estado = '';
     this.transportadora = '';
-    this.metodoDePago = '';
+    this.mercadoPago = '';
+    this.transferencia = '';
+    this.contraEntrega = '';
   }
 
   ngOnInit(): void {

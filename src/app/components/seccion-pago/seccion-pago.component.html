@@ -17,16 +17,34 @@
       <form>
         <div class="form-group">
           <label for="correo">Correo</label>
-          <input type="text" class="form-control" id="correo" />
+          <input
+            type="text"
+            class="form-control"
+            id="correo"
+            name="correo"
+            [(ngModel)]="email"
+          />
         </div>
         <div class="form-row">
           <div class="form-group col-md-6">
             <label for="nombres">Nombres</label>
-            <input type="text" class="form-control" id="nombres" />
+            <input
+              type="text"
+              class="form-control"
+              id="nombres"
+              name="nombres"
+              [(ngModel)]="nombres"
+            />
           </div>
           <div class="form-group col-md-6">
             <label for="apellidos">Apellidos</label>
-            <input type="text" class="form-control" id="apellidos" />
+            <input
+              type="text"
+              class="form-control"
+              id="apellidos"
+              name="apellidos"
+              [(ngModel)]="apellidos"
+            />
           </div>
         </div>
         <div class="form-group">
@@ -37,6 +55,7 @@
             id="direccion"
             autocomplete="off"
             placeholder="Cra 12 #64-158"
+            name="direccion"
             [ngModel]="direccion"
           />
         </div>
@@ -47,6 +66,8 @@
             class="form-control"
             id="direccion2"
             placeholder="Apartmento, piso, unidad, etc."
+            name="direccion2"
+            [(ngModel)]="direccion2"
           />
         </div>
         <div class="form-row">
@@ -55,6 +76,7 @@
             <select
               id="departamento"
               class="form-control"
+              name="departamento"
               [(ngModel)]="departamento"
             >
               <option selected>Elige un Departamento...</option>
@@ -70,14 +92,22 @@
             <input
               type="text"
               class="form-control"
+              name="ciudad"
               id="ciudad"
               autocomplete="off"
+              [(ngModel)]="ciudad"
             />
           </div>
 
           <div class="form-group col-md-3">
             <label for="cPostal">Codigo Postal</label>
-            <input type="text" class="form-control" id="cPostal" />
+            <input
+              type="text"
+              class="form-control"
+              id="cPostal"
+              name="cPostal"
+              [(ngModel)]="codigoPostal"
+            />
           </div>
         </div>
         <div class="form-group">
@@ -85,8 +115,10 @@
           <input
             type="text"
             class="form-control"
+            name="telefono"
             id="telefono"
             autocomplete="off"
+            [(ngModel)]="telefono"
           />
         </div>
       </form>
@@ -102,6 +134,7 @@
         <select
           id="departamento"
           class="form-control"
+          name="transportadora"
           [(ngModel)]="transportadora"
         >
           <option selected disabled>Elige una transportadora...</option>
@@ -127,7 +160,7 @@
               aria-controls="collapseThree"
             >
               Tarjeta de crédito, PSE, Efecty y Baloto
-              <img [src]="mercadoPago" class="card-img-center" alt="" />
+              <img [src]="imgMercadoPago" class="card-img-center" alt="" />
             </button>
           </h2>
           <div
@@ -163,7 +196,7 @@
               aria-controls="collapseTwo"
             >
               Transferencia Bancaria y consignación
-              <img [src]="transferencia" class="card-img-banco" alt="" />
+              <img [src]="imgTransferencia" class="card-img-banco" alt="" />
             </button>
           </h2>
           <div
@@ -192,8 +225,10 @@
             class="form-check-input"
             type="radio"
             name="inlineRadioOptions"
-            id="inlineRadio1"
-            value="option1"
+            name="mercadoPago"
+            id="mercadoPago"
+            value="mercadoPago"
+            [(ngModel)]="mercadoPago"
           />
           <label class="form-check-label" for="inlineRadio1"
             >Mercado Pago</label
@@ -203,9 +238,10 @@
           <input
             class="form-check-input"
             type="radio"
-            name="inlineRadioOptions"
-            id="inlineRadio2"
-            value="option2"
+            name="transferencia"
+            id="transferencia"
+            value="transferencia"
+            [(ngModel)]="transferencia"
           />
           <label class="form-check-label" for="inlineRadio2"
             >Transferencia bancaria</label
@@ -215,9 +251,10 @@
           <input
             class="form-check-input"
             type="radio"
-            name="inlineRadioOptions"
-            id="inlineRadio2"
-            value="option2"
+            name="contraEntrega"
+            id="contraEntrega"
+            value="contraEntrega"
+            [(ngModel)]="contraEntrega"
           />
           <label class="form-check-label" for="inlineRadio2"
             >Pago contra entrega</label
@@ -243,8 +280,16 @@
               <p class="card-text col">90.000 $</p>
             </div>
             <div class="row">
+              <p class="card-text col">Transportadora</p>
+              <p class="card-text col">Servientrega</p>
+            </div>
+            <div class="row">
               <p class="card-text col">Costo Envío</p>
               <p class="card-text col">11.000 $</p>
+            </div>
+            <div class="row">
+              <p class="card-text col">Metodo de Pago</p>
+              <p class="card-text col">Transferencia</p>
             </div>
           </div>
           <div class="card-footer">
