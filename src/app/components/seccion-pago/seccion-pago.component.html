@@ -22,6 +22,7 @@
             class="form-control"
             id="correo"
             name="correo"
+            autocomplete="off"
             [(ngModel)]="email"
           />
         </div>
@@ -31,8 +32,9 @@
             <input
               type="text"
               class="form-control"
-              id="nombres"
+              id="Idnombres"
               name="nombres"
+              autocomplete="off"
               [(ngModel)]="nombres"
             />
           </div>
@@ -43,22 +45,24 @@
               class="form-control"
               id="apellidos"
               name="apellidos"
+              autocomplete="off"
               [(ngModel)]="apellidos"
             />
           </div>
         </div>
         <div class="form-group">
-          <label for="direccion">Dirección</label>
+          <label for="direccion1">Dirección 1</label>
           <input
             type="text"
             class="form-control"
-            id="direccion"
-            autocomplete="off"
+            id="direccion1"
             placeholder="Cra 12 #64-158"
-            name="direccion"
-            [ngModel]="direccion"
+            name="direccion1"
+            autocomplete="off"
+            [(ngModel)]="direccion"
           />
         </div>
+
         <div class="form-group">
           <label for="direccion2">Dirección 2 (Opcional)</label>
           <input
@@ -67,6 +71,7 @@
             id="direccion2"
             placeholder="Apartmento, piso, unidad, etc."
             name="direccion2"
+            autocomplete="off"
             [(ngModel)]="direccion2"
           />
         </div>
@@ -79,7 +84,7 @@
               name="departamento"
               [(ngModel)]="departamento"
             >
-              <option selected>Elige un Departamento...</option>
+              <option selected disabled>Elige un Departamento...</option>
               <option>Tolima</option>
               <option>Caldas</option>
               <option>Antioquia</option>
@@ -138,8 +143,8 @@
           [(ngModel)]="transportadora"
         >
           <option selected disabled>Elige una transportadora...</option>
-          <option>Servientrega 11.000 $</option>
-          <option>Interapidisimo 13.000 $</option>
+          <option>Servientrega</option>
+          <option>Interapidisimo</option>
         </select>
       </div>
 
@@ -225,10 +230,8 @@
             class="form-check-input"
             type="radio"
             name="inlineRadioOptions"
-            name="mercadoPago"
-            id="mercadoPago"
-            value="mercadoPago"
-            [(ngModel)]="mercadoPago"
+            id="inlineRadio1"
+            value="option1"
           />
           <label class="form-check-label" for="inlineRadio1"
             >Mercado Pago</label
@@ -238,31 +241,31 @@
           <input
             class="form-check-input"
             type="radio"
-            name="transferencia"
-            id="transferencia"
-            value="transferencia"
-            [(ngModel)]="transferencia"
+            name="inlineRadioOptions"
+            id="inlineRadio2"
+            value="option2"
           />
           <label class="form-check-label" for="inlineRadio2"
-            >Transferencia bancaria</label
+            >Transferencia</label
           >
         </div>
         <div class="form-check form-check-inline">
           <input
             class="form-check-input"
             type="radio"
-            name="contraEntrega"
-            id="contraEntrega"
-            value="contraEntrega"
-            [(ngModel)]="contraEntrega"
+            name="inlineRadioOptions"
+            id="inlineRadio3"
+            value="option3"
           />
-          <label class="form-check-label" for="inlineRadio2"
-            >Pago contra entrega</label
+          <label class="form-check-label" for="inlineRadio3"
+            >Contra Entrega</label
           >
         </div>
       </div>
       <div class="vermas">
-        <button type="button" class="btn botonvermas">HACER PEDIDO</button>
+        <button type="button" class="btn botonvermas" (click)="hacerPedido()">
+          HACER PEDIDO
+        </button>
       </div>
     </div>
 
@@ -270,32 +273,64 @@
       <div class="resumen-pago">
         <p class="title-section">RESUMEN DE TU PEDIDO</p>
         <div class="card border-dark mb-3 card-pedido">
-          <div class="card-header">
-            <p class="card-text col">No de Productos</p>
-            <p class="card-text col">1</p>
-          </div>
+          <div class="card-header"></div>
           <div class="card-body text-dark">
             <div class="row">
+              <p class="card-text col">No de Productos</p>
+              <input
+                class="card-text col input-resumen"
+                name="total"
+                [(ngModel)]="numeroArticulos"
+                disabled
+              />
+            </div>
+
+            <div class="row">
               <p class="card-text col">Subtotal</p>
-              <p class="card-text col">90.000 $</p>
+              <input
+                class="card-text col input-resumen"
+                name="total"
+                [(ngModel)]="subtotal"
+                disabled
+              />
             </div>
             <div class="row">
               <p class="card-text col">Transportadora</p>
-              <p class="card-text col">Servientrega</p>
+              <input
+                class="card-text col input-resumen"
+                name="total"
+                [(ngModel)]="transportadora"
+                disabled
+              />
             </div>
             <div class="row">
               <p class="card-text col">Costo Envío</p>
-              <p class="card-text col">11.000 $</p>
+              <input
+                class="card-text col input-resumen"
+                name="total"
+                [(ngModel)]="costoEnvio"
+                disabled
+              />
             </div>
             <div class="row">
               <p class="card-text col">Metodo de Pago</p>
-              <p class="card-text col">Transferencia</p>
+              <input
+                class="card-text col input-resumen"
+                name="total"
+                [(ngModel)]="metodoDePago"
+                disabled
+              />
             </div>
           </div>
           <div class="card-footer">
             <div class="row">
               <p class="card-text col">Total</p>
-              <h5 class="card-text col">101.000$</h5>
+              <input
+                class="card-text col input-resumen"
+                name="total"
+                [(ngModel)]="total"
+                disabled
+              />
             </div>
           </div>
         </div>

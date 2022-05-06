@@ -82,7 +82,13 @@
   display: grid;
   justify-content: center;
 }
-.card-pedido{
+.card-pedido {
   width: 25vw;
   background-color: #fbbcee;
+}
+.input-resumen {
+  background-color: #fbbcee;
+  border-style: dashed;
+  height: 30px;
+  align-content: center;
 }

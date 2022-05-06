@@ -22,14 +22,20 @@
         type="text"
         class="form-control mb-4"
         placeholder="Nombre"
-        id="nombre"
+        name="nombre"
+        autocomplete="off"
+        id="iDnombre"
+        [(ngModel)]="nombre"
       />
 
       <input
         type="email"
         class="form-control mb-4"
         placeholder="Correo"
-        id="email"
+        name="correo"
+        id="iDemail"
+        autocomplete="off"
+        [(ngModel)]="correo"
        
       />
       <div class="form-group">
@@ -38,6 +44,9 @@
           id="mensaje"
           rows="3"
           placeholder="Mensaje"
+          name="mensaje"
+          autocomplete="off"
+          [(ngModel)]="mensaje"
         ></textarea>
       </div>
 

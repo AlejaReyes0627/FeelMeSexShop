@@ -9,9 +9,9 @@ import Swal from 'sweetalert2';
 export class ContactoComponent implements OnInit {
   whatsappIcon: string;
   gmailIcon: string;
-  nombre: string;
-  correo: string;
-  mensaje: string;
+  nombre: String;
+  correo: String;
+  mensaje: String;
 
   constructor() {
     this.whatsappIcon = '/assets/img/icons/whatsappIcon.png';
@@ -23,6 +23,29 @@ export class ContactoComponent implements OnInit {
 
   ngOnInit(): void {}
   enviarMensaje() {
+    if (this.correo == '' || this.nombre == '' || this.mensaje == '') {
+      Swal.fire({
+        title: 'Error',
+        text: 'Debe digitar todos lo campos !',
+        icon: 'warning',
+        confirmButtonText: 'Ok',
+      });
+
+      return;
+    }
+    if (
+      this.correo.includes('@') == false ||
+      this.correo.includes('.') == false
+    ) {
+      Swal.fire({
+        title: 'Error',
+        text: 'Ingrese una cuenta de correo válida',
+        icon: 'warning',
+        confirmButtonText: 'Ok',
+      });
+
+      return;
+    }
 
     Swal.fire({
       title: 'Gracias por tu comentario !',
@@ -30,7 +53,8 @@ export class ContactoComponent implements OnInit {
       icon: 'success',
       confirmButtonText: 'Ok',
     });
-    
-
+    this.nombre = '';
+    this.correo = '';
+    this.mensaje = '';
   }
 }
