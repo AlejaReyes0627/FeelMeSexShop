@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 import { SexshopdatabaseService } from 'src/app/sexshopdatabase.service';
+
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
@@ -19,6 +20,7 @@ export class NavbarComponent implements OnInit {
     this.SloganFeelMe = '/assets/img/logo2.png';
     this.iconcarrito = '/assets/img/icons/carrito.ico';
     this.iconUser = '/assets/img/icons/user.png';
+    
   }
 
   ngOnInit(): void {}

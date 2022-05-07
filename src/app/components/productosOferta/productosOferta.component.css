@@ -1,4 +1,5 @@
 .seccion {
+  padding-bottom: 20px;
 }
 
 .container /*selector por clase o por etiqueta*/ {
@@ -40,30 +41,6 @@
   font-size: 11px;
 }
 
-.boton1 {
-  background-color: #F992AD;
-  color: white;
-  margin-right: 5px;
-  text-shadow: 2px -2px 1px rgba(0, 0, 0, 0.301);
-}
-
-.boton1:hover {
-  color: white;
-  background-color: #FBBCEE;
-}
-
-.boton2 {
-  background-color: #A480F2;
-  color: white;
-  margin-left: 5px;
-  text-shadow: 2px -2px 1px rgba(0, 0, 0, 0.301);
-}
-
-.boton2:hover {
-  background-color: #CFB9F7;
-  color: white;
-}
-
 .vermas {
   width: 100%;
   display: flex;
@@ -85,24 +62,68 @@
   text-shadow: 2px -2px 1px rgba(0, 0, 0, 0.35);
 }
 
-.cardsSlider{
-padding: 0 130px 0 130px;
+
+/* Cards */
+
+.card-group{
+  padding: 0 60px;
 }
 
-.containerImg {
-}
-.imgProduct {
-  max-width: 350px;
+.cardsContainer {
   justify-content: center;
 }
 
-.cardProduct {
-  /* padding: 0 45px 0 45px; */
+.cardSize {
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  height: 500px;
 }
 
-.buttonZone{
-	width: 100%;
-	display: flex;
-	justify-content: center
+.titles {
+  font-size: 18px;
+  font-weight: 600;
 }
 
+.description {
+  text-align: justify;
+  font-size: 12px;
+}
+
+.price {
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.card-footer {
+  background-color: white;
+  text-decoration: none;
+  border: none;
+  padding-bottom: 10px;
+}
+
+.buttonZone {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  align-self: flex-end;
+}
+
+.buttonProduct {
+  background-color: #f992ad;
+  color: white;
+  margin-right: 5px;
+  text-shadow: 2px -2px 1px rgba(0, 0, 0, 0.301);
+  text-align: center;
+  width: 10vw;
+  font-size: 1vw;
+}
+
+img {
+  max-width: 180px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}

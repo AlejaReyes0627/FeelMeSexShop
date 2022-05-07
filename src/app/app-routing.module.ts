@@ -22,7 +22,6 @@ import { SeccionPagoComponent } from './components/seccion-pago/seccion-pago.com
 
 const routes: Routes = [
   { path: '', component: EntryPageComponent },
-  { path: 'productos', component: ProductosComponent  },
   { path: 'inicio', component: MenuComponent },
   { path: 'entrada', component: EntryPageComponent},
   { path: 'productos', component: ProductosComponent },

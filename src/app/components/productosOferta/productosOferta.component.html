@@ -1,7 +1,6 @@
 <app-navbar></app-navbar>
 
 <section class="seccion">
-
   <ul class="nav nav-tabs nav-middle">
     <p class="nav-links nav-middle-text">PRODUTOS EN OFERTA</p>
   </ul>
@@ -13,167 +12,85 @@
   >
     <div class="carousel-inner cardsSlider">
       <!-- Producto 1 -->
-      <div class="carousel-item active" data-bs-interval="10000">
+      <div class="carousel-item active" data-bs-interval="4000">
         <div class="card-group">
-          <!-- Subproducto 1 -->
+          <!-- CardProduct -->
+          <div class="row cardsContainer g-2">
+            <div
+              class="col-sm col-md col-lg-3"
+              *ngFor="let productos of listaProductosVibradores; let i = index"
+            >
+              <!-- CARDS -->
+              <div class="card cardSize">
+                <img [src]="prueba1" class="card-img-top" alt="product" />
+                <p class="card-title titles">{{ productos.nombreProducto }}</p>
 
-          <div class="card cardProduct">
-            <img [src]="prueba1" class="containerImg" />
-
-            <div class="card-body">
-              <h5 class="card-title titulos">Audifonos Para mujer</h5>
-              <h6 class="categoria">Categoría</h6>
-              <p>$360</p>
-              <div class="buttonZone">
-                <button type="button" class="btn btn-lg boton1" href="productos">
-                  Añadir al carrito
-                </button>
-                <button type="button" class="btn btn-lg boton2" href="productos">Vista</button>
+                <div class="card-body">
+                  <p class="description">
+                    {{ productos.descripcion }}
+                  </p>
+                  <p class="price">${{ productos.precio }}</p>
+                </div>
+                <div class="card-footer">
+                  <div class="buttonZone">
+                    <button
+                      type="button"
+                      class="btn buttonProduct"
+                      href="productos"
+                    >
+                      Añadir al carrito
+                    </button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-
-          <!-- Subproducto 2 -->
-          <div class="card cardProduct">
-            <img [src]="prueba1" class="containerImg" />
-
-            <div class="card-body">
-              <h5 class="card-title titulos">Audifonos Para mujer</h5>
-              <h6 class="categoria">Categoría</h6>
-              <p>$360</p>
-              <div class="buttonZone">
-                <button type="button" class="btn btn-lg boton1" href="productos">
-                  Añadir al carrito
-                </button>
-                <button type="button" class="btn btn-lg boton2" href="productos">Vista</button>
-              </div>
-            </div>
-          </div>
-
-          <!-- Subproducto 3 -->
-          <div class="card cardProduct">
-            <img [src]="prueba1" class="containerImg" />
-
-            <div class="card-body">
-              <h5 class="card-title titulos">Audifonos Para mujer</h5>
-              <h6 class="categoria">Categoría</h6>
-              <p>$360</p>
-              <div class="buttonZone">
-                <button type="button" class="btn btn-lg boton1" href="productos">
-                  Añadir al carrito
-                </button>
-                <button type="button" class="btn btn-lg boton2" href="productos">Vista</button>
-              </div>
-            </div>
-          </div>
+          <!-- Card Product -->
         </div>
+        <!-- Card Group -->
       </div>
+      <!-- Slider 1 -->
 
       <!-- Producto2 -->
-      <div class="carousel-item" data-bs-interval="2000">
+      <div class="carousel-item sliderProduct" data-bs-interval="4000">
+        <!-- Card Grourp -->
         <div class="card-group">
-          <!-- Subproducto 1 -->
-          <div class="card">
-            <img [src]="prueba1" class="containerImg" />
-            <div class="card-body">
-              <h5 class="card-title titulos">Producto 2.1</h5>
-              <h6 class="categoria">Categoría</h6>
-              <p>$360</p>
-              <div class="buttonZone">
-                <button type="button" class="btn btn-lg boton1" href="productos">
-                  Añadir al carrito
-                </button>
-                <button type="button" class="btn btn-lg boton2" href="productos">Vista</button>
-              </div>
-            </div>
-          </div>
+          <!-- CardProduct -->
+          <div class="row cardsContainer g-2">
+            <div
+              class="col-sm col-md col-lg-3"
+              *ngFor="let productos of listaProductosLenceria; let i = index"
+            >
+              <!-- CARDS -->
+              <div class="card cardSize">
+                <img [src]="prueba1" class="card-img-top" alt="product" />
+                <p class="card-title titles">{{ productos.nombreProducto }}</p>
 
-          <!-- Subproducto 2 -->
-          <div class="card">
-            <img [src]="prueba1" class="containerImg" />
-            <div class="card-body">
-              <h5 class="card-title titulos">Producto 2.2</h5>
-              <h6 class="categoria">Categoría</h6>
-              <p>$360</p>
-              <div class="buttonZone">
-                <button type="button" class="btn btn-lg boton1" href="productos">
-                  Añadir al carrito
-                </button>
-                <button type="button" class="btn btn-lg boton2" href="productos">Vista</button>
+                <div class="card-body">
+                  <p class="description">
+                    {{ productos.descripcion }}
+                  </p>
+                  <p class="price">${{ productos.precio }}</p>
+                </div>
+                <div class="card-footer">
+                  <div class="buttonZone">
+                    <button
+                      type="button"
+                      class="btn buttonProduct"
+                      href="productos"
+                    >
+                      Añadir al carrito
+                    </button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-
-          <!-- Subproducto 3 -->
-          <div class="card">
-            <img [src]="prueba1" class="containerImg" />
-            <div class="card-body">
-              <h5 class="card-title titulos">Producto 2.3</h5>
-              <h6 class="categoria">Categoría</h6>
-              <p>$360</p>
-              <div class="buttonZone">
-                <button type="button" class="btn btn-lg boton1" href="productos">
-                  Añadir al carrito
-                </button>
-                <button type="button" class="btn btn-lg boton2" href="productos">Vista</button>
-              </div>
-            </div>
-          </div>
+          <!-- Card Product -->
         </div>
+        <!-- Card Group 2 -->
       </div>
-
-      <!-- Producto 3 -->
-      <div class="carousel-item">
-        <div class="card-group">
-          <!-- Subproducto 1 -->
-          <div class="card">
-            <img [src]="prueba1" class="containerImg" />
-            <div class="card-body">
-              <h5 class="card-title titulos">Producto 3.1</h5>
-              <h6 class="categoria">Categoría</h6>
-              <p>$360</p>
-              <div class="buttonZone">
-                <button type="button" class="btn btn-lg boton1" href="productos">
-                  Añadir al carrito
-                </button>
-                <button type="button" class="btn btn-lg boton2" href="productos">Vista</button>
-              </div>
-            </div>
-          </div>
-
-          <!-- Subproducto 2 -->
-          <div class="card">
-            <img [src]="prueba1" class="containerImg" />
-            <div class="card-body">
-              <h5 class="card-title titulos">Producto 3.2</h5>
-              <h6 class="categoria">Categoría</h6>
-              <p>$360</p>
-              <div class="buttonZone">
-                <button type="button" class="btn btn-lg boton1" href="productos">
-                  Añadir al carrito
-                </button>
-                <button type="button" class="btn btn-lg boton2" href="productos">Vista</button>
-              </div>
-            </div>
-          </div>
-
-          <!-- Subproducto 3 -->
-          <div class="card">
-            <img [src]="prueba1" class="containerImg" />
-            <div class="card-body">
-              <h5 class="card-title titulos">Producto 3.3</h5>
-              <h6 class="categoria">Categoría</h6>
-              <p>$360</p>
-              <div class="buttonZone">
-                <button type="button" class="btn btn-lg boton1" href="productos">
-                  Añadir al carrito
-                </button>
-                <button type="button" class="btn btn-lg boton2" href="productos">Vista</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <!-- Slider 2 -->
     </div>
     <button
       class="carousel-control-prev"
@@ -198,8 +115,6 @@
 
   <!-- Boton Ver Mas -->
   <section class="vermas">
-    <button type="button" class="btn botonvermas" href="productos">
-      Ver Más
-    </button>
+    <a type="submit" class="btn botonvermas" href="/productos"> Ver Más </a>
   </section>
 </section>

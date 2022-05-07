@@ -37,7 +37,7 @@ export class ProductosComponent implements OnInit {
     this.mostrarProductos();
   }
 
-  mostrarProductos() {
+  public mostrarProductos() {
     var tipo = 'select';
     var sql = 'SELECT * FROM producto';
 
@@ -52,7 +52,7 @@ export class ProductosComponent implements OnInit {
     });
   }
 
-  mostrarProductosMujeres() {
+  public mostrarProductosMujeres() {
     var tipo = 'select';
     var sql = 'SELECT * FROM producto WHERE idCategoria =3';
 
@@ -66,7 +66,7 @@ export class ProductosComponent implements OnInit {
       }
     });
   }
-  mostrarProductosHombres() {
+  public mostrarProductosHombres() {
     var tipo = 'select';
     var sql = 'SELECT * FROM producto WHERE idCategoria =2';
 
@@ -80,7 +80,7 @@ export class ProductosComponent implements OnInit {
       }
     });
   }
-  mostrarProductosParejas() {
+  public mostrarProductosParejas() {
     var tipo = 'select';
     var sql = 'SELECT * FROM producto WHERE idCategoria =9';
 
@@ -94,7 +94,7 @@ export class ProductosComponent implements OnInit {
       }
     });
   }
-  mostrarProductosUnisex() {
+  public  mostrarProductosUnisex() {
     var tipo = 'select';
     var sql = 'SELECT * FROM producto WHERE idCategoria =1';
 
@@ -108,7 +108,7 @@ export class ProductosComponent implements OnInit {
       }
     });
   }
-  mostrarProductosVibradores() {
+  public mostrarProductosVibradores() {
     var tipo = 'select';
     var sql = 'SELECT * FROM producto WHERE idCategoria =4';
 
@@ -122,7 +122,7 @@ export class ProductosComponent implements OnInit {
       }
     });
   }
-  mostrarProductosJuegos() {
+  public mostrarProductosJuegos() {
     var tipo = 'select';
     var sql = 'SELECT * FROM producto WHERE idCategoria =5';
 
@@ -136,7 +136,7 @@ export class ProductosComponent implements OnInit {
       }
     });
   }
-  mostrarProductosLenceria() {
+  public mostrarProductosLenceria() {
     var tipo = 'select';
     var sql = 'SELECT * FROM producto WHERE idCategoria =6';
 
@@ -150,7 +150,7 @@ export class ProductosComponent implements OnInit {
       }
     });
   }
-  mostrarProductosLubricantes() {
+  public mostrarProductosLubricantes() {
     var tipo = 'select';
     var sql = 'SELECT * FROM producto WHERE idCategoria =7';
 
@@ -164,7 +164,7 @@ export class ProductosComponent implements OnInit {
       }
     });
   }
-  mostrarProductosOtros() {
+  public mostrarProductosOtros() {
     var tipo = 'select';
     var sql = 'SELECT * FROM producto WHERE idCategoria =8';
 
@@ -178,7 +178,7 @@ export class ProductosComponent implements OnInit {
       }
     });
   }
-  mostrarProductosAscendente() {
+  public mostrarProductosAscendente() {
     var tipo = 'select';
     var sql = 'SELECT * FROM producto ORDER BY precio;';
 
@@ -192,7 +192,7 @@ export class ProductosComponent implements OnInit {
       }
     });
   }
-  mostrarProductosDescendente() {
+  public mostrarProductosDescendente() {
     var tipo = 'select';
     var sql = 'SELECT * FROM producto ORDER BY precio DESC;';
 

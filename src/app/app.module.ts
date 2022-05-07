@@ -10,7 +10,6 @@ import { MenuComponent } from './components/menu/menu.component';
 import { ProductosComponent } from './components/productos/productos.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { ProductosOfertaComponent } from './components/productosOferta/productosOferta.component';
-import { ProductosTopComponent } from './components/productosTop/productosTop.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { PreguntasFrecuentesComponent } from './components/preguntas-frecuentes/preguntas-frecuentes.component';
 import { EnviosComponent } from './components/envios/envios.component';
@@ -34,7 +33,6 @@ import { SeccionPagoComponent } from './components/seccion-pago/seccion-pago.com
     ProductosComponent,
     NavbarComponent,
     ProductosOfertaComponent,
-    ProductosTopComponent,
     FooterComponent,
     PreguntasFrecuentesComponent,
     EnviosComponent,
