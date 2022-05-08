@@ -84,11 +84,32 @@
 }
 .card-pedido {
   width: 25vw;
-  background-color: #fbbcee;
 }
 .input-resumen {
-  background-color: #fbbcee;
   border-style: dashed;
   height: 30px;
   align-content: center;
 }
+
+.seccionElementos
+{
+  width: 20rem;
+  text-align:center;
+  padding-left: 15%;
+}
+
+.botonCarrito{
+  background-color: #f78ecf;
+}
+
+.botonCarrito:hover
+{
+  background-color: #fbbcee;
+  color: white;
+}
+
+.botonCarrito2
+{
+  background-color: #E0CEFD;
+}
+

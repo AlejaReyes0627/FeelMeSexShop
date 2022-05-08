@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { SexshopdatabaseService } from 'src/app/sexshopdatabase.service';
 import { HttpClient } from '@angular/common/http';
 import Swal from 'sweetalert2';
+import { ProductosComponent } from '../productos/productos.component';
+import * as bootstrap from 'bootstrap';
 
 @Component({
   selector: 'app-seccion-pago',
@@ -30,12 +32,13 @@ export class SeccionPagoComponent implements OnInit {
   metodoDePago: String;
   total: number;
   idPersonaPedido: number;
+  loading: boolean = false;
 
   constructor(http: HttpClient) {
     this.sexShopService = new SexshopdatabaseService(http);
     this.imgMercadoPago = '/assets/img/seccion-pago/mercadoPago.png';
     this.imgTransferencia = '/assets/img/seccion-pago/Bancolombia-nequi.png';
-    this.nombres = '';
+    this.nombres = "";
     this.apellidos = '';
     this.email = '';
     this.direccion = '';
@@ -48,11 +51,14 @@ export class SeccionPagoComponent implements OnInit {
     this.transportadora = '-';
     this.numeroArticulos = 0;
     this.subtotal = 0;
-    this.costoEnvio = 0.0;
+    this.costoEnvio = 0;
     this.metodoDePago = '-';
-    this.total = 0.0;
+    this.total = 0;
     this.idPersonaPedido = 0;
+
   }
+
+  public listaProductos: Array<any> = [];
 
   ngOnInit(): void {
     this.MostrarInfo();
@@ -79,6 +85,66 @@ export class SeccionPagoComponent implements OnInit {
     });
   }
 
+  sumarpreciosArray() {
+    var storedList = localStorage.getItem('localProducts');
+    let suma = 0;
+    if (storedList == null) {
+      this.listaProductos = []
+    }
+    else {
+
+      this.listaProductos = JSON.parse(storedList);
+      //console.log(this.listaProductos);
+      for (let i = 0; i < this.listaProductos.length; i++) {
+        //console.log(this.listaProductos[i].precio);
+        suma += parseInt(this.listaProductos[i].precio);
+
+      }
+      //console.log(suma) 
+      return suma;
+    }
+    return 0;
+  }
+
+  sumarCantidadesArray() {
+    var storedList = localStorage.getItem('localProducts');
+    let suma = 0;
+    if (storedList == null) {
+      this.listaProductos = []
+    }
+    else {
+
+      this.listaProductos = JSON.parse(storedList);
+      //console.log(this.listaProductos);
+      for (let i = 0; i < this.listaProductos.length; i++) {
+        //console.log(this.listaProductos[i]);
+        suma = this.listaProductos.length;
+        //console.log(this.listaProductos.length)
+      }
+      //console.log(suma) 
+      return suma;
+    }
+    return 0;
+
+  }
+
+  mostrarResumen() {
+    this.numeroArticulos = this.sumarCantidadesArray();
+    this.subtotal = this.sumarpreciosArray()
+    this.metodoDePago = (<HTMLInputElement>document.getElementById('metodo')).value;
+    if ((<HTMLInputElement>document.getElementById('transportadora')).value == "Servientrega") {
+      this.costoEnvio = 11000;
+      this.total = this.sumarTotales();
+      return true;
+    }
+    if ((<HTMLInputElement>document.getElementById('transportadora')).value == "Interapidisimo") {
+      this.costoEnvio = 13000;
+      this.total = this.sumarTotales();
+    } 
+    return false;
+  }
+
+
   hacerPedido() {
     var mercadoPago = document.getElementById(
       'inlineRadio1'
@@ -100,10 +166,10 @@ export class SeccionPagoComponent implements OnInit {
       this.metodoDePago = 'Contra Entrega';
     }
 
-    if (this.transportadora == 'Servientrega') {
+    if (this.transportadora == "Servientrega") {
       this.costoEnvio = 11000;
     }
-    if (this.transportadora == 'Interapidisimo') {
+    if (this.transportadora == "Interapidisimo") {
       this.costoEnvio = 13000;
     }
 
@@ -130,6 +196,8 @@ export class SeccionPagoComponent implements OnInit {
       return;
     }
 
+
+
     var tipo2 = 'insert';
     var sql2 =
       'INSERT INTO pedido (fechaPedido, estado, transportadora, precioEnvio, metodoPago, costoTotal, personaId) VALUES(' +
@@ -142,7 +210,7 @@ export class SeccionPagoComponent implements OnInit {
       ",'" +
       this.metodoDePago +
       "'," +
-      this.total +
+      this.sumarTotales() +
       ',' +
       this.idPersonaPedido +
       ');';
@@ -155,7 +223,83 @@ export class SeccionPagoComponent implements OnInit {
           icon: 'success',
           confirmButtonText: 'Ok',
         });
+
       }
     });
+  }
+
+  public mostrarCarrito() {
+    var storedList = localStorage.getItem('localProducts');
+    if (storedList == null) {
+      this.listaProductos = []
+    }
+    else {
+      this.listaProductos = JSON.parse(storedList);
+    }
+    return this.listaProductos;
+  }
+
+  public encontrarproducto(id: number) {
+    for (let i = 0; i < this.listaProductos.length; i++) {
+      const element = this.listaProductos[i];
+      if (element.idProducto == id) {
+        return element;
+      }
+    }
+    return null;
+  }
+  /*public seleccionarProducto(id:number)
+  {
+    console.log(id);
+    var producto = this.encontrarproducto(id);
+    localStorage.removeItem(String(id));
+    
+    /*if(producto != null)
+    {
+      if(localcosa == null)
+    {
+      this.listaProductos=[]
+    }
+    else{
+      this.listaProductos = JSON.parse(localcosa);
+      localStorage.removeItem(String(producto.idProducto-1));
+    }
+      //this.listaproductosSeleccionados.push(producto);
+      //localStorage.removeItem(String(producto.idProducto), JSON.stringify((producto)));
+    }
+
+  }*/
+
+  estaSeleccionado(id: number) {
+    for (let i = 0; i < this.listaProductos.length; i++) {
+      const element = this.listaProductos[i];
+      if (element.idProducto == id) {
+        return i;
+      }
+    }
+    return null;
+  }
+
+
+
+  public deseleccionarProducto(id: number) {
+    console.log(id);
+    var i = this.estaSeleccionado(id);
+    if (i != null) {
+      this.listaProductos.splice(i, 1);
+      localStorage.setItem('localProducts', JSON.stringify(this.listaProductos))
+      Swal.fire({
+        title: 'Exito!',
+        text: 'Producto eliminado de la lista !',
+        icon: 'success',
+        confirmButtonText: 'Ok',
+      });
+    }
+  }
+  sumarTotales() {
+    let suma = 0;
+    suma = this.sumarpreciosArray() + this.costoEnvio;
+    console.log(suma);
+    return suma;
   }
 }

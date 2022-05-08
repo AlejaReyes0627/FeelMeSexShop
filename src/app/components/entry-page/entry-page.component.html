@@ -7,7 +7,7 @@
       </div>
       <p class="aviso">ESTE SITIO WEB ESTA PERMITIDO <br /></p>
       <p class="mayorEdad">SOLO PARA MAYORES DE EDAD</p>
-      <p class="verificaTuEdad">VERIFICA TU EDAD</p>
+      <p class="verificaTuEdad">INDICA TU FECHA DE NACIMIENTO</p>
 
       <div class="container dateContainer">
         <div class="row">
@@ -21,7 +21,8 @@
               type="number"
               class="form-control"
               required
-              [(ngModel)]="dia"
+              [(ngModel)]="dia" 
+              placeholder="0"
             />
           </div>
           <div class="col">
@@ -30,6 +31,7 @@
               class="form-control"
               required
               [(ngModel)]="mes"
+              placeholder="0"
             />
           </div>
           <div class="col">
@@ -38,6 +40,7 @@
               class="form-control"
               required
               [(ngModel)]="anio"
+              placeholder="0"
             />
           </div>
         </div>

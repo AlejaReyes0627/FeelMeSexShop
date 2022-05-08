@@ -17,73 +17,35 @@
       <form>
         <div class="form-group">
           <label for="correo">Correo</label>
-          <input
-            type="text"
-            class="form-control"
-            id="correo"
-            name="correo"
-            autocomplete="off"
-            [(ngModel)]="email"
-          />
+          <input type="text" class="form-control" id="correo" name="correo" autocomplete="off" [(ngModel)]="email" />
         </div>
         <div class="form-row">
           <div class="form-group col-md-6">
             <label for="nombres">Nombres</label>
-            <input
-              type="text"
-              class="form-control"
-              id="Idnombres"
-              name="nombres"
-              autocomplete="off"
-              [(ngModel)]="nombres"
-            />
+            <input type="text" class="form-control" id="Idnombres" name="nombres" autocomplete="off"
+              [(ngModel)]="nombres" />
           </div>
           <div class="form-group col-md-6">
             <label for="apellidos">Apellidos</label>
-            <input
-              type="text"
-              class="form-control"
-              id="apellidos"
-              name="apellidos"
-              autocomplete="off"
-              [(ngModel)]="apellidos"
-            />
+            <input type="text" class="form-control" id="apellidos" name="apellidos" autocomplete="off"
+              [(ngModel)]="apellidos" />
           </div>
         </div>
         <div class="form-group">
           <label for="direccion1">Dirección 1</label>
-          <input
-            type="text"
-            class="form-control"
-            id="direccion1"
-            placeholder="Cra 12 #64-158"
-            name="direccion1"
-            autocomplete="off"
-            [(ngModel)]="direccion"
-          />
+          <input type="text" class="form-control" id="direccion1" placeholder="Cra 12 #64-158" name="direccion1"
+            autocomplete="off" [(ngModel)]="direccion" />
         </div>
 
         <div class="form-group">
           <label for="direccion2">Dirección 2 (Opcional)</label>
-          <input
-            type="text"
-            class="form-control"
-            id="direccion2"
-            placeholder="Apartmento, piso, unidad, etc."
-            name="direccion2"
-            autocomplete="off"
-            [(ngModel)]="direccion2"
-          />
+          <input type="text" class="form-control" id="direccion2" placeholder="Apartmento, piso, unidad, etc."
+            name="direccion2" autocomplete="off" [(ngModel)]="direccion2" />
         </div>
         <div class="form-row">
           <div class="form-group col-md-4">
             <label for="departamento">Departamento</label>
-            <select
-              id="departamento"
-              class="form-control"
-              name="departamento"
-              [(ngModel)]="departamento"
-            >
+            <select id="departamento" class="form-control" name="departamento" [(ngModel)]="departamento">
               <option selected disabled>Elige un Departamento...</option>
               <option>Tolima</option>
               <option>Caldas</option>
@@ -94,37 +56,18 @@
           </div>
           <div class="form-group col-md-5">
             <label for="ciudad">Ciudad</label>
-            <input
-              type="text"
-              class="form-control"
-              name="ciudad"
-              id="ciudad"
-              autocomplete="off"
-              [(ngModel)]="ciudad"
-            />
+            <input type="text" class="form-control" name="ciudad" id="ciudad" autocomplete="off" [(ngModel)]="ciudad" />
           </div>
 
           <div class="form-group col-md-3">
             <label for="cPostal">Codigo Postal</label>
-            <input
-              type="text"
-              class="form-control"
-              id="cPostal"
-              name="cPostal"
-              [(ngModel)]="codigoPostal"
-            />
+            <input type="text" class="form-control" id="cPostal" name="cPostal" [(ngModel)]="codigoPostal" />
           </div>
         </div>
         <div class="form-group">
           <label for="telefono">Teléfono</label>
-          <input
-            type="text"
-            class="form-control"
-            name="telefono"
-            id="telefono"
-            autocomplete="off"
-            [(ngModel)]="telefono"
-          />
+          <input type="text" class="form-control" name="telefono" id="telefono" autocomplete="off"
+            [(ngModel)]="telefono" />
         </div>
       </form>
 
@@ -136,12 +79,7 @@
         compra es mayor a 90.000$ el envio sale gratis !.
       </p>
       <div class="form-group">
-        <select
-          id="departamento"
-          class="form-control"
-          name="transportadora"
-          [(ngModel)]="transportadora"
-        >
+        <select id="departamento" class="form-control" name="transportadora" [(ngModel)]="transportadora">
           <option selected disabled>Elige una transportadora...</option>
           <option>Servientrega</option>
           <option>Interapidisimo</option>
@@ -156,24 +94,14 @@
       <div class="accordion col-md-13" id="accordionExample">
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingThree">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapseThree"
-              aria-expanded="false"
-              aria-controls="collapseThree"
-            >
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
               Tarjeta de crédito, PSE, Efecty y Baloto
               <img [src]="imgMercadoPago" class="card-img-center" alt="" />
             </button>
           </h2>
-          <div
-            id="collapseThree"
-            class="accordion-collapse collapse"
-            aria-labelledby="headingThree"
-            data-bs-parent="#accordionExample"
-          >
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+            data-bs-parent="#accordionExample">
             <div class="accordion-body">
               <p>
                 Puedes pagar con tu tarjeta de crédito, débito o pagos en
@@ -192,24 +120,14 @@
 
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingTwo">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapseTwo"
-              aria-expanded="false"
-              aria-controls="collapseTwo"
-            >
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
               Transferencia Bancaria y consignación
               <img [src]="imgTransferencia" class="card-img-banco" alt="" />
             </button>
           </h2>
-          <div
-            id="collapseTwo"
-            class="accordion-collapse collapse"
-            aria-labelledby="headingTwo"
-            data-bs-parent="#accordionExample"
-          >
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+            data-bs-parent="#accordionExample">
             <div class="accordion-body">
               <p>
                 Realiza tu pago directamente en nuestra cuenta bancaria por
@@ -224,42 +142,18 @@
       </div>
       <br /><br />
       <p class="title-section">¿CÓMO DESEAS PAGAR TU PEDIDO?</p>
-      <div class="metodo-pago">
+      <div class="metodo-pago" >
         <div class="form-check form-check-inline">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="inlineRadioOptions"
-            id="inlineRadio1"
-            value="option1"
-          />
-          <label class="form-check-label" for="inlineRadio1"
-            >Mercado Pago</label
-          >
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="Mercado Pago" [(ngModel)]="metodoDePago"/>
+          <label class="form-check-label" for="inlineRadio1">Mercado Pago</label>
         </div>
         <div class="form-check form-check-inline">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="inlineRadioOptions"
-            id="inlineRadio2"
-            value="option2"
-          />
-          <label class="form-check-label" for="inlineRadio2"
-            >Transferencia</label
-          >
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="Transferencia" [(ngModel)]="metodoDePago"/>
+          <label class="form-check-label" for="inlineRadio2">Transferencia</label>
         </div>
         <div class="form-check form-check-inline">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="inlineRadioOptions"
-            id="inlineRadio3"
-            value="option3"
-          />
-          <label class="form-check-label" for="inlineRadio3"
-            >Contra Entrega</label
-          >
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="Contra Entrega" [(ngModel)]="metodoDePago"/>
+          <label class="form-check-label" for="inlineRadio3">Contra Entrega</label>
         </div>
       </div>
       <div class="vermas">
@@ -269,69 +163,53 @@
       </div>
     </div>
 
-    <div class="col-md-5">
-      <div class="resumen-pago">
-        <p class="title-section">RESUMEN DE TU PEDIDO</p>
+    <div class="col-md-5" >
+      <div class="resumen-pago" >
+        <p class="title-section" >RESUMEN DE TU PEDIDO</p>
+        <button class="btn botonCarrito mb-3"  (click)="mostrarResumen()" >¿Quieres actualizar el resumen de tu pedido?</button>
         <div class="card border-dark mb-3 card-pedido">
-          <div class="card-header"></div>
+          <div class="card-header">
           <div class="card-body text-dark">
-            <div class="row">
-              <p class="card-text col">No de Productos</p>
-              <input
-                class="card-text col input-resumen"
-                name="total"
-                [(ngModel)]="numeroArticulos"
-                disabled
-              />
+            <div class="row" >
+              <p class="card-text col"># de Productos</p>
+              <input class="card-text col input-resumen" name="total" [(ngModel)]="numeroArticulos" disabled />
             </div>
 
             <div class="row">
               <p class="card-text col">Subtotal</p>
-              <input
-                class="card-text col input-resumen"
-                name="total"
-                [(ngModel)]="subtotal"
-                disabled
-              />
+              <input class="card-text col input-resumen" name="total" [(ngModel)]="subtotal" disabled />
             </div>
             <div class="row">
               <p class="card-text col">Transportadora</p>
-              <input
-                class="card-text col input-resumen"
-                name="total"
-                [(ngModel)]="transportadora"
-                disabled
-              />
+              <input class="card-text col input-resumen" name="total" id="transportadora" value="" [(ngModel)]="transportadora" disabled />
             </div>
             <div class="row">
               <p class="card-text col">Costo Envío</p>
-              <input
-                class="card-text col input-resumen"
-                name="total"
-                [(ngModel)]="costoEnvio"
-                disabled
-              />
+              <input class="card-text col input-resumen" name="total" id="envio" [(ngModel)]="costoEnvio" disabled/>
             </div>
             <div class="row">
               <p class="card-text col">Metodo de Pago</p>
-              <input
-                class="card-text col input-resumen"
-                name="total"
-                [(ngModel)]="metodoDePago"
-                disabled
-              />
+              <input class="card-text col input-resumen" name="total" value="" id="metodo" [(ngModel)]="metodoDePago" disabled />
             </div>
           </div>
           <div class="card-footer">
             <div class="row">
               <p class="card-text col">Total</p>
-              <input
-                class="card-text col input-resumen"
-                name="total"
-                [(ngModel)]="total"
-                disabled
-              />
+              <input class="card-text col input-resumen" name="total" id="" [(ngModel)]="total" disabled />
             </div>
+          </div>
+      </div>
+    </div>
+        <div class="card mt-3 card-square">
+          <div class="card-body seccionElementos" *ngFor="let productos of listaProductos">
+            <h4 class="card-title">{{productos?.nombreProducto}}</h4>
+            <p class="card-title">{{productos?.descripcion}}</p>
+            <h5 class="card-title">${{productos?.precio}}</h5>
+            <button type="button" class="btn btn-danger" *ngIf="estaSeleccionado(productos.idProducto) != null"
+              (click)="deseleccionarProducto(productos.idProducto)">
+              Eliminar Producto
+            </button>
+            <hr>
           </div>
         </div>
       </div>
@@ -339,4 +217,22 @@
   </div>
 </div>
 
+
+<div class="modal" tabindex="-1" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Modal body text goes here.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
 <app-footer></app-footer>

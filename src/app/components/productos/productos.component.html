@@ -246,6 +246,17 @@
                     type="button"
                     class="btn buttonProduct"
                     href="productos"
+                    *ngIf="estaSeleccionado(productos.idProducto) == null"
+                    (click)="seleccionarProducto(productos.idProducto)"
+                  >
+                    Añadir al carrito
+                  </button>
+                  <button
+                  type="button"
+                  class="btn buttonProduct"
+                  href="productos"
+                  *ngIf="estaSeleccionado(productos.idProducto) != null"
+                  (click)="deseleccionarProducto(productos.idProducto)"
                   >
                     Añadir al carrito
                   </button>
@@ -258,3 +269,4 @@
     </div>
   </div>
 </div>
+<app-footer></app-footer>

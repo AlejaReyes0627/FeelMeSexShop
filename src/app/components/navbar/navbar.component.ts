@@ -36,4 +36,10 @@ export class NavbarComponent implements OnInit {
       }
     );
   }
+
+
+  cerrarSesion()
+  {
+    localStorage.removeItem('usuario')
+  }
 }
