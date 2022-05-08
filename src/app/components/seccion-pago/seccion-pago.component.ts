@@ -288,6 +288,9 @@ export class SeccionPagoComponent implements OnInit {
     if (i != null) {
       this.listaProductos.splice(i, 1);
       localStorage.setItem('localProducts', JSON.stringify(this.listaProductos))
+      this.numeroArticulos = this.sumarCantidadesArray();
+      this.subtotal = this.sumarpreciosArray();
+      this.total=this.sumarTotales();
       Swal.fire({
         title: 'Exito!',
         text: 'Producto eliminado de la lista !',
