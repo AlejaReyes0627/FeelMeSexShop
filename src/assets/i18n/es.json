@@ -225,5 +225,13 @@
   "Juegos": "Juegos",
   "Lenceria": "Lenceria",
   "LA": "Lubricantes/Aceites",
-  "Otros":"Otros"
+  "Otros": "Otros",
+
+  "PRODUCTOS": "PRODUCTOS",
+  "Categorias": "Categorias",
+  "VerTodos": "Ver Todos",
+  "Orden":"Orden",
+  "Ascendente": "Ascendente",
+  "Descendente": "Descendente"
+
 }

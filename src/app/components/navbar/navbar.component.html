@@ -25,58 +25,27 @@
       <!-- hace referencia a un elemento con ID -->
       <a href="/productos"> {{ "Products" | translate }}</a>
 
-      <a>
-        <select
-          id="language"
-          name="language"
-          [(ngModel)]="languageItem"
-          (click)="language()"
-          class="selectLanguage"
-        >
-          <option value="Idioma" disabled selected>
-            <a style="font-weight: bold;">{{ "Language" | translate }} </a>
-          </option>
-          <option>
-            <a value="lang" class="dropdown-item dropdownUser">{{
-              "Spanish" | translate
-            }}</a>
-          </option>
-          <option>
-            <a value="en" class="dropdown-item dropdownUser">{{
-              "English" | translate
-            }}</a>
-          </option>
-        </select>
-      </a>
-
-      <!--     <a
-        class="dropdown-toggle user2"
-        id="dropdownMenuLink"
-        data-bs-toggle="dropdown"
-        aria-expanded="false"
+      <select
         id="language"
         name="language"
         [(ngModel)]="languageItem"
         (click)="language()"
+        class="selectLanguage"
       >
-        {{ "Language" | translate }}
-      </a>
-      <ul
-        class="dropdown-menu"
-        aria-labelledby="dropdownMenuLink"
-        
-      >
-        <li>
+        <option value="Idioma" disabled selected>
+          <a style="font-weight: bold">{{ "Language" | translate }} </a>
+        </option>
+        <option>
           <a value="lang" class="dropdown-item dropdownUser">{{
             "Spanish" | translate
           }}</a>
-        </li>
-        <li>
+        </option>
+        <option>
           <a value="en" class="dropdown-item dropdownUser">{{
             "English" | translate
           }}</a>
-        </li> 
-     </ul> -->
+        </option>
+      </select>
 
       <a href="/pago" class="carrito2"
         ><img class="carrito" [src]="iconcarrito" /><span
@@ -122,12 +91,23 @@
     <a class="nav-link links" href="/productos/filtroParejas">{{
       "ParaParejas" | translate
     }}</a>
-    <a class="nav-link links" href="/productos/filtroUnisex">{{"Unisex" | translate}}</a>
-    <a class="nav-link links" href="/productos/filtroVibradores">{{"Vibradores" | translate}}</a>
-    <a class="nav-link links" href="/productos/filtroJuegos">{{"Juegos" | translate}}</a>
-    <a class="nav-link links" href="/productos/filtroLenceria">{{"Lenceria" | translate}}</a>
-    <a class="nav-link links" href="/productos/filtroLubricantes">{{"Lubricantes/Aceites" | translate}}</a
-    >
-    <a class="nav-link links" href="/productos/filtroOtros">{{"Otros" | translate}}</a>
+    <a class="nav-link links" href="/productos/filtroUnisex">{{
+      "Unisex" | translate
+    }}</a>
+    <a class="nav-link links" href="/productos/filtroVibradores">{{
+      "Vibradores" | translate
+    }}</a>
+    <a class="nav-link links" href="/productos/filtroJuegos">{{
+      "Juegos" | translate
+    }}</a>
+    <a class="nav-link links" href="/productos/filtroLenceria">{{
+      "Lenceria" | translate
+    }}</a>
+    <a class="nav-link links" href="/productos/filtroLubricantes">{{
+      "LA" | translate
+    }}</a>
+    <a class="nav-link links" href="/productos/filtroOtros">{{
+      "Otros" | translate
+    }}</a>
   </ul>
 </header>

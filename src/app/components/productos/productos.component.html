@@ -2,7 +2,7 @@
 <div style="padding-top: 130px">
   <div class="separatorSabiasQue">
     <ul class="nav nav-middle" style="background-color: #f992ad">
-      <p class="nav-links nav-middle-text">PRODUCTOS</p>
+      <p class="nav-links nav-middle-text">{{ "PRODUCTOS" | translate }}</p>
     </ul>
   </div>
 
@@ -17,9 +17,8 @@
           <p class="titleMenu">MENU</p>
 
           <!-- Categorias -->
-          <p class="titleCategories">Categorias</p>
-          <a class="options"
-            >
+          <p class="titleCategories">{{ "Categorias" | translate }}</p>
+          <a class="options">
             <div
               style="cursor: pointer"
               class="productDiv"
@@ -27,9 +26,9 @@
               onselectstart="return false"
               oncontextmenu="return false"
               (click)="pasarAMujeres()"
-              id = "mujeres"
+              id="mujeres"
             >
-              Para Mujeres
+              {{ "ParaMujeres" | translate }}
             </div></a
           >
           <a class="options">
@@ -41,7 +40,7 @@
               oncontextmenu="return false"
               (click)="pasarAHombres()"
             >
-              Para Hombres
+              {{ "ParaHombres" | translate }}
             </div></a
           >
           <a class="options"
@@ -54,7 +53,7 @@
               oncontextmenu="return false"
               (click)="pasarAParejas()"
             >
-              Para Parejas
+              {{ "ParaParejas" | translate }}
             </div></a
           >
           <a class="options"
@@ -83,7 +82,7 @@
               oncontextmenu="return false"
               (click)="pasarAVibradores()"
             >
-              Vibradores
+              {{ "Vibradores" | translate }}
             </div></a
           >
           <a class="options"
@@ -99,7 +98,7 @@
               oncontextmenu="return false"
               (click)="pasarAJuegos()"
             >
-              Juegos
+              {{ "Juegos" | translate }}
             </div></a
           >
           <a class="options"
@@ -116,7 +115,7 @@
               oncontextmenu="return false"
               (click)="pasarALenceria()"
             >
-              Lenceria
+              {{ "Lenceria" | translate }}
             </div></a
           >
           <a class="options"
@@ -134,7 +133,7 @@
               oncontextmenu="return false"
               (click)="pasarALubricantes()"
             >
-              Lubricantes/Aceites
+              {{ "LA" | translate }}
             </div></a
           >
           <a class="options"
@@ -153,7 +152,7 @@
               oncontextmenu="return false"
               (click)="pasarAOtros()"
             >
-              Otros
+              {{ "Otros" | translate }}
             </div></a
           >
           <a class="options"
@@ -173,11 +172,11 @@
               oncontextmenu="return false"
               (click)="mostrarProductos()"
             >
-              Ver Todos
+              {{ "VerTodos" | translate }}
             </div></a
           >
           <!-- Orden -->
-          <p class="titleCategories pt-2">Orden</p>
+          <p class="titleCategories pt-2">{{ "Orden" | translate }}</p>
           <a class="options"
             ><div
               class="productDiv"
@@ -196,7 +195,7 @@
               oncontextmenu="return false"
               (click)="mostrarProductosAscendente()"
             >
-              Ascendente
+              {{ "Ascendente" | translate }}
             </div></a
           >
           <a class="options"
@@ -218,7 +217,7 @@
               oncontextmenu="return false"
               (click)="mostrarProductosDescendente()"
             >
-              Descendente
+              {{ "Descendente" | translate }}
             </div></a
           >
         </div>
@@ -251,16 +250,16 @@
                     *ngIf="estaSeleccionado(productos.idProducto) == null"
                     (click)="seleccionarProducto(productos.idProducto)"
                   >
-                    Añadir al carrito
+                    {{ "AnadirCarrito" | translate }}
                   </button>
                   <button
-                  type="button"
-                  class="btn buttonProduct"
-                  href="productos"
-                  *ngIf="estaSeleccionado(productos.idProducto) != null"
-                  (click)="deseleccionarProducto(productos.idProducto)"
+                    type="button"
+                    class="btn buttonProduct"
+                    href="productos"
+                    *ngIf="estaSeleccionado(productos.idProducto) != null"
+                    (click)="deseleccionarProducto(productos.idProducto)"
                   >
-                    Añadir al carrito
+                    {{ "AnadirCarrito" | translate }}
                   </button>
                 </div>
               </div>

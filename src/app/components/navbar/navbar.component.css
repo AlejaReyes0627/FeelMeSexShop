@@ -29,18 +29,18 @@ header .container nav a:hover {
   color: #c580ed;
 }
 
-.dropdownUser{
+.dropdownUser {
   color: black;
-  text-decoration: none; 
+  text-decoration: none;
   margin: 0 15px;
   font-weight: 500 !important;
 }
 
-.dropdownUser :hover{
-  color: #A480F2;
+.dropdownUser :hover {
+  color: #a480f2;
 }
 
-nav{
+nav {
   text-align: right;
 }
 
@@ -60,7 +60,7 @@ nav{
   opacity: 50%;
 }
 
-.logos{
+.logos {
   width: 70%;
 }
 
@@ -77,7 +77,7 @@ nav{
 /* MENU */
 
 .nav-link:hover {
-  color: #CFB9F7;
+  color: #cfb9f7;
 }
 
 .nav-upside {
@@ -107,7 +107,7 @@ nav{
   margin: 0 6px;
 }
 
-.nav-upside{
+.nav-upside {
   padding: 2px 0;
 }
 
@@ -115,9 +115,19 @@ nav{
   max-width: 60px;
 }
 
-.selectLanguage{
-  border: 0;
-  color:black;
-  font-weight: bold;
+select {
+  border: none !important;
+  outline: none !important;
 
+}
+
+.selectLanguage {
+  border: none !important;
+  color: black;
+  font-weight: bold;
+  outline: none !important;
+}
+
+.selectContainer {
+  border: none !important;
 }

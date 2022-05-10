@@ -154,7 +154,7 @@
   "ValoresDeLaEmpresa": "VALUES OF THE COMPANY",
   "QSTxt4": "We are a company that always seeks the integrity and well-being of our clients and our employees, so our company values not only seek to be applied as a company, but also as each one of the people who are part of this family. These values are:",
   "Respeto": "Respect",
-  "Disciplina": "Disciplina",
+  "Disciplina": "Discipline",
   "TrabajoEnEquipo": "Teamwork",
   "EticaLaboral": "Work ethics",
   "Honestidad": "Honesty",
@@ -212,21 +212,24 @@
 
   "ATENCIONOPORTUNACLASE": "ATENCIONOPORTUNACLASE",
 
-  "AOTxt1": "Feel Me SexShop cuenta con un equipo de personas dispuestas en nuestros horarios estipulados para asesorarte en lo que necesites. Tenemos un equipo capacitado para acompañarte en el proceso de seleccion, compra y finalmente preparados para escuchar tu experiencia con nuestros productos. Esto parte de la idea de poder tener una buena comunicación con nuestros clientes, por lo que puedes comunicarte con nosotros mediente nuestras redes sociales, nuestro correo o nuestro whatsapp. Para mas informacion visita nuestra seccion de contacto.",
+  "AOTxt1": "Feel Me SexShop has a team of people available at our stipulated times to advise you on whatever you need. We have a trained team to accompany you in the process of selection, purchase and finally prepared to listen to your experience with our products. This is based on the idea of being able to have good communication with our clients, so you can communicate with us through our social networks, our email or our whatsapp. For more information visit our contact section.",
 
   "CATEGORIAS": "CATEGORIAS",
 
-
   "ParaMujeres": "For women",
-  "ParaHombres": "For Men Hombres",
+  "ParaHombres": "For Men",
   "ParaParejas": "For Couples",
-  "Vibradores": "vibrators",
+  "Vibradores": "Vibrators",
   "Juegos": "Games",
   "Lenceria": "Lingerie",
   "LA": "Lubricants / Oils",
-  "Otros":"Others"
+  "Otros": "Others",
 
-
-    
+  "PRODUCTOS":"PRODUCTS",
+  "Categorias":"Categories",
+  "VerTodos":"See all",
+  "Orden":"Order",
+  "Ascendente": "Upward",
+  "Descendente": "Downward"
 
 }
