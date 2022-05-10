@@ -23,7 +23,7 @@ export class AppComponent {
     this.sexShopservice = new SexshopdatabaseService(http);
     this.translate.addLangs(['es', 'en']);
     this.translate.setDefaultLang('es');
-    this.translate.use('en'); /* Cambie el idioma aqui XD */
+    this.translate.use('es'); /* Cambie el idioma aqui XD */
     this.langs = this.translate.getLangs();
   }
   ngOnInit() {}

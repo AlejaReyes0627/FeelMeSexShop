@@ -29,7 +29,7 @@ export class FiltroParejasComponent implements OnInit {
   listaProductos: Producto[] = [];
   listaproductosSeleccionados: Producto[] = [];
 
-  constructor(http: HttpClient, private servicioproductos: SexshopdatabaseService) {
+  constructor(http: HttpClient, private servicioproductos: SexshopdatabaseService,private router: Router) {
     this.prueba1 = '/assets/img/pruebas/prueba5.jpg';
     this.prueba2 = '/assets/img/pruebas/prueba1.jpg';
     this.sexShopService = new SexshopdatabaseService(http);
@@ -53,6 +53,56 @@ export class FiltroParejasComponent implements OnInit {
     });
   }
 
+  pasarAMujeres()
+  {
+    this.router.navigate(['/productos/filtroMujeres']);
+  }
+
+  pasarAHombres()
+  {
+    this.router.navigate(['/productos/filtroHombres']);
+  }
+
+  pasarAJuegos()
+  {
+    this.router.navigate(['/productos/filtroJuegos']);
+  }
+
+  pasarALenceria()
+  {
+    this.router.navigate(['/productos/filtroLenceria']);
+  }
+
+  pasarALubricantes()
+  {
+    this.router.navigate(['/productos/filtroLubricantes']);
+  }
+
+  pasarAOtros()
+  {
+    this.router.navigate(['/productos/filtroOtros']);
+  }
+
+  pasarAParejas()
+  {
+    this.router.navigate(['/productos/filtroParejas']);
+  }
+   
+  pasarAUnisex()
+  {
+    this.router.navigate(['/productos/filtroUnisex']);
+  }
+
+  pasarAVibradores()
+  {
+    this.router.navigate(['/productos/filtroVibradores']);
+  }
+
+  pasarATodos()
+  {
+    this.router.navigate(['/productos']);
+  }
+
   public mostrarProductosParejas() {
     var tipo = 'select';
     var sql = 'SELECT * FROM producto WHERE idCategoria =9';
@@ -69,7 +119,7 @@ export class FiltroParejasComponent implements OnInit {
   }
   public mostrarProductosAscendente() {
     var tipo = 'select';
-    var sql = 'SELECT * FROM producto ORDER BY precio;';
+    var sql = 'SELECT * FROM producto WHERE idCategoria =9 ORDER BY precio;';
 
     this.listaProductos = [];
 
@@ -83,7 +133,7 @@ export class FiltroParejasComponent implements OnInit {
   }
   public mostrarProductosDescendente() {
     var tipo = 'select';
-    var sql = 'SELECT * FROM producto ORDER BY precio DESC;';
+    var sql = 'SELECT * FROM producto WHERE idCategoria =9 ORDER BY precio DESC;';
 
     this.listaProductos = [];
 
