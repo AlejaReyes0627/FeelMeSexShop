@@ -1,11 +1,13 @@
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { BrowserModule } from '@angular/platform-browser';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import  {environment}  from '../environments/environment';
+import { environment } from '../environments/environment';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HttpClientModule } from '@angular/common/http';
 import { MenuComponent } from './components/menu/menu.component';
 import { ProductosComponent } from './components/productos/productos.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
@@ -34,6 +36,10 @@ import { FiltroJuegosComponent } from './components/productos/filtro-juegos/filt
 import { FiltroLenceriaComponent } from './components/productos/filtro-lenceria/filtro-lenceria.component';
 import { FiltroLubricantesComponent } from './components/productos/filtro-lubricantes/filtro-lubricantes.component';
 import { FiltroOtrosComponent } from './components/productos/filtro-otros/filtro-otros.component';
+
+export function HttpLoaderFactory(http: HttpClient) {
+  return new TranslateHttpLoader(http, './assets/i18n/','.json');
+}
 
 @NgModule({
   declarations: [
@@ -65,16 +71,24 @@ import { FiltroOtrosComponent } from './components/productos/filtro-otros/filtro
     FiltroJuegosComponent,
     FiltroLenceriaComponent,
     FiltroLubricantesComponent,
-    FiltroOtrosComponent
+    FiltroOtrosComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     FontAwesomeModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule,
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: HttpLoaderFactory,
+        deps: [HttpClient],
+      },
+    }),
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
