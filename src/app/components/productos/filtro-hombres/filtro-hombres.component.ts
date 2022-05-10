@@ -55,6 +55,46 @@ export class FiltroHombresComponent implements OnInit {
     this.router.navigate(['/productos/filtroMujeres']);
   }
 
+  pasarAJuegos()
+  {
+    this.router.navigate(['/productos/filtroJuegos']);
+  }
+
+  pasarALenceria()
+  {
+    this.router.navigate(['/productos/filtroLenceria']);
+  }
+
+  pasarALubricantes()
+  {
+    this.router.navigate(['/productos/filtroLubricantes']);
+  }
+
+  pasarAOtros()
+  {
+    this.router.navigate(['/productos/filtroOtros']);
+  }
+
+  pasarAParejas()
+  {
+    this.router.navigate(['/productos/filtroParejas']);
+  }
+   
+  pasarAUnisex()
+  {
+    this.router.navigate(['/productos/filtroUnisex']);
+  }
+
+  pasarAVibradores()
+  {
+    this.router.navigate(['/productos/filtroVibradores']);
+  }
+
+  pasarATodos()
+  {
+    this.router.navigate(['/productos']);
+  }
+
   public mostrarProductosHombres() {
     var tipo = 'select';
     var sql = 'SELECT * FROM producto WHERE idCategoria =2';
@@ -72,7 +112,7 @@ export class FiltroHombresComponent implements OnInit {
 
   public mostrarProductosAscendente() {
     var tipo = 'select';
-    var sql = 'SELECT * FROM producto ORDER BY precio;';
+    var sql = 'SELECT * FROM producto where idCategoria = 2 ORDER BY precio;';
 
     this.listaProductos = [];
 
@@ -88,7 +128,7 @@ export class FiltroHombresComponent implements OnInit {
   
   public mostrarProductosDescendente() {
     var tipo = 'select';
-    var sql = 'SELECT * FROM producto ORDER BY precio DESC;';
+    var sql = 'SELECT * FROM producto where idCategoria = 2 ORDER BY precio DESC;';
 
     this.listaProductos = [];
 

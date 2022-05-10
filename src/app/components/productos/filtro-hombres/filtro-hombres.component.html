@@ -25,13 +25,14 @@
                     <a class="options">
                         <div style="cursor: pointer" class="productDiv" ondragstart="return false"
                             onselectstart="return false" oncontextmenu="return false"
-                             [routerLink]="['productos/filtroHombres']">
+                                (click)="mostrarProductosHombres()">
                             Para Hombres
                         </div>
                     </a>
                     <a class="options">
                         <div style="cursor: pointer" class="productDiv" class="productDiv" ondragstart="return false"
                             onselectstart="return false" oncontextmenu="return false"
+                            (click)="pasarAParejas()"
                             >
                             Para Parejas
                         </div>
@@ -39,14 +40,14 @@
                     <a class="options">
                         <div style="cursor: pointer" class="productDiv" class="productDiv" class="productDiv"
                             ondragstart="return false" onselectstart="return false" oncontextmenu="return false"
-                           >
+                            (click)="pasarAUnisex()">
                             Unisex
                         </div>
                     </a>
                     <a class="options">
                         <div style="cursor: pointer" class="productDiv" class="productDiv" class="productDiv"
                             class="productDiv" ondragstart="return false" onselectstart="return false"
-                            oncontextmenu="return false">
+                            oncontextmenu="return false" (click)="pasarAVibradores()">
                             Vibradores
                         </div>
                     </a>
@@ -54,7 +55,7 @@
                         <div style="cursor: pointer" class="productDiv" class="productDiv" class="productDiv"
                             class="productDiv" class="productDiv" ondragstart="return false"
                             onselectstart="return false" oncontextmenu="return false"
-                            >
+                            (click)="pasarAJuegos()">
                             Juegos
                         </div>
                     </a>
@@ -62,7 +63,7 @@
                         <div style="cursor: pointer" class="productDiv" class="productDiv" class="productDiv"
                             class="productDiv" class="productDiv" class="productDiv" ondragstart="return false"
                             onselectstart="return false" oncontextmenu="return false"
-                            >
+                            (click)="pasarALenceria()">
                             Lenceria
                         </div>
                     </a>
@@ -70,7 +71,7 @@
                         <div class="productDiv" style="cursor: pointer" class="productDiv" class="productDiv"
                             class="productDiv" class="productDiv" class="productDiv" class="productDiv"
                             ondragstart="return false" onselectstart="return false" oncontextmenu="return false"
-                            >
+                            (click)="pasarALubricantes()">
                             Lubricantes/Aceites
                         </div>
                     </a>
@@ -78,7 +79,7 @@
                         <div class="productDiv" class="productDiv" style="cursor: pointer" class="productDiv"
                             class="productDiv" class="productDiv" class="productDiv" class="productDiv"
                             class="productDiv" ondragstart="return false" onselectstart="return false"
-                            oncontextmenu="return false">
+                            oncontextmenu="return false" (click)="pasarAOtros()">
                             Otros
                         </div>
                     </a>
@@ -86,7 +87,7 @@
                         <div class="productDiv" class="productDiv" class="productDiv" style="cursor: pointer"
                             class="productDiv" class="productDiv" class="productDiv" class="productDiv"
                             class="productDiv" class="productDiv" ondragstart="return false"
-                            onselectstart="return false" oncontextmenu="return false">
+                            onselectstart="return false" oncontextmenu="return false" (click)="pasarATodos()">
                             Ver Todos
                         </div>
                     </a>
@@ -130,12 +131,12 @@
                             </div>
                             <div class="card-footer">
                                 <div class="buttonZone">
-                                    <button type="button" class="btn buttonProduct" href="productos/filtroMujeres"
+                                    <button type="button" class="btn buttonProduct" href="productos/filtroHombres"
                                         *ngIf="estaSeleccionado(productos.idProducto) == null"
                                         (click)="seleccionarProducto(productos.idProducto)">
                                         Añadir al carrito
                                     </button>
-                                    <button type="button" class="btn buttonProduct" href="productos/filtroMujeres"
+                                    <button type="button" class="btn buttonProduct" href="productos/filtroHombres"
                                         *ngIf="estaSeleccionado(productos.idProducto) != null"
                                         (click)="deseleccionarProducto(productos.idProducto)">
                                         Añadir al carrito

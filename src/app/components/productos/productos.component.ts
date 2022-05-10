@@ -31,7 +31,7 @@ export class ProductosComponent implements OnInit {
   listaProductos: Producto[] = [];
   listaproductosSeleccionados:Producto[] = [];
 
-  constructor(http: HttpClient, private servicioproductos: SexshopdatabaseService) {
+  constructor(http: HttpClient, private servicioproductos: SexshopdatabaseService ,private router: Router) {
     this.prueba1 = '/assets/img/pruebas/prueba5.jpg';
     this.prueba2 = '/assets/img/pruebas/prueba1.jpg';
     this.sexShopService = new SexshopdatabaseService(http);
@@ -60,132 +60,57 @@ export class ProductosComponent implements OnInit {
     });
   }
 
-  public mostrarProductosMujeres() {
-    var tipo = 'select';
-    var sql = 'SELECT * FROM producto WHERE idCategoria =3';
-
-    this.listaProductos = [];
-
-    this.sexShopService.llamadoHttp(tipo, sql).subscribe((data: any) => {
-      if (data.success == true) {
-        for (let i in data.mensaje) {
-          this.listaProductos.push(data.mensaje[i]);
-        }
-      }
-    });
+  
+  pasarAMujeres()
+  {
+    this.router.navigate(['/productos/filtroMujeres']);
   }
-  public mostrarProductosHombres() {
-    var tipo = 'select';
-    var sql = 'SELECT * FROM producto WHERE idCategoria =2';
 
-    this.listaProductos = [];
-
-    this.sexShopService.llamadoHttp(tipo, sql).subscribe((data: any) => {
-      if (data.success == true) {
-        for (let i in data.mensaje) {
-          this.listaProductos.push(data.mensaje[i]);
-        }
-      }
-    });
+  pasarAHombres()
+  {
+    this.router.navigate(['/productos/filtroHombres']);
   }
-  public mostrarProductosParejas() {
-    var tipo = 'select';
-    var sql = 'SELECT * FROM producto WHERE idCategoria =9';
 
-    this.listaProductos = [];
-
-    this.sexShopService.llamadoHttp(tipo, sql).subscribe((data: any) => {
-      if (data.success == true) {
-        for (let i in data.mensaje) {
-          this.listaProductos.push(data.mensaje[i]);
-        }
-      }
-    });
+  pasarAJuegos()
+  {
+    this.router.navigate(['/productos/filtroJuegos']);
   }
-  public  mostrarProductosUnisex() {
-    var tipo = 'select';
-    var sql = 'SELECT * FROM producto WHERE idCategoria =1';
 
-    this.listaProductos = [];
-
-    this.sexShopService.llamadoHttp(tipo, sql).subscribe((data: any) => {
-      if (data.success == true) {
-        for (let i in data.mensaje) {
-          this.listaProductos.push(data.mensaje[i]);
-        }
-      }
-    });
+  pasarALenceria()
+  {
+    this.router.navigate(['/productos/filtroLenceria']);
   }
-  public mostrarProductosVibradores() {
-    var tipo = 'select';
-    var sql = 'SELECT * FROM producto WHERE idCategoria =4';
 
-    this.listaProductos = [];
-
-    this.sexShopService.llamadoHttp(tipo, sql).subscribe((data: any) => {
-      if (data.success == true) {
-        for (let i in data.mensaje) {
-          this.listaProductos.push(data.mensaje[i]);
-        }
-      }
-    });
+  pasarALubricantes()
+  {
+    this.router.navigate(['/productos/filtroLubricantes']);
   }
-  public mostrarProductosJuegos() {
-    var tipo = 'select';
-    var sql = 'SELECT * FROM producto WHERE idCategoria =5';
 
-    this.listaProductos = [];
-
-    this.sexShopService.llamadoHttp(tipo, sql).subscribe((data: any) => {
-      if (data.success == true) {
-        for (let i in data.mensaje) {
-          this.listaProductos.push(data.mensaje[i]);
-        }
-      }
-    });
+  pasarAOtros()
+  {
+    this.router.navigate(['/productos/filtroOtros']);
   }
-  public mostrarProductosLenceria() {
-    var tipo = 'select';
-    var sql = 'SELECT * FROM producto WHERE idCategoria =6';
 
-    this.listaProductos = [];
-
-    this.sexShopService.llamadoHttp(tipo, sql).subscribe((data: any) => {
-      if (data.success == true) {
-        for (let i in data.mensaje) {
-          this.listaProductos.push(data.mensaje[i]);
-        }
-      }
-    });
+  pasarAParejas()
+  {
+    this.router.navigate(['/productos/filtroParejas']);
   }
-  public mostrarProductosLubricantes() {
-    var tipo = 'select';
-    var sql = 'SELECT * FROM producto WHERE idCategoria =7';
-
-    this.listaProductos = [];
-
-    this.sexShopService.llamadoHttp(tipo, sql).subscribe((data: any) => {
-      if (data.success == true) {
-        for (let i in data.mensaje) {
-          this.listaProductos.push(data.mensaje[i]);
-        }
-      }
-    });
+   
+  pasarAUnisex()
+  {
+    this.router.navigate(['/productos/filtroUnisex']);
   }
-  public mostrarProductosOtros() {
-    var tipo = 'select';
-    var sql = 'SELECT * FROM producto WHERE idCategoria =8';
 
-    this.listaProductos = [];
-
-    this.sexShopService.llamadoHttp(tipo, sql).subscribe((data: any) => {
-      if (data.success == true) {
-        for (let i in data.mensaje) {
-          this.listaProductos.push(data.mensaje[i]);
-        }
-      }
-    });
+  pasarAVibradores()
+  {
+    this.router.navigate(['/productos/filtroVibradores']);
   }
+
+  pasarATodos()
+  {
+    this.router.navigate(['/productos']);
+  }
+
   public mostrarProductosAscendente() {
     var tipo = 'select';
     var sql = 'SELECT * FROM producto ORDER BY precio;';

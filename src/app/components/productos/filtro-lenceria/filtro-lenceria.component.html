@@ -1,1 +1,143 @@
-<p>filtro-lenceria works!</p>
+<app-navbar></app-navbar>
+<div style="padding-top: 130px">
+  <div class="separatorSabiasQue">
+    <ul class="nav nav-middle" style="background-color: #f992ad">
+      <p class="nav-links nav-middle-text">PRODUCTOS</p>
+    </ul>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row">
+      <!-- Menu Lateral -->
+      <div class="col-2 menuContainer" style="background-color: rgb(245, 245, 245)">
+        <div class="optionsContainer">
+          <p class="titleMenu">MENU</p>
+
+          <!-- Categorias -->
+          <p class="titleCategories">Categorias</p>
+          <a class="options">
+            <div style="cursor: pointer" class="productDiv" ondragstart="return false" onselectstart="return false"
+              oncontextmenu="return false" (click)="pasarAMujeres()">
+              Para Mujeres
+            </div>
+          </a>
+          <a class="options">
+            <div style="cursor: pointer" class="productDiv" ondragstart="return false" onselectstart="return false"
+              oncontextmenu="return false" (click)="pasarAHombres()">
+              Para Hombres
+            </div>
+          </a>
+          <a class="options">
+            <div style="cursor: pointer" class="productDiv" class="productDiv" ondragstart="return false"
+              onselectstart="return false" oncontextmenu="return false" (click)="pasarAParejas()">
+              Para Parejas
+            </div>
+          </a>
+          <a class="options">
+            <div style="cursor: pointer" class="productDiv" class="productDiv" class="productDiv"
+              ondragstart="return false" onselectstart="return false" oncontextmenu="return false"
+              (click)="pasarAUnisex()">
+              Unisex
+            </div>
+          </a>
+          <a class="options">
+            <div style="cursor: pointer" class="productDiv" class="productDiv" class="productDiv" class="productDiv"
+              ondragstart="return false" onselectstart="return false" oncontextmenu="return false"
+              (click)="pasarAVibradores()">
+              Vibradores
+            </div>
+          </a>
+          <a class="options">
+            <div style="cursor: pointer" class="productDiv" class="productDiv" class="productDiv" class="productDiv"
+              class="productDiv" ondragstart="return false" onselectstart="return false" oncontextmenu="return false"
+              (click)="pasarAJuegos()">
+              Juegos
+            </div>
+          </a>
+          <a class="options">
+            <div style="cursor: pointer" class="productDiv" class="productDiv" class="productDiv" class="productDiv"
+              class="productDiv" class="productDiv" ondragstart="return false" onselectstart="return false"
+              oncontextmenu="return false" (click)="mostrarProductosLenceria()">
+              Lenceria
+            </div>
+          </a>
+          <a class="options">
+            <div class="productDiv" style="cursor: pointer" class="productDiv" class="productDiv" class="productDiv"
+              class="productDiv" class="productDiv" class="productDiv" ondragstart="return false"
+              onselectstart="return false" oncontextmenu="return false" (click)="pasarALubricantes()">
+              Lubricantes/Aceites
+            </div>
+          </a>
+          <a class="options">
+            <div class="productDiv" class="productDiv" style="cursor: pointer" class="productDiv" class="productDiv"
+              class="productDiv" class="productDiv" class="productDiv" class="productDiv" ondragstart="return false"
+              onselectstart="return false" oncontextmenu="return false" (click)="pasarAOtros()">
+              Otros
+            </div>
+          </a>
+          <a class="options">
+            <div class="productDiv" class="productDiv" class="productDiv" style="cursor: pointer" class="productDiv"
+              class="productDiv" class="productDiv" class="productDiv" class="productDiv" class="productDiv"
+              ondragstart="return false" onselectstart="return false" oncontextmenu="return false"
+              (click)="pasarATodos()">
+              Ver Todos
+            </div>
+          </a>
+          <!-- Orden -->
+          <p class="titleCategories pt-2">Orden</p>
+          <a class="options">
+            <div class="productDiv" class="productDiv" class="productDiv" class="productDiv" style="cursor: pointer"
+              class="productDiv" class="productDiv" class="productDiv" class="productDiv" class="productDiv"
+              class="productDiv" ondragstart="return false" onselectstart="return false" oncontextmenu="return false"
+              (click)="mostrarProductosAscendente()">
+              Ascendente
+            </div>
+          </a>
+          <a class="options">
+            <div class="productDiv" class="productDiv" class="productDiv" class="productDiv" class="productDiv"
+              style="cursor: pointer" class="productDiv" class="productDiv" class="productDiv" class="productDiv"
+              class="productDiv" class="productDiv" ondragstart="return false" onselectstart="return false"
+              oncontextmenu="return false" (click)="mostrarProductosDescendente()">
+              Descendente
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Productos -->
+      <div class="col">
+        <div class="row cardsContainer g-3">
+          <div class="col-sm col-md col-lg-3" *ngFor="let productos of listaProductos; let i = index">
+            <!-- CARDS -->
+            <div class="card cardSize">
+              <img [src]="prueba1" class="card-img-top" alt="product" />
+              <p class="card-title titles">{{ productos.nombreProducto }}</p>
+
+              <div class="card-body">
+                <p class="description">
+                  {{ productos.descripcion }}
+                </p>
+                <p class="price">${{ productos.precio }}</p>
+              </div>
+              <div class="card-footer">
+                <div class="buttonZone">
+                  <button type="button" class="btn buttonProduct" href="productos/filtrosLenceria"
+                    *ngIf="estaSeleccionado(productos.idProducto) == null"
+                    (click)="seleccionarProducto(productos.idProducto)">
+                    Añadir al carrito
+                  </button>
+                  <button type="button" class="btn buttonProduct" href="productos/filtrosLenceria"
+                    *ngIf="estaSeleccionado(productos.idProducto) != null"
+                    (click)="deseleccionarProducto(productos.idProducto)">
+                    Añadir al carrito
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>
