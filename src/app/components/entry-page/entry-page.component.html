@@ -5,15 +5,15 @@
         <img [src]="logoFeelMe" class="col-md-5 logo" />
         <img [src]="SloganFeelMe" class="col-md-7 slogan" />
       </div>
-      <p class="aviso">ESTE SITIO WEB ESTA PERMITIDO <br /></p>
-      <p class="mayorEdad">SOLO PARA MAYORES DE EDAD</p>
-      <p class="verificaTuEdad">INDICA TU FECHA DE NACIMIENTO</p>
+      <p class="aviso">{{ "EntryPageTxt1" | translate }} <br /></p>
+      <p class="mayorEdad">{{ "EntryPageTxt2" | translate }}</p>
+      <p class="verificaTuEdad">{{ "EntryPageTxt3" | translate }}</p>
 
       <div class="container dateContainer">
         <div class="row">
-          <div class="col">Dia</div>
-          <div class="col">Mes</div>
-          <div class="col">Año</div>
+          <div class="col">{{ "Day" | translate }}</div>
+          <div class="col">{{ "Month" | translate }}</div>
+          <div class="col">{{ "Year" | translate }}</div>
         </div>
         <div class="row">
           <div class="col">
@@ -21,8 +21,7 @@
               type="number"
               class="form-control"
               required
-              [(ngModel)]="dia" 
-              placeholder="0"
+              [(ngModel)]="dia"
             />
           </div>
           <div class="col">
@@ -31,7 +30,6 @@
               class="form-control"
               required
               [(ngModel)]="mes"
-              placeholder="0"
             />
           </div>
           <div class="col">
@@ -40,7 +38,6 @@
               class="form-control"
               required
               [(ngModel)]="anio"
-              placeholder="0"
             />
           </div>
         </div>
@@ -53,7 +50,7 @@
           routerLink="/inicio"
           (click)="validacionFecha()"
         >
-          Confirmar
+          {{'Confirm'| translate }}
         </button>
       </div>
     </div>

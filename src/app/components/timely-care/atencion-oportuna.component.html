@@ -3,29 +3,28 @@
 <div class="enviosContainer">
   <div class="separatorSabiasQue">
     <ul class="nav nav-middle" style="background-color: #f992ad">
-      <p class="nav-links nav-middle-text">ATENCIÓN OPORTUNA</p>
+      <p class="nav-links nav-middle-text">
+        {{ "ATENCIONOPORTUNA" | translate }}
+      </p>
     </ul>
   </div>
 
   <div class="row imageText">
     <div class="col-md-7">
-      <img [src]="atencionOportuna" class="img-fluid shadow-2-strong image-envio" alt="" />
+      <img
+        [src]="atencionOportuna"
+        class="img-fluid shadow-2-strong image-envio"
+        alt=""
+      />
     </div>
 
     <div class="col-md-5">
       <p class="style-text">
-        Feel Me SexShop cuenta con un equipo de personas dispuestas en nuestros
-        horarios estipulados para asesorarte en lo que necesites. Tenemos un
-        equipo capacitado para acompañarte en el proceso de seleccion, compra y
-        finalmente preparados para escuchar tu experiencia con nuestros
-        productos. Esto parte de la idea de poder tener una buena
-        comunicación con nuestros clientes, por lo que puedes comunicarte con
-        nosotros mediente nuestras redes sociales, nuestro correo o nuestro
-        whatsapp. Para mas informacion visita nuestra seccion de contacto.
+        {{ "AOTxt1" | translate }}
       </p>
       <div class="containerBtn">
         <button type="button" class="btn boton1" href="/contacto">
-          Click Aquí
+          {{ "CA" | translate }}
         </button>
       </div>
     </div>

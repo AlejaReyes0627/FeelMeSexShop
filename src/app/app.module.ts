@@ -38,7 +38,7 @@ import { FiltroLubricantesComponent } from './components/productos/filtro-lubric
 import { FiltroOtrosComponent } from './components/productos/filtro-otros/filtro-otros.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
-  return new TranslateHttpLoader(http, './assets/i18n/','.json');
+  return new TranslateHttpLoader(http);
 }
 
 @NgModule({
@@ -85,6 +85,7 @@ export function HttpLoaderFactory(http: HttpClient) {
         provide: TranslateLoader,
         useFactory: HttpLoaderFactory,
         deps: [HttpClient],
+        
       },
     }),
   ],

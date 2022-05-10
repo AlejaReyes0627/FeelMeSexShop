@@ -20,15 +20,37 @@
     <nav>
       <!-- relacionada a los navegadores-->
       <a type="submit" (click)="insertarprueba()" href="/inicio">
-        {{ "Home.Homepage" | translate }}</a
+        {{ "Homepage" | translate }}</a
       >
       <!-- hace referencia a un elemento con ID -->
-      <a href="/productos"> {{ "Home.products" | translate }}</a>
+      <a href="/productos"> {{ "Products" | translate }}</a>
+
+      <a
+        class="dropdown-toggle user2"
+        id="dropdownMenuLink"
+        data-bs-toggle="dropdown"
+        aria-expanded="false"
+      >
+        {{ "Language" | translate }}
+      </a>
+
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+        <li>
+          <a value="lang" class="dropdown-item dropdownUser">{{
+            "Spanish" | translate
+          }}</a>
+        </li>
+        <li>
+          <a value="en" class="dropdown-item dropdownUser">{{
+            "English" | translate
+          }}</a>
+        </li>
+      </ul>
 
       <a href="/pago" class="carrito2"
         ><img class="carrito" [src]="iconcarrito" /><span
           class="position-absolute start-100 p-2 bg-danger border border-light rounded-circle"
-          style="transform: translateX(-220px)"
+          style="transform: translateX(-115px)"
         >
         </span>
       </a>
@@ -42,47 +64,48 @@
         <img [src]="iconUser" class="user" />
       </a>
       <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-        <li><a class="dropdown-item dropdownUser" href="/perfil">Perfil</a></li>
+        <li>
+          <a class="dropdown-item dropdownUser" href="/perfil">{{
+            "Profile" | translate
+          }}</a>
+        </li>
         <li>
           <a
             class="dropdown-item dropdownUser"
             href="#"
             (click)="cerrarSesion()"
-            >Cerrar Sesión</a
+            >{{ "Logout" | translate }}</a
           >
-        </li>
-      </ul>
-
-      <a
-        class="dropdown-toggle user2"
-        id="dropdownMenuLink"
-        data-bs-toggle="dropdown"
-        aria-expanded="false"
-      >
-        Idioma
-      </a>
-      <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-        <li>
-          <a value="lang" class="dropdown-item dropdownUser">Español</a>
-        </li>
-        <li>
-          <a value="en" class="dropdown-item dropdownUser">Ingles</a>
         </li>
       </ul>
     </nav>
   </div>
 
   <ul class="nav nav-tabs nav-upside">
-    <a class="nav-link links" href="/productos/filtroMujeres">Para Mujeres</a>
-    <a class="nav-link links" href="/productos/filtroHombres">Para Hombres</a>
-    <a class="nav-link links" href="/productos/filtroParejas">Para Parejas</a>
+    <a class="nav-link links" href="/productos/filtroMujeres">{{
+      "ParaMujeres" | translate
+    }}</a>
+    <a class="nav-link links" href="/productos/filtroHombres">{{
+      "ParaHombres" | translate
+    }}</a>
+    <a class="nav-link links" href="/productos/filtroParejas">{{
+      "ParaParejas" | translate
+    }}</a>
     <a class="nav-link links" href="/productos/filtroUnisex">Unisex</a>
-    <a class="nav-link links" href="/productos/filtroVibradores">Vibradores</a>
-    <a class="nav-link links" href="/productos/filtroJuegos">Juegos</a>
-    <a class="nav-link links" href="/productos/filtroLenceria">Lenceria</a>
-    <a class="nav-link links" href="/productos/filtroLubricantes"
-      >Lubricantes/Aceites</a
-    >
-    <a class="nav-link links" href="/productos/filtroOtros">Otros</a>
+    <a class="nav-link links" href="/productos/filtroVibradores">{{
+      "Vibradores" | translate
+    }}</a>
+    <a class="nav-link links" href="/productos/filtroJuegos">{{
+      "Juegos" | translate
+    }}</a>
+    <a class="nav-link links" href="/productos/filtroLenceria">{{
+      "Lenceria" | translate
+    }}</a>
+    <a class="nav-link links" href="/productos/filtroLubricantes">{{
+      "LA" | translate
+    }}</a>
+    <a class="nav-link links" href="/productos/filtroOtros">{{
+      "Otros" | translate
+    }}</a>
   </ul>
 </header>

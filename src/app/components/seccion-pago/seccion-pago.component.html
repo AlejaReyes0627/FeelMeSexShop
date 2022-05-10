@@ -3,50 +3,89 @@
 <div class="enviosContainer">
   <div class="separatorSabiasQue">
     <ul class="nav nav-middle" style="background-color: #f992ad">
-      <p class="nav-links nav-middle-text">Sección de Pago</p>
+      <p class="nav-links nav-middle-text">{{ "SECCIONDEPAGO" | translate }}</p>
     </ul>
   </div>
 
   <div class="row imageText">
     <div class="col-md-7">
-      <p class="title-section">INFORMACIÓN PERSONAL</p>
+      <p class="title-section">{{ "INFORMACIÓNPERSONAL" | translate }}</p>
       <p class="text-style">
-        Ingresa tus datos faltantes o los de la persona que va a recibir el
-        pedido.
+        {{ "SPTxt1" | translate }}
       </p>
       <form>
         <div class="form-group">
-          <label for="correo">Correo</label>
-          <input type="text" class="form-control" id="correo" name="correo" autocomplete="off" [(ngModel)]="email" />
+          <label for="correo">{{ "ContatcEmail" | translate }}</label>
+          <input
+            type="text"
+            class="form-control"
+            id="correo"
+            name="correo"
+            autocomplete="off"
+            [(ngModel)]="email"
+          />
         </div>
         <div class="form-row">
           <div class="form-group col-md-6">
-            <label for="nombres">Nombres</label>
-            <input type="text" class="form-control" id="Idnombres" name="nombres" autocomplete="off"
-              [(ngModel)]="nombres" />
+            <label for="nombres">{{ "Nombres" | translate }}</label>
+            <input
+              type="text"
+              class="form-control"
+              id="Idnombres"
+              name="nombres"
+              autocomplete="off"
+              [(ngModel)]="nombres"
+            />
           </div>
           <div class="form-group col-md-6">
-            <label for="apellidos">Apellidos</label>
-            <input type="text" class="form-control" id="apellidos" name="apellidos" autocomplete="off"
-              [(ngModel)]="apellidos" />
+            <label for="apellidos">{{ "Apellidos" | translate }}</label>
+            <input
+              type="text"
+              class="form-control"
+              id="apellidos"
+              name="apellidos"
+              autocomplete="off"
+              [(ngModel)]="apellidos"
+            />
           </div>
         </div>
         <div class="form-group">
-          <label for="direccion1">Dirección 1</label>
-          <input type="text" class="form-control" id="direccion1" placeholder="Cra 12 #64-158" name="direccion1"
-            autocomplete="off" [(ngModel)]="direccion" />
+          <label for="direccion1">{{ "Direccion1" | translate }}</label>
+          <input
+            type="text"
+            class="form-control"
+            id="direccion1"
+            placeholder="Cra 12 #64-158"
+            name="direccion1"
+            autocomplete="off"
+            [(ngModel)]="direccion"
+          />
         </div>
 
         <div class="form-group">
-          <label for="direccion2">Dirección 2 (Opcional)</label>
-          <input type="text" class="form-control" id="direccion2" placeholder="Apartmento, piso, unidad, etc."
-            name="direccion2" autocomplete="off" [(ngModel)]="direccion2" />
+          <label for="direccion2">{{ "Direccion2" | translate }}</label>
+          <input
+            type="text"
+            class="form-control"
+            id="direccion2"
+            placeholder="{{ 'placeholderApart' | translate }}"
+            name="direccion2"
+            autocomplete="off"
+            [(ngModel)]="direccion2"
+          />
         </div>
         <div class="form-row">
           <div class="form-group col-md-4">
-            <label for="departamento">Departamento</label>
-            <select id="departamento" class="form-control" name="departamento" [(ngModel)]="departamento">
-              <option selected disabled>Elige un Departamento...</option>
+            <label for="departamento">{{ "Departamento" | translate }}</label>
+            <select
+              id="departamento"
+              class="form-control"
+              name="departamento"
+              [(ngModel)]="departamento"
+            >
+              <option selected disabled>
+                {{ "ElegirDepartamento" | translate }}
+              </option>
               <option>Tolima</option>
               <option>Caldas</option>
               <option>Antioquia</option>
@@ -55,57 +94,90 @@
             </select>
           </div>
           <div class="form-group col-md-5">
-            <label for="ciudad">Ciudad</label>
-            <input type="text" class="form-control" name="ciudad" id="ciudad" autocomplete="off" [(ngModel)]="ciudad" />
+            <label for="ciudad">{{ "Ciudad" | translate }}</label>
+            <input
+              type="text"
+              class="form-control"
+              name="ciudad"
+              id="ciudad"
+              autocomplete="off"
+              [(ngModel)]="ciudad"
+            />
           </div>
 
           <div class="form-group col-md-3">
-            <label for="cPostal">Codigo Postal</label>
-            <input type="text" class="form-control" id="cPostal" name="cPostal" [(ngModel)]="codigoPostal" />
+            <label for="cPostal">{{ "CodigoPostal" | translate }}</label>
+            <input
+              type="text"
+              class="form-control"
+              id="cPostal"
+              name="cPostal"
+              [(ngModel)]="codigoPostal"
+            />
           </div>
         </div>
         <div class="form-group">
-          <label for="telefono">Teléfono</label>
-          <input type="text" class="form-control" name="telefono" id="telefono" autocomplete="off"
-            [(ngModel)]="telefono" />
+          <label for="telefono">{{ "Telefono" | translate }}</label>
+          <input
+            type="text"
+            class="form-control"
+            name="telefono"
+            id="telefono"
+            autocomplete="off"
+            [(ngModel)]="telefono"
+          />
         </div>
       </form>
 
-      <p class="title-section">MÉTODO DE ENVIÓ Y TRANSPORTADORA</p>
+      <p class="title-section">
+        {{ "METODODEENVIOYTRANSPORTADORA" | translate }}
+      </p>
       <p class="text-style">
-        Acontinuación debes de seleccionar la transpordadora, puedes cotizar el
-        costo del envio a tu ciudad en en la sección de
-        <a href="/envios" class="envio-link">envios</a>, recuerda que si tu
-        compra es mayor a 90.000$ el envio sale gratis !.
+        {{ "SPTxt2" | translate }}
+        <a href="/envios" class="envio-link">{{ "envios" | translate }}</a
+        >{{ "SPTxt3" | translate }}
       </p>
       <div class="form-group">
-        <select id="departamento" class="form-control" name="transportadora" [(ngModel)]="transportadora">
-          <option selected disabled>Elige una transportadora...</option>
+        <select
+          id="departamento"
+          class="form-control"
+          name="transportadora"
+          [(ngModel)]="transportadora"
+        >
+          <option selected disabled>{{ "SelectT" | translate }}</option>
           <option>Servientrega</option>
           <option>Interapidisimo</option>
         </select>
       </div>
 
-      <p class="title-section">INFORMACIÓN DE PAGO</p>
+      <p class="title-section">{{ "InfoPago" | translate }}</p>
       <p class="text-style">
-        Recuerda que todas tus transacciones son seguras. Escoge el metodo que
-        mejor se adapte a tu necesidad.
+        {{ "SPTxt4" | translate }}
       </p>
       <div class="accordion col-md-13" id="accordionExample">
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingThree">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-              Tarjeta de crédito, PSE, Efecty y Baloto
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseThree"
+              aria-expanded="false"
+              aria-controls="collapseThree"
+            >
+              {{ "Cards" | translate }}
               <img [src]="imgMercadoPago" class="card-img-center" alt="" />
             </button>
           </h2>
-          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-            data-bs-parent="#accordionExample">
+          <div
+            id="collapseThree"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingThree"
+            data-bs-parent="#accordionExample"
+          >
             <div class="accordion-body">
               <p>
-                Puedes pagar con tu tarjeta de crédito, débito o pagos en
-                efectivo. Manejamos los siguientes medios :
+                {{ "SPTxt5" | translate }}
               </p>
               <ul>
                 <li>Visa</li>
@@ -120,96 +192,176 @@
 
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingTwo">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-              Transferencia Bancaria y consignación
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo"
+              aria-expanded="false"
+              aria-controls="collapseTwo"
+            >
+              {{ "bank" | translate }}
               <img [src]="imgTransferencia" class="card-img-banco" alt="" />
             </button>
           </h2>
-          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-            data-bs-parent="#accordionExample">
+          <div
+            id="collapseTwo"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingTwo"
+            data-bs-parent="#accordionExample"
+          >
             <div class="accordion-body">
               <p>
-                Realiza tu pago directamente en nuestra cuenta bancaria por
-                transferencia o consignación y envíanos el comprobante de pago a
-                nuestro WhatsApp.
-                <strong>recuerda :</strong> Tu pedido no se procesará hasta que
-                se haya recibido el importe en nuestra cuenta.
+                {{ "SPTxt6" | translate }}
+                <strong>{{ "recuerda" | translate }}</strong>
+                {{ "SPTxt7" | translate }}
               </p>
             </div>
           </div>
         </div>
       </div>
       <br /><br />
-      <p class="title-section">¿CÓMO DESEAS PAGAR TU PEDIDO?</p>
-      <div class="metodo-pago" >
+      <p class="title-section">{{ "comopagar" | translate }}</p>
+      <div class="metodo-pago">
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="Mercado Pago" [(ngModel)]="metodoDePago"/>
-          <label class="form-check-label" for="inlineRadio1">Mercado Pago</label>
+          <input
+            class="form-check-input"
+            type="radio"
+            name="inlineRadioOptions"
+            id="inlineRadio1"
+            value="Mercado Pago"
+            [(ngModel)]="metodoDePago"
+          />
+          <label class="form-check-label" for="inlineRadio1"
+            >Mercado Pago</label
+          >
         </div>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="Transferencia" [(ngModel)]="metodoDePago"/>
-          <label class="form-check-label" for="inlineRadio2">Transferencia</label>
+          <input
+            class="form-check-input"
+            type="radio"
+            name="inlineRadioOptions"
+            id="inlineRadio2"
+            value="Transferencia"
+            [(ngModel)]="metodoDePago"
+          />
+          <label class="form-check-label" for="inlineRadio2">{{
+            "Transferencia" | translate
+          }}</label>
         </div>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="Contra Entrega" [(ngModel)]="metodoDePago"/>
-          <label class="form-check-label" for="inlineRadio3">Contra Entrega</label>
+          <input
+            class="form-check-input"
+            type="radio"
+            name="inlineRadioOptions"
+            id="inlineRadio3"
+            value="Contra Entrega"
+            [(ngModel)]="metodoDePago"
+          />
+          <label class="form-check-label" for="inlineRadio3">{{
+            "Contra Entrega" | translate
+          }}</label>
         </div>
       </div>
       <div class="vermas">
         <button type="button" class="btn botonvermas" (click)="hacerPedido()">
-          HACER PEDIDO
+          {{ "HACERPEDIDO" | translate }}
         </button>
       </div>
     </div>
 
-    <div class="col-md-5" >
-      <div class="resumen-pago" >
-        <p class="title-section" >RESUMEN DE TU PEDIDO</p>
-        <button class="btn botonCarrito mb-3"  (click)="mostrarResumen()" >¿Quieres actualizar el resumen de tu pedido?</button>
+    <div class="col-md-5">
+      <div class="resumen-pago">
+        <p class="title-section">{{ "RESUMENDETUPEDIDO" | translate }}</p>
+        <button class="btn botonCarrito mb-3" (click)="mostrarResumen()">
+          {{ "ActuPedido" | translate }}
+        </button>
         <div class="card border-dark mb-3 card-pedido">
           <div class="card-header">
-          <div class="card-body text-dark">
-            <div class="row" >
-              <p class="card-text col"># de Productos</p>
-              <input class="card-text col input-resumen" name="total" [(ngModel)]="numeroArticulos" disabled />
-            </div>
+            <div class="card-body text-dark">
+              <div class="row">
+                <p class="card-text col">{{ "numeroProductos" | translate }}</p>
+                <input
+                  class="card-text col input-resumen"
+                  name="total"
+                  [(ngModel)]="numeroArticulos"
+                  disabled
+                />
+              </div>
 
-            <div class="row">
-              <p class="card-text col">Subtotal</p>
-              <input class="card-text col input-resumen" name="total" [(ngModel)]="subtotal" disabled />
+              <div class="row">
+                <p class="card-text col">Subtotal</p>
+                <input
+                  class="card-text col input-resumen"
+                  name="total"
+                  [(ngModel)]="subtotal"
+                  disabled
+                />
+              </div>
+              <div class="row">
+                <p class="card-text col">{{ "Carrier" | translate }}</p>
+                <input
+                  class="card-text col input-resumen"
+                  name="total"
+                  id="transportadora"
+                  value=""
+                  [(ngModel)]="transportadora"
+                  disabled
+                />
+              </div>
+              <div class="row">
+                <p class="card-text col">{{ "CostoEnvio" | translate }}</p>
+                <input
+                  class="card-text col input-resumen"
+                  name="total"
+                  id="envio"
+                  [(ngModel)]="costoEnvio"
+                  disabled
+                />
+              </div>
+              <div class="row">
+                <p class="card-text col">{{ "MetododePago" | translate }}</p>
+                <input
+                  class="card-text col input-resumen"
+                  name="total"
+                  value=""
+                  id="metodo"
+                  [(ngModel)]="metodoDePago"
+                  disabled
+                />
+              </div>
             </div>
-            <div class="row">
-              <p class="card-text col">Transportadora</p>
-              <input class="card-text col input-resumen" name="total" id="transportadora" value="" [(ngModel)]="transportadora" disabled />
-            </div>
-            <div class="row">
-              <p class="card-text col">Costo Envío</p>
-              <input class="card-text col input-resumen" name="total" id="envio" [(ngModel)]="costoEnvio" disabled/>
-            </div>
-            <div class="row">
-              <p class="card-text col">Metodo de Pago</p>
-              <input class="card-text col input-resumen" name="total" value="" id="metodo" [(ngModel)]="metodoDePago" disabled />
+            <div class="card-footer">
+              <div class="row">
+                <p class="card-text col">Total</p>
+                <input
+                  class="card-text col input-resumen"
+                  name="total"
+                  id=""
+                  [(ngModel)]="total"
+                  disabled
+                />
+              </div>
             </div>
           </div>
-          <div class="card-footer">
-            <div class="row">
-              <p class="card-text col">Total</p>
-              <input class="card-text col input-resumen" name="total" id="" [(ngModel)]="total" disabled />
-            </div>
-          </div>
-      </div>
-    </div>
+        </div>
         <div class="card mt-3 card-square">
-          <div class="card-body seccionElementos" *ngFor="let productos of listaProductos">
-            <h4 class="card-title">{{productos?.nombreProducto}}</h4>
-            <p class="card-title">{{productos?.descripcion}}</p>
-            <h5 class="card-title">${{productos?.precio}}</h5>
-            <button type="button" class="btn btn-danger" *ngIf="estaSeleccionado(productos.idProducto) != null"
-              (click)="deseleccionarProducto(productos.idProducto)">
-              Eliminar Producto
+          <div
+            class="card-body seccionElementos"
+            *ngFor="let productos of listaProductos"
+          >
+            <h4 class="card-title">{{ productos?.nombreProducto }}</h4>
+            <p class="card-title">{{ productos?.descripcion }}</p>
+            <h5 class="card-title">${{ productos?.precio }}</h5>
+            <button
+              type="button"
+              class="btn btn-danger"
+              *ngIf="estaSeleccionado(productos.idProducto) != null"
+              (click)="deseleccionarProducto(productos.idProducto)"
+            >
+              {{'EliminarProducto'| translate }}
             </button>
-            <hr>
+            <hr />
           </div>
         </div>
       </div>
@@ -217,19 +369,25 @@
   </div>
 </div>
 
-
 <div class="modal" tabindex="-1" id="myModal">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title">Modal title</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
       </div>
       <div class="modal-body">
         <p>Modal body text goes here.</p>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+          Close
+        </button>
         <button type="button" class="btn btn-primary">Save changes</button>
       </div>
     </div>

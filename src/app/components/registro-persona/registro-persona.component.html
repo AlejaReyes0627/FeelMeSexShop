@@ -9,14 +9,18 @@
           <div class="card-body cardSize">
             <div class="separatorSabiasQue">
               <ul class="nav nav-middle" style="background-color: #f992ad">
-                <p class="nav-links nav-middle-text">REGISTRATE</p>
+                <p class="nav-links nav-middle-text">
+                  {{ "REGISTRATE" | translate }}
+                </p>
               </ul>
             </div>
 
             <form class="px-md-2">
               <!-- Nombre -->
               <div class="form-outline mb-4">
-                <label class="form-label" for="form3Example1q">Nombres</label>
+                <label class="form-label" for="form3Example1q">{{
+                  "Nombres" | translate
+                }}</label>
                 <input
                   type="text"
                   id="nombre_registro"
@@ -30,7 +34,9 @@
               </div>
               <!-- Apellidos -->
               <div class="form-outline mb-4">
-                <label class="form-label" for="form3Example1q">Apellidos</label>
+                <label class="form-label" for="form3Example1q">{{
+                  "Apellidos" | translate
+                }}</label>
                 <input
                   type="text"
                   id="apellido_registro"
@@ -44,7 +50,9 @@
               </div>
               <!-- Correo -->
               <div class="form-outline mb-4">
-                <label class="form-label" for="form3Example1q">Correo</label>
+                <label class="form-label" for="form3Example1q">{{
+                  "ContatcEmail" | translate
+                }}</label>
                 <input
                   type="text"
                   id="email_registro"
@@ -58,7 +66,9 @@
               </div>
 
               <div class="form-outline mb-4">
-                <label class="form-label" for="form3Example1q">Género</label>
+                <label class="form-label" for="form3Example1q">{{
+                  "Genero" | translate
+                }}</label>
                 <div class="col-md-12 mb-4">
                   <select
                     id="genero"
@@ -66,18 +76,22 @@
                     [(ngModel)]="genero"
                     class="selectGenero"
                   >
-                    <option value="Masculino">Masculino</option>
-                    <option value="Femenino">Femenino</option>
-                    <option value="Otro">Otro</option>
+                    <option value="Masculino">
+                      {{ "Masculino" | translate }}
+                    </option>
+                    <option value="Femenino">
+                      {{ "Femenino" | translate }}
+                    </option>
+                    <option value="Otro">{{ "Otro" | translate }}</option>
                   </select>
                 </div>
               </div>
 
               <!-- Contraseña -->
               <div class="form-group pb-4">
-                <label class="form-label" for="form3Example1q"
-                  >Contraseña</label
-                >
+                <label class="form-label" for="form3Example1q">{{
+                  "Contraseña" | translate
+                }}</label>
                 <div class="input-group inputsPassword">
                   <input
                     type="password"
@@ -97,16 +111,16 @@
                     id="button-addon2"
                     style="font-size: 14px"
                   >
-                    Mostrar
+                    {{ "Ver" | translate }}
                   </button>
                 </div>
               </div>
 
               <!-- Confirmar Contraseña -->
               <div class="form-outline mb-4">
-                <label class="form-label" for="form3Example1q"
-                  >Confirmar Contraseña</label
-                >
+                <label class="form-label" for="form3Example1q">{{
+                  "ConfirmarContra" | translate
+                }}</label>
                 <div class="input-group inputsPassword">
                   <input
                     type="password"
@@ -126,7 +140,7 @@
                     id="button-addon2"
                     style="font-size: 14px"
                   >
-                    Mostrar
+                    {{ "Ver" | translate }}
                   </button>
                 </div>
               </div>
@@ -139,7 +153,7 @@
                   class="btn btn-lg mb-1 btnRegistrarse"
                   (click)="insertarPerona()"
                 >
-                  Registrarse
+                  {{'Registrarse'| translate }}
                 </button>
               </div>
             </form>

@@ -5,14 +5,21 @@
     <p class="nav-links nav-middle-text">PRODUTOS EN OFERTA</p>
   </ul>
 
-  <div id="carouselExampleDark" class="carousel carousel-dark slide sliderProductsContainer" data-bs-ride="carousel">
+  <div
+    id="carouselExampleDark"
+    class="carousel carousel-dark slide sliderProductsContainer"
+    data-bs-ride="carousel"
+  >
     <div class="carousel-inner cardsSlider">
       <!-- Producto 1 -->
       <div class="carousel-item active" data-bs-interval="4000">
         <div class="card-group">
           <!-- CardProduct -->
           <div class="row cardsContainer g-2">
-            <div class="col-sm col-md col-lg-3" *ngFor="let productos of listaProductosLenceria; let i = index">
+            <div
+              class="col-sm col-md col-lg-3"
+              *ngFor="let productos of listaProductosLenceria; let i = index"
+            >
               <!-- CARDS -->
               <div class="card cardSize">
                 <img [src]="prueba1" class="card-img-top" alt="product" />
@@ -26,16 +33,25 @@
                 </div>
                 <div class="card-footer">
                   <div class="buttonZone">
-                    <button type="button" class="btn buttonProduct" href="productos"
-                    *ngIf="estaSeleccionado(productos.idProducto) == null"
-                    (click)="seleccionarProducto(productos.idProducto)">
-                    Añadir al carrito
-                  </button>
-                  <button type="button" class="btn buttonProduct" href="productos"
-                    *ngIf="estaSeleccionado(productos.idProducto) != null"
-                    (click)="deseleccionarProducto(productos.idProducto)">
-                    Añadir al carrito
-                  </button>                  </div>
+                    <button
+                      type="button"
+                      class="btn buttonProduct"
+                      href="productos"
+                      *ngIf="estaSeleccionado(productos.idProducto) == null"
+                      (click)="seleccionarProducto(productos.idProducto)"
+                    >
+                      {{ "AnadirCarrito" | translate }}
+                    </button>
+                    <button
+                      type="button"
+                      class="btn buttonProduct"
+                      href="productos"
+                      *ngIf="estaSeleccionado(productos.idProducto) != null"
+                      (click)="deseleccionarProducto(productos.idProducto)"
+                    >
+                      {{ "AnadirCarrito" | translate }}
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -52,7 +68,10 @@
         <div class="card-group">
           <!-- CardProduct -->
           <div class="row cardsContainer g-2">
-            <div class="col-sm col-md col-lg-3" *ngFor="let productos of listaProductosVibradores; let i = index">
+            <div
+              class="col-sm col-md col-lg-3"
+              *ngFor="let productos of listaProductosVibradores; let i = index"
+            >
               <!-- CARDS -->
               <div class="card cardSize">
                 <img [src]="prueba1" class="card-img-top" alt="product" />
@@ -66,15 +85,23 @@
                 </div>
                 <div class="card-footer">
                   <div class="buttonZone">
-                    <button type="button" class="btn buttonProduct" href="productos"
+                    <button
+                      type="button"
+                      class="btn buttonProduct"
+                      href="productos"
                       *ngIf="estaSeleccionado(productos.idProducto) == null"
-                      (click)="seleccionarProducto(productos.idProducto)">
-                      Añadir al carrito
+                      (click)="seleccionarProducto(productos.idProducto)"
+                    >
+                      {{ "AnadirCarrito" | translate }}
                     </button>
-                    <button type="button" class="btn buttonProduct" href="productos"
+                    <button
+                      type="button"
+                      class="btn buttonProduct"
+                      href="productos"
                       *ngIf="estaSeleccionado(productos.idProducto) != null"
-                      (click)="deseleccionarProducto(productos.idProducto)">
-                      Añadir al carrito
+                      (click)="deseleccionarProducto(productos.idProducto)"
+                    >
+                      {{ "AnadirCarrito" | translate }}
                     </button>
                   </div>
                 </div>
@@ -87,19 +114,31 @@
       </div>
       <!-- Slider 2 -->
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+    <button
+      class="carousel-control-prev"
+      type="button"
+      data-bs-target="#carouselExampleDark"
+      data-bs-slide="prev"
+    >
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Previous</span>
     </button>
 
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+    <button
+      class="carousel-control-next"
+      type="button"
+      data-bs-target="#carouselExampleDark"
+      data-bs-slide="next"
+    >
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
     </button>
-</div>
+  </div>
 
   <!-- Boton Ver Mas -->
   <section class="vermas">
-    <a type="submit" class="btn botonvermas" href="/productos"> Ver Más </a>
+    <a type="submit" class="btn botonvermas" href="/productos">
+      {{ "VerMas" | translate }}
+    </a>
   </section>
 </section>

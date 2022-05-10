@@ -3,7 +3,9 @@
 <div class="enviosContainer">
   <div class="separatorSabiasQue">
     <ul class="nav nav-middle" style="background-color: #f992ad">
-      <p class="nav-links nav-middle-text">PEDIDOS Y ENVÍOS</p>
+      <p class="nav-links nav-middle-text">
+        {{ "ORDERSANDSHIPMENTS" | translate }}
+      </p>
     </ul>
   </div>
 
@@ -18,37 +20,28 @@
 
     <div class="col-md-5">
       <p class="style-text">
-        Contamos con envios a todo el pais, Las transportadoras con las cuales
-        trabajamos son Servientrega e interrapidísimo. En caso tal de que éstas
-        empresas no lleguen a tu ubicación, nos adaptamos a la que nos sugieras.
-        Si prefieres que la agencia de transporte no acuda a tu domicilio, lugar
-        de trabajo u otro destino personal, también puedes elegir que te lo
-        enviemos a una oficina de una agencia de transporte donde ellos se
-        comunicaran contigo para informarte cuando puedes acercarte a recoger tu
-        producto.
+        {{ "ShippingTxt1" | translate }}
       </p>
     </div>
   </div>
 
   <div class="separatorSabiasQue">
     <ul class="nav nav-middle" style="background-color: #cfb9f7">
-      <p class="nav-links nav-middle-text">COSTES DE ENVÍO</p>
+      <p class="nav-links nav-middle-text">{{ "SHIPPINGCOSTS" | translate }}</p>
     </ul>
   </div>
 
   <div style="justify-content: center">
     <p class="style-text">
-      El envío es gratis por compras desde $90.000, si es menor a este valor,
-      pagarías por el valor del flete, dependiendo de la transportadora y la
-      ciudad a la que vaya el envio.
+      {{ "ShippingTxt2" | translate }}
     </p>
   </div>
 
   <div class="divTable">
     <table class="table style-text">
       <tr>
-        <th>Transportadora</th>
-        <th>Coste del transporte</th>
+        <th>{{ "Carrier" | translate }}</th>
+        <th>{{ "CostOfTransportation" | translate }}</th>
       </tr>
       <tr>
         <td>
@@ -65,7 +58,7 @@
             />
           </a>
         </td>
-        <td><h4>Desde 11.000 $</h4></td>
+        <td><h4>{{ "11000" | translate }}</h4></td>
       </tr>
       <tr>
         <td>
@@ -82,44 +75,33 @@
             />
           </a>
         </td>
-        <td><h4>Desde 13.000 $</h4></td>
+        <td><h4>{{ "13000" | translate }}</h4></td>
       </tr>
     </table>
   </div>
 
   <div class="separatorSabiasQue">
     <ul class="nav nav-middle" style="background-color: #f78ecf">
-      <p class="nav-links nav-middle-text">TIEMPOS DE ENTREGA</p>
+      <p class="nav-links nav-middle-text">{{ "DELIVERYTIMES" | translate }}</p>
     </ul>
   </div>
 
   <div style="justify-content: center" style="padding-bottom: 30px">
     <p class="style-text">
-      En Feel Me SexShop realizamos envios todos los dias con excepcion de los
-      dias Domingos y dias festivos. Tu pedido sera enviado en maximo dos dias
-      desde que realices la solicitud. El resto del tiempo sera el que la
-      transportadora tarde en realizar la llegada del producto hasta la puerta
-      de tu casa. Para las ciudades principales los envios se demoran entre 3 y
-      4 días hábiles en llegar, a las ciudades secundarias pueden demorar de 6
-      hasta 8 días hábiles en llegar.
+      {{'ShippingTxt3'| translate }}
     </p>
   </div>
 
   <div class="separatorSabiasQue">
     <ul class="nav nav-middle" style="background-color: #c580ed">
-      <p class="nav-links nav-middle-text">ARTÍCULOS EN TU CARRITO</p>
+      <p class="nav-links nav-middle-text">{{'ITEMSINYOURCART'| translate }}</p>
     </ul>
   </div>
 
   <div style="justify-content: center" class="espacio-footer">
     <p class="style-text">
-      Para poder conocer el precio exacto de los gastos de envío, antes de
-      realizar el pedido debes añadir a tu carrito los artículos que desees,
-      seleccionar destino y transportadora. <br /><br />
-      Antes de efectuar la compra sus gastos de envío se calcularán
-      automáticamente en base a los productos que tengas en la cesta y según la
-      agencia de transportes seleccionada. La información será facilitada
-      siempre de forma previa a la realización del pago.
+      {{'ShippingTxt4'| translate }} <br /><br />
+      {{'ShippingTxt5'| translate }}
     </p>
   </div>
 </div>

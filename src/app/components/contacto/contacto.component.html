@@ -3,25 +3,23 @@
 <div class="formContactenos">
   <div class="separatorSabiasQue">
     <ul class="nav nav-middle" style="background-color: #f992ad">
-      <p class="nav-links nav-middle-text">CONTACTANOS</p>
+      <p class="nav-links nav-middle-text">{{'ConctatcTitle' | translate}}</p>
     </ul>
   </div>
 
   <div class="formInputsContactenos">
     <div style="justify-content: center">
       <p class="style-text">
-        Si tienes alguna duda o quieres alguna asesoria para la compra de
-        productos no dudes en comunicarte con nosotros. Estamos dispuestos a
-        solucionar todas tus dudas.
+        {{'ConctactText1' | translate}}
       </p>
-      <h3>PUEDES DEJARNOS TU COMENTARIO</h3>
+      <h3>{{'ConctactText2'| translate }}</h3>
     </div>
 
     <form class="text-center inputsContactenos">
       <input
         type="text"
         class="form-control mb-4"
-        placeholder="Nombre"
+        placeholder="{{'ContatcName'| translate }}"
         name="nombre"
         autocomplete="off"
         id="iDnombre"
@@ -31,7 +29,7 @@
       <input
         type="email"
         class="form-control mb-4"
-        placeholder="Correo"
+        placeholder="{{'ContatcEmail'| translate }}"
         name="correo"
         id="iDemail"
         autocomplete="off"
@@ -43,7 +41,7 @@
           class="form-control rounded-0"
           id="mensaje"
           rows="3"
-          placeholder="Mensaje"
+          placeholder="{{'ContatcMessage'| translate }}"
           name="mensaje"
           autocomplete="off"
           [(ngModel)]="mensaje"
@@ -52,7 +50,7 @@
 
       <div class="btnEnviar" (click)="enviarMensaje()">
         <button type="button" class="btn botonvermas" href="/productos">
-          Enviar
+          {{'Send'| translate }}
         </button>
       </div>
     </form>
@@ -60,21 +58,20 @@
 
   <div>
     <p class="style-text">
-      Brindamos asesorias en nuestra linea de WhatsApp, también nos puedes
-      escribir al correo.
+      {{'ConctactText3'| translate }}
     </p>
   </div>
 
   <div class="containerInfoWhatsapp">
     <a href="https://web.whatsapp.com" target="_blank">
       <img [src]="whatsappIcon" class="socialMediaIcon" />
-      <p class="style-text"><strong>WhatsApp :</strong> 3015969277</p>
+      <p class="style-text"><strong>WhatsApp :</strong> +57 3015969277</p>
     </a>
   </div>
 
   <div>
     <img [src]="gmailIcon" class="gmailIcon" />
-    <p class="style-text"><strong>Correo:</strong> info@feelmeshop.com</p>
+    <p class="style-text"><strong>{{'ContatcEmail'| translate }}:</strong> info@feelmeshop.com</p>
   </div>
 </div>
 <app-footer></app-footer>
