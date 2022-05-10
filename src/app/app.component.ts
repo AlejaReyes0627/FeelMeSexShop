@@ -12,6 +12,7 @@ import { TranslateService } from '@ngx-translate/core';
 export class AppComponent {
   title = 'FeelMeSexShop';
   respuesta: any;
+  language : any;
   sexShopservice: SexshopdatabaseService;
   langs: string[] = [];
 
@@ -20,10 +21,11 @@ export class AppComponent {
     http: HttpClient,
     private router: Router
   ) {
+    this.language = localStorage.getItem("language");
     this.sexShopservice = new SexshopdatabaseService(http);
     this.translate.addLangs(['es', 'en']);
     this.translate.setDefaultLang('es');
-    this.translate.use('en'); /* Cambie el idioma aqui XD */
+    this.translate.use(this.language); /* Cambie el idioma aqui XD */
     this.langs = this.translate.getLangs();
   }
   ngOnInit() {}
@@ -31,7 +33,6 @@ export class AppComponent {
   public changeLang(lang: string) {
     this.translate.use(lang);
   }
-
   //metodo de ejemplo para usar webservice
   llamadoEjemplo() {
     //se declara la variable tipo, que contiene el tipo de script que se le dara al webservice
@@ -62,4 +63,6 @@ export class AppComponent {
       }
     );
   }
+
+  
 }

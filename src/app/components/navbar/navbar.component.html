@@ -25,16 +25,47 @@
       <!-- hace referencia a un elemento con ID -->
       <a href="/productos"> {{ "Products" | translate }}</a>
 
-      <a
+      <a>
+        <select
+          id="language"
+          name="language"
+          [(ngModel)]="languageItem"
+          (click)="language()"
+          class="selectLanguage"
+        >
+          <option value="Idioma" disabled selected>
+            <a style="font-weight: bold;">{{ "Language" | translate }} </a>
+          </option>
+          <option>
+            <a value="lang" class="dropdown-item dropdownUser">{{
+              "Spanish" | translate
+            }}</a>
+          </option>
+          <option>
+            <a value="en" class="dropdown-item dropdownUser">{{
+              "English" | translate
+            }}</a>
+          </option>
+        </select>
+      </a>
+
+      <!--     <a
         class="dropdown-toggle user2"
         id="dropdownMenuLink"
         data-bs-toggle="dropdown"
         aria-expanded="false"
+        id="language"
+        name="language"
+        [(ngModel)]="languageItem"
+        (click)="language()"
       >
         {{ "Language" | translate }}
       </a>
-
-      <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+      <ul
+        class="dropdown-menu"
+        aria-labelledby="dropdownMenuLink"
+        
+      >
         <li>
           <a value="lang" class="dropdown-item dropdownUser">{{
             "Spanish" | translate
@@ -44,8 +75,8 @@
           <a value="en" class="dropdown-item dropdownUser">{{
             "English" | translate
           }}</a>
-        </li>
-      </ul>
+        </li> 
+     </ul> -->
 
       <a href="/pago" class="carrito2"
         ><img class="carrito" [src]="iconcarrito" /><span

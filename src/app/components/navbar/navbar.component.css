@@ -114,3 +114,10 @@ nav{
 .imgUser {
   max-width: 60px;
 }
+
+.selectLanguage{
+  border: 0;
+  color:black;
+  font-weight: bold;
+
+}

@@ -14,16 +14,21 @@ export class NavbarComponent implements OnInit {
   iconcarrito: string;
   iconUser: string;
   SloganFeelMe: string;
+  languageItem: string;
   langs: string[] = [];
-  constructor(public router: Router, http: HttpClient ) {
+  constructor(public router: Router, http: HttpClient) {
     this.sexshopService = new SexshopdatabaseService(http);
     this.logoFeelMe = '/assets/img/logo.png';
     this.SloganFeelMe = '/assets/img/logo2.png';
     this.iconcarrito = '/assets/img/icons/carrito.ico';
     this.iconUser = '/assets/img/icons/user.png';
-   }
+    this.languageItem = 'Idioma';
+  }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.language();
+    
+  }
   insertarprueba() {
     var tipo = 'delete';
     var sql = 'DELETE FROM persona';
@@ -37,11 +42,18 @@ export class NavbarComponent implements OnInit {
     );
   }
 
+  language() {
+    if (this.languageItem == 'Spanish' || this.languageItem == 'Español') {
+      localStorage.setItem('language', 'es');
+      location.reload();
+    }
+    if (this.languageItem == 'English' || this.languageItem == 'Ingles') {
+      localStorage.setItem('language', 'en');
+      location.reload();
+    }
+  }
 
-
-
-  cerrarSesion()
-  {
-    localStorage.removeItem('usuario')
+  cerrarSesion() {
+    localStorage.removeItem('usuario');
   }
 }
