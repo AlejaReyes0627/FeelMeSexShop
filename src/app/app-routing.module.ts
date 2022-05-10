@@ -19,31 +19,49 @@ import { EntryPageComponent } from './components/entry-page/entry-page.component
 import { PerfilComponent } from './components/perfil/perfil.component';
 import { RememberPasswordComponent } from './components/remember-password/remember-password.component';
 import { SeccionPagoComponent } from './components/seccion-pago/seccion-pago.component';
+import { FiltroMujeresComponent } from './components/productos/filtro-mujeres/filtro-mujeres.component';
+import { FiltroHombresComponent } from './components/productos/filtro-hombres/filtro-hombres.component';
+import { FiltroParejasComponent } from './components/productos/filtro-parejas/filtro-parejas.component';
+import { FiltroUnisexComponent } from './components/productos/filtro-unisex/filtro-unisex.component';
+import { FiltroVibradoresComponent } from './components/productos/filtro-vibradores/filtro-vibradores.component';
+import { FiltroJuegosComponent } from './components/productos/filtro-juegos/filtro-juegos.component';
+import { FiltroLenceriaComponent } from './components/productos/filtro-lenceria/filtro-lenceria.component';
+import { FiltroLubricantesComponent } from './components/productos/filtro-lubricantes/filtro-lubricantes.component';
+import { FiltroOtrosComponent } from './components/productos/filtro-otros/filtro-otros.component';
 
 const routes: Routes = [
   { path: '', component: EntryPageComponent },
   { path: 'inicio', component: MenuComponent },
-  { path: 'entrada', component: EntryPageComponent},
+  { path: 'entrada', component: EntryPageComponent },
   { path: 'productos', component: ProductosComponent },
+  { path: 'productos/filtroMujeres', component: FiltroMujeresComponent },
+  { path: 'productos/filtroHombres', component: FiltroHombresComponent },
+  { path: 'productos/filtroParejas', component: FiltroParejasComponent },
+  { path: 'productos/filtroUnisex', component: FiltroUnisexComponent },
+  { path: 'productos/filtroVibradores', component: FiltroVibradoresComponent },
+  { path: 'productos/filtroJuegos', component: FiltroJuegosComponent },
+  { path: 'productos/filtroLenceria', component: FiltroLenceriaComponent },
+  { path: 'productos/filtroLubricantes', component: FiltroLubricantesComponent },
+  { path: 'productos/filtroOtros', component: FiltroOtrosComponent },
   { path: 'produtosOferta', component: ProductosOfertaComponent },
   { path: 'footer', component: FooterComponent },
   { path: 'preguntasFrecuentes', component: PreguntasFrecuentesComponent },
   { path: 'envios', component: EnviosComponent },
-  { path: 'devoluciones', component: DevolucionesComponent},
-  { path: 'confidencialidad', component: ConfidencialidadComponent},
-  { path: 'contacto', component: ContactoComponent},
-  { path: 'quienesSomos', component: QuienesSomosComponent},
-  { path: 'preciosAsequibles', component: PreciosAsequiblesComponent},
-  { path: 'atencionOportuna', component: AtencionOportunaComponent},
-  { path: 'registro-persona', component: RegistroPersonaComponent},
-  { path: 'login', component: LoginComponent},
-  { path: 'perfil', component: PerfilComponent},
-  { path: 'rememberPassword', component: RememberPasswordComponent},
-  { path: 'pago', component:SeccionPagoComponent}
+  { path: 'devoluciones', component: DevolucionesComponent },
+  { path: 'confidencialidad', component: ConfidencialidadComponent },
+  { path: 'contacto', component: ContactoComponent },
+  { path: 'quienesSomos', component: QuienesSomosComponent },
+  { path: 'preciosAsequibles', component: PreciosAsequiblesComponent },
+  { path: 'atencionOportuna', component: AtencionOportunaComponent },
+  { path: 'registro-persona', component: RegistroPersonaComponent },
+  { path: 'login', component: LoginComponent },
+  { path: 'perfil', component: PerfilComponent },
+  { path: 'rememberPassword', component: RememberPasswordComponent },
+  { path: 'pago', component: SeccionPagoComponent }
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }

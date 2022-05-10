@@ -26,8 +26,7 @@
               ondragstart="return false"
               onselectstart="return false"
               oncontextmenu="return false"
-              (click)="mostrarProductosMujeres()"
-              id = "mujeres"
+              
             >
               Para Mujeres
             </div></a
@@ -39,7 +38,7 @@
               ondragstart="return false"
               onselectstart="return false"
               oncontextmenu="return false"
-              (click)="mostrarProductosHombres()"
+            
             >
               Para Hombres
             </div></a
@@ -52,7 +51,7 @@
               ondragstart="return false"
               onselectstart="return false"
               oncontextmenu="return false"
-              (click)="mostrarProductosParejas()"
+              
             >
               Para Parejas
             </div></a
@@ -81,8 +80,7 @@
               ondragstart="return false"
               onselectstart="return false"
               oncontextmenu="return false"
-              (click)="mostrarProductosVibradores()"
-            >
+             >
               Vibradores
             </div></a
           >
@@ -97,7 +95,7 @@
               ondragstart="return false"
               onselectstart="return false"
               oncontextmenu="return false"
-              (click)="mostrarProductosJuegos()"
+            
             >
               Juegos
             </div></a
@@ -114,7 +112,7 @@
               ondragstart="return false"
               onselectstart="return false"
               oncontextmenu="return false"
-              (click)="mostrarProductosLenceria()"
+             
             >
               Lenceria
             </div></a
@@ -132,7 +130,7 @@
               ondragstart="return false"
               onselectstart="return false"
               oncontextmenu="return false"
-              (click)="mostrarProductosLubricantes()"
+             
             >
               Lubricantes/Aceites
             </div></a
@@ -151,7 +149,6 @@
               ondragstart="return false"
               onselectstart="return false"
               oncontextmenu="return false"
-              (click)="mostrarProductosOtros()"
             >
               Otros
             </div></a
@@ -171,7 +168,7 @@
               ondragstart="return false"
               onselectstart="return false"
               oncontextmenu="return false"
-              (click)="mostrarProductos()"
+              
             >
               Ver Todos
             </div></a
@@ -247,7 +244,7 @@
                   <button
                     type="button"
                     class="btn buttonProduct"
-                    href="productos"
+                    href="productos/filtroUnisex"
                     *ngIf="estaSeleccionado(productos.idProducto) == null"
                     (click)="seleccionarProducto(productos.idProducto)"
                   >
@@ -256,7 +253,7 @@
                   <button
                   type="button"
                   class="btn buttonProduct"
-                  href="productos"
+                  href="productos/filtroUnisex"
                   *ngIf="estaSeleccionado(productos.idProducto) != null"
                   (click)="deseleccionarProducto(productos.idProducto)"
                   >

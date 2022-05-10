@@ -25,6 +25,15 @@ import { EntryPageComponent } from './components/entry-page/entry-page.component
 import { PerfilComponent } from './components/perfil/perfil.component';
 import { RememberPasswordComponent } from './components/remember-password/remember-password.component';
 import { SeccionPagoComponent } from './components/seccion-pago/seccion-pago.component';
+import { FiltroMujeresComponent } from './components/productos/filtro-mujeres/filtro-mujeres.component';
+import { FiltroHombresComponent } from './components/productos/filtro-hombres/filtro-hombres.component';
+import { FiltroParejasComponent } from './components/productos/filtro-parejas/filtro-parejas.component';
+import { FiltroUnisexComponent } from './components/productos/filtro-unisex/filtro-unisex.component';
+import { FiltroVibradoresComponent } from './components/productos/filtro-vibradores/filtro-vibradores.component';
+import { FiltroJuegosComponent } from './components/productos/filtro-juegos/filtro-juegos.component';
+import { FiltroLenceriaComponent } from './components/productos/filtro-lenceria/filtro-lenceria.component';
+import { FiltroLubricantesComponent } from './components/productos/filtro-lubricantes/filtro-lubricantes.component';
+import { FiltroOtrosComponent } from './components/productos/filtro-otros/filtro-otros.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +56,16 @@ import { SeccionPagoComponent } from './components/seccion-pago/seccion-pago.com
     EntryPageComponent,
     PerfilComponent,
     RememberPasswordComponent,
-    SeccionPagoComponent
+    SeccionPagoComponent,
+    FiltroMujeresComponent,
+    FiltroHombresComponent,
+    FiltroParejasComponent,
+    FiltroUnisexComponent,
+    FiltroVibradoresComponent,
+    FiltroJuegosComponent,
+    FiltroLenceriaComponent,
+    FiltroLubricantesComponent,
+    FiltroOtrosComponent
   ],
   imports: [
     BrowserModule,
