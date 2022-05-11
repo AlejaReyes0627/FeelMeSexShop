@@ -55,9 +55,6 @@ a{
   height: 50px;
 }
 
-.columnaPaid {
-  padding-left: 150px;
-}
 
  /* Separador */
  .separatorSabiasQue {
@@ -213,6 +210,10 @@ a{
   padding-right: 15px;
   padding-left: 15px;
   position: relative;
+}
+
+.metodoPago{
+  padding-left: 100px;
 }
 
 .container-fluid {
