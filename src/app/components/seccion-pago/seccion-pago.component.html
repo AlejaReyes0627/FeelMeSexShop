@@ -351,8 +351,7 @@
             *ngFor="let productos of listaProductos"
           >
             <h4 class="card-title">{{ productos?.nombreProducto }}</h4>
-            <p class="card-title">{{ productos?.descripcion }}</p>
-            <h5 class="card-title">${{ productos?.precio }}</h5>
+            <h6 style="color: gray;" class="card-title">${{ productos?.precio }}</h6>
             <button
               type="button"
               class="btn btn-danger"
