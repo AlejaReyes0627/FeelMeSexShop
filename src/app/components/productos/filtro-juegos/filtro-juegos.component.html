@@ -1,118 +1,226 @@
 <app-navbar></app-navbar>
 <div style="padding-top: 130px">
   <div class="separatorSabiasQue">
-      <ul class="nav nav-middle" style="background-color: #f992ad">
-          <p class="nav-links nav-middle-text">PRODUCTOS</p>
-      </ul>
+    <ul class="nav nav-middle" style="background-color: #f992ad">
+      <p class="nav-links nav-middle-text">PRODUCTOS</p>
+    </ul>
   </div>
 
   <div class="container-fluid">
-      <div class="row">
-          <!-- Menu Lateral -->
-          <div class="col-2 menuContainer" style="background-color: rgb(245, 245, 245)">
-              <div class="optionsContainer">
-                  <p class="titleMenu">MENU</p>
+    <div class="row">
+      <!-- Menu Lateral -->
+      <div
+        class="col-2 menuContainer"
+        style="background-color: rgb(245, 245, 245)"
+      >
+        <div class="optionsContainer">
+          <p class="titleMenu">MENU</p>
 
-                  <!-- Categorias -->
-                  <p class="titleCategories">Categorias</p>
-                  <a class="options">
-                      <div style="cursor: pointer" class="productDiv" ondragstart="return false"
-                          onselectstart="return false" oncontextmenu="return false"
-                          (click)="pasarAMujeres()">
-                          Para Mujeres
-                      </div>
-                  </a>
-                  <a class="options">
-                      <div style="cursor: pointer" class="productDiv" ondragstart="return false"
-                          onselectstart="return false" oncontextmenu="return false"
-                              (click)="pasarAHombres()">
-                          Para Hombres
-                      </div>
-                  </a>
-                  <a class="options">
-                      <div style="cursor: pointer" class="productDiv" class="productDiv" ondragstart="return false"
-                          onselectstart="return false" oncontextmenu="return false"
-                          (click)="pasarAParejas()"
-                          >
-                          Para Parejas
-                      </div>
-                  </a>
-                  <a class="options">
-                      <div style="cursor: pointer" class="productDiv" class="productDiv" class="productDiv"
-                          ondragstart="return false" onselectstart="return false" oncontextmenu="return false"
-                          (click)="pasarAUnisex()">
-                          Unisex
-                      </div>
-                  </a>
-                  <a class="options">
-                      <div style="cursor: pointer" class="productDiv" class="productDiv" class="productDiv"
-                          class="productDiv" ondragstart="return false" onselectstart="return false"
-                          oncontextmenu="return false" (click)="pasarAVibradores()">
-                          Vibradores
-                      </div>
-                  </a>
-                  <a class="options">
-                      <div style="cursor: pointer" class="productDiv" class="productDiv" class="productDiv"
-                          class="productDiv" class="productDiv" ondragstart="return false"
-                          onselectstart="return false" oncontextmenu="return false"
-                          (click)="mostrarProductosJuegos()">
-                          Juegos
-                      </div>
-                  </a>
-                  <a class="options">
-                      <div style="cursor: pointer" class="productDiv" class="productDiv" class="productDiv"
-                          class="productDiv" class="productDiv" class="productDiv" ondragstart="return false"
-                          onselectstart="return false" oncontextmenu="return false"
-                          (click)="pasarALenceria()">
-                          Lenceria
-                      </div>
-                  </a>
-                  <a class="options">
-                      <div class="productDiv" style="cursor: pointer" class="productDiv" class="productDiv"
-                          class="productDiv" class="productDiv" class="productDiv" class="productDiv"
-                          ondragstart="return false" onselectstart="return false" oncontextmenu="return false"
-                          (click)="pasarALubricantes()">
-                          Lubricantes/Aceites
-                      </div>
-                  </a>
-                  <a class="options">
-                      <div class="productDiv" class="productDiv" style="cursor: pointer" class="productDiv"
-                          class="productDiv" class="productDiv" class="productDiv" class="productDiv"
-                          class="productDiv" ondragstart="return false" onselectstart="return false"
-                          oncontextmenu="return false" (click)="pasarAOtros()">
-                          Otros
-                      </div>
-                  </a>
-                  <a class="options">
-                      <div class="productDiv" class="productDiv" class="productDiv" style="cursor: pointer"
-                          class="productDiv" class="productDiv" class="productDiv" class="productDiv"
-                          class="productDiv" class="productDiv" ondragstart="return false"
-                          onselectstart="return false" oncontextmenu="return false" (click)="pasarATodos()">
-                          Ver Todos
-                      </div>
-                  </a>
-                  <!-- Orden -->
-                  <p class="titleCategories pt-2">Orden</p>
-                  <a class="options">
-                      <div class="productDiv" class="productDiv" class="productDiv" class="productDiv"
-                          style="cursor: pointer" class="productDiv" class="productDiv" class="productDiv"
-                          class="productDiv" class="productDiv" class="productDiv" ondragstart="return false"
-                          onselectstart="return false" oncontextmenu="return false"
-                          (click)="mostrarProductosAscendente()">
-                          Ascendente
-                      </div>
-                  </a>
-                  <a class="options">
-                      <div class="productDiv" class="productDiv" class="productDiv" class="productDiv"
-                          class="productDiv" style="cursor: pointer" class="productDiv" class="productDiv"
-                          class="productDiv" class="productDiv" class="productDiv" class="productDiv"
-                          ondragstart="return false" onselectstart="return false" oncontextmenu="return false"
-                          (click)="mostrarProductosDescendente()">
-                          Descendente
-                      </div>
-                  </a>
-              </div>
-          </div>
+          <!-- Categorias -->
+          <p class="titleCategories">Categorias</p>
+          <a class="options">
+            <div
+              style="cursor: pointer"
+              class="productDiv"
+              ondragstart="return false"
+              onselectstart="return false"
+              oncontextmenu="return false"
+              (click)="pasarAMujeres()"
+            >
+              Para Mujeres
+            </div>
+          </a>
+          <a class="options">
+            <div
+              style="cursor: pointer"
+              class="productDiv"
+              ondragstart="return false"
+              onselectstart="return false"
+              oncontextmenu="return false"
+              (click)="pasarAHombres()"
+            >
+              Para Hombres
+            </div>
+          </a>
+          <a class="options">
+            <div
+              style="cursor: pointer"
+              class="productDiv"
+              class="productDiv"
+              ondragstart="return false"
+              onselectstart="return false"
+              oncontextmenu="return false"
+              (click)="pasarAParejas()"
+            >
+              Para Parejas
+            </div>
+          </a>
+          <a class="options">
+            <div
+              style="cursor: pointer"
+              class="productDiv"
+              class="productDiv"
+              class="productDiv"
+              ondragstart="return false"
+              onselectstart="return false"
+              oncontextmenu="return false"
+              (click)="pasarAUnisex()"
+            >
+              Unisex
+            </div>
+          </a>
+          <a class="options">
+            <div
+              style="cursor: pointer"
+              class="productDiv"
+              class="productDiv"
+              class="productDiv"
+              class="productDiv"
+              ondragstart="return false"
+              onselectstart="return false"
+              oncontextmenu="return false"
+              (click)="pasarAVibradores()"
+            >
+              Vibradores
+            </div>
+          </a>
+          <a class="options">
+            <div
+              style="cursor: pointer"
+              class="productDiv"
+              class="productDiv"
+              class="productDiv"
+              class="productDiv"
+              class="productDiv"
+              ondragstart="return false"
+              onselectstart="return false"
+              oncontextmenu="return false"
+              (click)="mostrarProductosJuegos()"
+            >
+              Juegos
+            </div>
+          </a>
+          <a class="options">
+            <div
+              style="cursor: pointer"
+              class="productDiv"
+              class="productDiv"
+              class="productDiv"
+              class="productDiv"
+              class="productDiv"
+              class="productDiv"
+              ondragstart="return false"
+              onselectstart="return false"
+              oncontextmenu="return false"
+              (click)="pasarALenceria()"
+            >
+              Lenceria
+            </div>
+          </a>
+          <a class="options">
+            <div
+              class="productDiv"
+              style="cursor: pointer"
+              class="productDiv"
+              class="productDiv"
+              class="productDiv"
+              class="productDiv"
+              class="productDiv"
+              class="productDiv"
+              ondragstart="return false"
+              onselectstart="return false"
+              oncontextmenu="return false"
+              (click)="pasarALubricantes()"
+            >
+              Lubricantes/Aceites
+            </div>
+          </a>
+          <a class="options">
+            <div
+              class="productDiv"
+              class="productDiv"
+              style="cursor: pointer"
+              class="productDiv"
+              class="productDiv"
+              class="productDiv"
+              class="productDiv"
+              class="productDiv"
+              class="productDiv"
+              ondragstart="return false"
+              onselectstart="return false"
+              oncontextmenu="return false"
+              (click)="pasarAOtros()"
+            >
+              Otros
+            </div>
+          </a>
+          <a class="options">
+            <div
+              class="productDiv"
+              class="productDiv"
+              class="productDiv"
+              style="cursor: pointer"
+              class="productDiv"
+              class="productDiv"
+              class="productDiv"
+              class="productDiv"
+              class="productDiv"
+              class="productDiv"
+              ondragstart="return false"
+              onselectstart="return false"
+              oncontextmenu="return false"
+              (click)="pasarATodos()"
+            >
+              Ver Todos
+            </div>
+          </a>
+          <!-- Orden -->
+          <p class="titleCategories pt-2">Orden</p>
+          <a class="options">
+            <div
+              class="productDiv"
+              class="productDiv"
+              class="productDiv"
+              class="productDiv"
+              style="cursor: pointer"
+              class="productDiv"
+              class="productDiv"
+              class="productDiv"
+              class="productDiv"
+              class="productDiv"
+              class="productDiv"
+              ondragstart="return false"
+              onselectstart="return false"
+              oncontextmenu="return false"
+              (click)="mostrarProductosAscendente()"
+            >
+              Ascendente
+            </div>
+          </a>
+          <a class="options">
+            <div
+              class="productDiv"
+              class="productDiv"
+              class="productDiv"
+              class="productDiv"
+              class="productDiv"
+              style="cursor: pointer"
+              class="productDiv"
+              class="productDiv"
+              class="productDiv"
+              class="productDiv"
+              class="productDiv"
+              class="productDiv"
+              ondragstart="return false"
+              onselectstart="return false"
+              oncontextmenu="return false"
+              (click)="mostrarProductosDescendente()"
+            >
+              Descendente
+            </div>
+          </a>
+        </div>
+      </div>
 
       <!-- Productos -->
       <div class="col">
@@ -123,7 +231,12 @@
           >
             <!-- CARDS -->
             <div class="card cardSize">
-              <img [src]="prueba1" class="card-img-top" alt="product" />
+              <img
+                src="{{ productos.imagen }}"
+                class="card-img-top"
+                alt="product"
+              />
+
               <p class="card-title titles">{{ productos.nombreProducto }}</p>
 
               <div class="card-body">
@@ -144,11 +257,11 @@
                     Añadir al carrito
                   </button>
                   <button
-                  type="button"
-                  class="btn buttonProduct"
-                  href="productos/filtroJuegos"
-                  *ngIf="estaSeleccionado(productos.idProducto) != null"
-                  (click)="deseleccionarProducto(productos.idProducto)"
+                    type="button"
+                    class="btn buttonProduct"
+                    href="productos/filtroJuegos"
+                    *ngIf="estaSeleccionado(productos.idProducto) != null"
+                    (click)="deseleccionarProducto(productos.idProducto)"
                   >
                     Añadir al carrito
                   </button>

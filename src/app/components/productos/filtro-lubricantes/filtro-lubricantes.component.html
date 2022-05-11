@@ -18,15 +18,15 @@
 
           <!-- Categorias -->
           <p class="titleCategories">Categorias</p>
-          <a class="options"
-            >
+          <a class="options">
             <div
               style="cursor: pointer"
               class="productDiv"
               ondragstart="return false"
               onselectstart="return false"
               oncontextmenu="return false"
-              (click)="pasarAMujeres()">
+              (click)="pasarAMujeres()"
+            >
               Para Mujeres
             </div></a
           >
@@ -37,7 +37,8 @@
               ondragstart="return false"
               onselectstart="return false"
               oncontextmenu="return false"
-              (click)="pasarAHombres()">
+              (click)="pasarAHombres()"
+            >
               Para Hombres
             </div></a
           >
@@ -49,7 +50,8 @@
               ondragstart="return false"
               onselectstart="return false"
               oncontextmenu="return false"
-              (click)="pasarAParejas()">
+              (click)="pasarAParejas()"
+            >
               Para Parejas
             </div></a
           >
@@ -62,7 +64,8 @@
               ondragstart="return false"
               onselectstart="return false"
               oncontextmenu="return false"
-              (click)="pasarAUnisex()">
+              (click)="pasarAUnisex()"
+            >
               Unisex
             </div></a
           >
@@ -76,7 +79,8 @@
               ondragstart="return false"
               onselectstart="return false"
               oncontextmenu="return false"
-              (click)="pasarAVibradores()">
+              (click)="pasarAVibradores()"
+            >
               Vibradores
             </div></a
           >
@@ -91,7 +95,8 @@
               ondragstart="return false"
               onselectstart="return false"
               oncontextmenu="return false"
-              (click)="pasarAJuegos()">
+              (click)="pasarAJuegos()"
+            >
               Juegos
             </div></a
           >
@@ -107,7 +112,8 @@
               ondragstart="return false"
               onselectstart="return false"
               oncontextmenu="return false"
-              (click)="pasarALenceria()">
+              (click)="pasarALenceria()"
+            >
               Lenceria
             </div></a
           >
@@ -143,7 +149,8 @@
               ondragstart="return false"
               onselectstart="return false"
               oncontextmenu="return false"
-              (click)="pasarAOtros()">
+              (click)="pasarAOtros()"
+            >
               Otros
             </div></a
           >
@@ -162,7 +169,8 @@
               ondragstart="return false"
               onselectstart="return false"
               oncontextmenu="return false"
-              (click)="pasarATodos()">
+              (click)="pasarATodos()"
+            >
               Ver Todos
             </div></a
           >
@@ -223,7 +231,12 @@
           >
             <!-- CARDS -->
             <div class="card cardSize">
-              <img [src]="prueba1" class="card-img-top" alt="product" />
+              <img
+                src="{{ productos.imagen }}"
+                class="card-img-top"
+                alt="product"
+              />
+
               <p class="card-title titles">{{ productos.nombreProducto }}</p>
 
               <div class="card-body">
@@ -244,11 +257,11 @@
                     Añadir al carrito
                   </button>
                   <button
-                  type="button"
-                  class="btn buttonProduct"
-                  href="productos/filtroLubricantes"
-                  *ngIf="estaSeleccionado(productos.idProducto) != null"
-                  (click)="deseleccionarProducto(productos.idProducto)"
+                    type="button"
+                    class="btn buttonProduct"
+                    href="productos/filtroLubricantes"
+                    *ngIf="estaSeleccionado(productos.idProducto) != null"
+                    (click)="deseleccionarProducto(productos.idProducto)"
                   >
                     Añadir al carrito
                   </button>

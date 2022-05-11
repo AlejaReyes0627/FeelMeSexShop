@@ -18,8 +18,7 @@
 
           <!-- Categorias -->
           <p class="titleCategories">Categorias</p>
-          <a class="options"
-            >
+          <a class="options">
             <div
               style="cursor: pointer"
               class="productDiv"
@@ -79,8 +78,9 @@
               class="productDiv"
               ondragstart="return false"
               onselectstart="return false"
-              oncontextmenu="return false" (click)="pasarAVibradores()"
-             >
+              oncontextmenu="return false"
+              (click)="pasarAVibradores()"
+            >
               Vibradores
             </div></a
           >
@@ -148,7 +148,8 @@
               class="productDiv"
               ondragstart="return false"
               onselectstart="return false"
-              oncontextmenu="return false" (click)="pasarAOtros()"
+              oncontextmenu="return false"
+              (click)="pasarAOtros()"
             >
               Otros
             </div></a
@@ -230,7 +231,12 @@
           >
             <!-- CARDS -->
             <div class="card cardSize">
-              <img [src]="prueba1" class="card-img-top" alt="product" />
+              <img
+                src="{{ productos.imagen }}"
+                class="card-img-top"
+                alt="product"
+              />
+
               <p class="card-title titles">{{ productos.nombreProducto }}</p>
 
               <div class="card-body">
@@ -251,11 +257,11 @@
                     Añadir al carrito
                   </button>
                   <button
-                  type="button"
-                  class="btn buttonProduct"
-                  href="productos/filtroUnisex"
-                  *ngIf="estaSeleccionado(productos.idProducto) != null"
-                  (click)="deseleccionarProducto(productos.idProducto)"
+                    type="button"
+                    class="btn buttonProduct"
+                    href="productos/filtroUnisex"
+                    *ngIf="estaSeleccionado(productos.idProducto) != null"
+                    (click)="deseleccionarProducto(productos.idProducto)"
                   >
                     Añadir al carrito
                   </button>
