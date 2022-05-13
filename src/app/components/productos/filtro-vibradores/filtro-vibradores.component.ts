@@ -25,15 +25,13 @@ export class FiltroVibradoresComponent implements OnInit {
   title = 'zoo';
   sexShopService: SexshopdatabaseService;
   prueba1: string;
-  prueba2: string;
   tipoProductos: number;
   listaProductos: Producto[] = [];
   listaproductosSeleccionados:Producto[] = [];
 
-  constructor(http: HttpClient, private servicioproductos: SexshopdatabaseService,private router: Router) {
-    this.prueba1 = '/assets/img/pruebas/prueba5.jpg';
-    this.prueba2 = '/assets/img/pruebas/prueba1.jpg';
+  constructor( http: HttpClient, private router: Router) {
     this.sexShopService = new SexshopdatabaseService(http);
+    this.prueba1 = "/assets/img/productos/Vidradores/1.jpg";
     this.tipoProductos = 0;
   }
   ngOnInit(): void {

@@ -55,9 +55,6 @@ a{
   height: 50px;
 }
 
-.columnaPaid {
-  padding-left: 150px;
-}
 
  /* Separador */
  .separatorSabiasQue {
@@ -81,9 +78,6 @@ a{
 }
 /*------------------------------------------------------*/
 
-.colorCards {
-  padding: 15px 0 15px 0;
-}
 
 .card1 {
   background-color: #a480f2;
@@ -216,6 +210,10 @@ a{
   padding-right: 15px;
   padding-left: 15px;
   position: relative;
+}
+
+.metodoPago{
+  padding-left: 100px;
 }
 
 .container-fluid {

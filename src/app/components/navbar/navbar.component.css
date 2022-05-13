@@ -116,18 +116,18 @@ nav {
 }
 
 select {
-  border: none !important;
+
   outline: none !important;
 
 }
 
 .selectLanguage {
-  border: none !important;
+  border-radius: 5px;
   color: black;
   font-weight: bold;
-  outline: none !important;
+
 }
 
 .selectContainer {
-  border: none !important;
+  border-radius: 5px;
 }

@@ -18,8 +18,7 @@
 
           <!-- Categorias -->
           <p class="titleCategories">Categorias</p>
-          <a class="options"
-            >
+          <a class="options">
             <div
               style="cursor: pointer"
               class="productDiv"
@@ -37,7 +36,8 @@
               class="productDiv"
               ondragstart="return false"
               onselectstart="return false"
-              oncontextmenu="return false" (click)="pasarAHombres()"
+              oncontextmenu="return false"
+              (click)="pasarAHombres()"
             >
               Para Hombres
             </div></a
@@ -49,7 +49,8 @@
               class="productDiv"
               ondragstart="return false"
               onselectstart="return false"
-              oncontextmenu="return false" (click)="pasarAParejas()"
+              oncontextmenu="return false"
+              (click)="pasarAParejas()"
             >
               Para Parejas
             </div></a
@@ -62,7 +63,8 @@
               class="productDiv"
               ondragstart="return false"
               onselectstart="return false"
-              oncontextmenu="return false" (click)="pasarAUnisex()"
+              oncontextmenu="return false"
+              (click)="pasarAUnisex()"
             >
               Unisex
             </div></a
@@ -76,7 +78,8 @@
               class="productDiv"
               ondragstart="return false"
               onselectstart="return false"
-              oncontextmenu="return false" (click)="pasarAVibradores()"
+              oncontextmenu="return false"
+              (click)="pasarAVibradores()"
             >
               Vibradores
             </div></a
@@ -91,7 +94,8 @@
               class="productDiv"
               ondragstart="return false"
               onselectstart="return false"
-              oncontextmenu="return false" (click)="pasarAJuegos()"
+              oncontextmenu="return false"
+              (click)="pasarAJuegos()"
             >
               Juegos
             </div></a
@@ -107,7 +111,8 @@
               class="productDiv"
               ondragstart="return false"
               onselectstart="return false"
-              oncontextmenu="return false" (click)="pasarALenceria()"
+              oncontextmenu="return false"
+              (click)="pasarALenceria()"
             >
               Lenceria
             </div></a
@@ -124,7 +129,8 @@
               class="productDiv"
               ondragstart="return false"
               onselectstart="return false"
-              oncontextmenu="return false" (click)="pasarALubricantes()"
+              oncontextmenu="return false"
+              (click)="pasarALubricantes()"
             >
               Lubricantes/Aceites
             </div></a
@@ -162,7 +168,8 @@
               class="productDiv"
               ondragstart="return false"
               onselectstart="return false"
-              oncontextmenu="return false" (click)="pasarATodos()"
+              oncontextmenu="return false"
+              (click)="pasarATodos()"
             >
               Ver Todos
             </div></a
@@ -224,7 +231,12 @@
           >
             <!-- CARDS -->
             <div class="card cardSize">
-              <img [src]="prueba1" class="card-img-top" alt="product" />
+              <img
+                src="{{ productos.imagen }}"
+                class="card-img-top"
+                alt="product"
+              />
+
               <p class="card-title titles">{{ productos.nombreProducto }}</p>
 
               <div class="card-body">
@@ -245,11 +257,11 @@
                     Añadir al carrito
                   </button>
                   <button
-                  type="button"
-                  class="btn buttonProduct"
-                  href="productos/filtroOtros"
-                  *ngIf="estaSeleccionado(productos.idProducto) != null"
-                  (click)="deseleccionarProducto(productos.idProducto)"
+                    type="button"
+                    class="btn buttonProduct"
+                    href="productos/filtroOtros"
+                    *ngIf="estaSeleccionado(productos.idProducto) != null"
+                    (click)="deseleccionarProducto(productos.idProducto)"
                   >
                     Añadir al carrito
                   </button>
