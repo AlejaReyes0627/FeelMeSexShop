@@ -12,6 +12,7 @@ export class ContactoComponent implements OnInit {
   nombre: String;
   correo: String;
   mensaje: String;
+  //Prueba
 
   constructor() {
     this.whatsappIcon = '/assets/img/icons/whatsappIcon.png';
