@@ -46,7 +46,7 @@ export class LoginComponent implements OnInit {
     } else {
       var tipo = 'select';
       var sql =
-        "select * from usuario where contraseña='" +
+        "select * from persona where contraseña='" +
         this.contrasena +
         "' and correo='" +
         this.email.toLowerCase() +
